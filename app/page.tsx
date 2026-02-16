@@ -2,6 +2,7 @@ import { BlogPreview } from "@/components/BlogPreview";
 import { CTA } from "@/components/CTA";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { Guarantee } from "@/components/Guarantee";
 import { Hero } from "@/components/Hero";
 import { LogosBar } from "@/components/LogosBar";
 import { Nav } from "@/components/Nav";
@@ -19,6 +20,7 @@ export default function HomePage() {
         <LogosBar />
         <Services />
         <WhyAdding />
+        <Guarantee />
         <Testimonials />
         <BlogPreview />
         <FAQ />
