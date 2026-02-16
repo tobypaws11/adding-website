@@ -20,14 +20,14 @@ const translations: Translations = {
   "hero.h1.2": { es: "ecosistemas digitales", en: "digital ecosystems" },
   "hero.h1.3": { es: "que generan crecimiento.", en: "that drive growth." },
   "hero.p": {
-    es: "No hacemos campañas aisladas. Creamos sistemas automatizados de generación de leads que convierten prospectos en clientes leales — con IA, data y mejora continua.",
-    en: "We don't run isolated campaigns. We build automated lead generation systems that turn prospects into loyal customers — with AI, data, and continuous improvement."
+    es: "No hacemos campañas aisladas. Creamos sistemas automatizados de generación de leads que convierten prospectos en clientes leales, con IA, data y mejora continua.",
+    en: "We don't run isolated campaigns. We build automated lead generation systems that turn prospects into loyal customers, with AI, data, and continuous improvement."
   },
   "hero.cta": { es: "Agendá una llamada", en: "Book a call" },
   "hero.link": { es: "Ver servicios", en: "See services" },
   "hero.flywheel.title": { es: "Tu Flywheel de crecimiento", en: "Your Growth Flywheel" },
   "hero.flywheel.sub": { es: "Ecosistema automatizado", en: "Automated ecosystem" },
-  "hero.flywheel.each": { es: "Cada etapa alimenta la siguiente — crecimiento continuo", en: "Each stage feeds the next — continuous growth" },
+  "hero.flywheel.each": { es: "Cada etapa alimenta la siguiente: crecimiento continuo", en: "Each stage feeds the next: continuous growth" },
   "hero.fly.1": { es: "Prospección automatizada", en: "Automated prospecting" },
   "hero.fly.2": { es: "Nutrición inteligente", en: "Intelligent nurturing" },
   "hero.fly.3": { es: "Cierre eficiente", en: "Efficient closing" },
@@ -40,8 +40,8 @@ const translations: Translations = {
   "services.label": { es: "Servicios", en: "Services" },
   "services.title": { es: "Todo lo que necesitás para crecer en digital.", en: "Everything you need to grow digitally." },
   "services.subtitle": {
-    es: "Construimos ecosistemas digitales completos para PYMES — desde la primera visita hasta el cliente fiel, acompañándote en cada etapa del customer journey con automatización y mejora continua.",
-    en: "We build complete digital ecosystems for SMBs — from first visit to loyal customer, guiding you through every stage of the customer journey with automation and continuous improvement."
+    es: "Construimos ecosistemas digitales completos para PYMES, desde la primera visita hasta el cliente fiel, acompañándote en cada etapa del recorrido del cliente con automatización y mejora continua.",
+    en: "We build complete digital ecosystems for SMBs, from first visit to loyal customer, guiding you through every stage of the customer journey with automation and continuous improvement."
   },
   "svc.web.title": { es: "Diseño y Desarrollo Web", en: "Web Design & Development" },
   "svc.web.desc": { es: "Sitios rápidos, modernos y optimizados para convertir visitas en oportunidades reales de negocio.", en: "Fast, modern sites optimized to turn visits into real business opportunities." },
@@ -50,7 +50,7 @@ const translations: Translations = {
   "svc.seo.title": { es: "SEO y Marketing Digital", en: "SEO & Digital Marketing" },
   "svc.seo.desc": { es: "Estrategias orientadas a datos para posicionarte orgánicamente y generar tráfico calificado constante.", en: "Data-driven strategies to rank organically and generate consistent qualified traffic." },
   "svc.leads.title": { es: "Ecosistemas de Leads", en: "Lead Ecosystems" },
-  "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. No campañas aisladas — sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. Not isolated campaigns — predictable growth systems." },
+  "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. Nada de campañas aisladas, solo sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. No isolated campaigns, just predictable growth systems." },
   "svc.email.title": { es: "Email Marketing y Newsletter", en: "Email Marketing & Newsletter" },
   "svc.email.desc": { es: "Secuencias automatizadas, nutrición inteligente y newsletters que mantienen a tus prospectos comprometidos hasta la conversión.", en: "Automated sequences, intelligent nurturing, and newsletters that keep prospects engaged until conversion." },
   "svc.auto.title": { es: "Automatización", en: "Automation" },
@@ -60,15 +60,15 @@ const translations: Translations = {
   "why.label": { es: "Por qué AdDing", en: "Why AdDing" },
   "why.title": { es: "No somos una agencia más. Somos tu sistema de crecimiento.", en: "We're not just another agency. We're your growth system." },
   "why.subtitle": {
-    es: "Especialistas en crear ecosistemas digitales automatizados que transforman prospectos en clientes leales. No hacemos campañas aisladas — construimos crecimiento predecible.",
-    en: "Specialists in building automated digital ecosystems that turn prospects into loyal customers. No isolated campaigns — we build predictable growth."
+    es: "Especialistas en crear ecosistemas digitales automatizados que transforman prospectos en clientes leales. No hacemos campañas aisladas, construimos crecimiento predecible.",
+    en: "Specialists in building automated digital ecosystems that turn prospects into loyal customers. We don't run isolated campaigns, we build predictable growth."
   },
   "why.p1.title": { es: "Ecosistema, no campañas", en: "Ecosystem, not campaigns" },
-  "why.p1.desc": { es: "Construimos un Flywheel automatizado donde cada etapa alimenta la siguiente — prospección, nutrición, cierre, retención y crecimiento.", en: "We build an automated Flywheel where each stage feeds the next — prospecting, nurturing, closing, retention, and growth." },
+  "why.p1.desc": { es: "Construimos un Flywheel automatizado donde cada etapa alimenta la siguiente: prospección, nutrición, cierre, retención y crecimiento.", en: "We build an automated Flywheel where each stage feeds the next: prospecting, nurturing, closing, retention, and growth." },
   "why.p2.title": { es: "IA y automatización real", en: "Real AI & automation" },
   "why.p2.desc": { es: "Usamos inteligencia artificial en cada paso: agentes que responden 24/7, CRM automatizado, seguimientos inteligentes y optimización basada en data.", en: "We use AI at every step: agents that respond 24/7, automated CRM, smart follow-ups, and data-driven optimization." },
   "why.p3.title": { es: "Resultados medibles", en: "Measurable results" },
-  "why.p3.desc": { es: "Trabajás con KPIs reales de negocio — leads calificados, costo por adquisición, conversión y retorno. Nada de métricas de vanidad.", en: "You work with real business KPIs — qualified leads, cost per acquisition, conversion, and ROI. No vanity metrics." },
+  "why.p3.desc": { es: "Trabajás con KPIs reales de negocio: leads calificados, costo por adquisición, conversión y retorno. Nada de métricas de vanidad.", en: "You work with real business KPIs: qualified leads, cost per acquisition, conversion, and ROI. No vanity metrics." },
   "why.cmp.them": { es: "Otros proveedores", en: "Other providers" },
   "why.cmp.us": { es: "AdDing Agency", en: "AdDing Agency" },
   "why.c1.them": { es: "Campañas aisladas sin conexión", en: "Disconnected isolated campaigns" },
@@ -128,8 +128,8 @@ const translations: Translations = {
   },
   "faq.q3": { es: "¿Pueden ayudarme aunque no tenga equipo interno?", en: "Can you help me even without an internal team?" },
   "faq.a3": {
-    es: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica para que podás avanzar sin fricción. Estrategia, contenido, ads, CRM, email — todo incluido.",
-    en: "Yes. We integrate as your external marketing, execution, and analytics team so you can move forward without friction. Strategy, content, ads, CRM, email — all included."
+    es: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica para que podás avanzar sin fricción. Estrategia, contenido, ads, CRM, email, todo incluido.",
+    en: "Yes. We integrate as your external marketing, execution, and analytics team so you can move forward without friction. Strategy, content, ads, CRM, email, all included."
   },
 
   // CTA

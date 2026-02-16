@@ -10,11 +10,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 100px;
 }
 
 section[id] {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 100px;
 }
 
 body {
@@ -37,6 +37,23 @@ body {
   @apply mt-5 max-w-2xl text-base leading-relaxed text-black/65 md:text-lg;
 }
 
+/* Prose styles for legal pages */
+.prose h2 {
+  @apply mt-8 mb-3 font-title text-xl font-bold text-brand-black;
+}
+
+.prose p {
+  @apply mb-4 text-sm leading-relaxed;
+}
+
+.prose ul {
+  @apply mb-4 ml-5 list-disc space-y-1.5 text-sm leading-relaxed;
+}
+
+.prose a {
+  @apply text-brand-blue underline;
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(14px);
@@ -48,7 +65,7 @@ body {
 }
 
 .animate-scroll {
-  animation: scroll 25s linear infinite;
+  animation: scroll 12s linear infinite;
 }
 
 .animate-scroll:hover {
