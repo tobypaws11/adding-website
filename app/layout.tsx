@@ -112,8 +112,8 @@ export default function RootLayout({
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Diseño y desarrollo web" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Agentes de IA" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO y marketing digital" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Identidad de marca" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Producción de video" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ecosistemas de generación de leads" } },
+            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Email marketing y newsletter" } },
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatización" } }
           ]
         }
@@ -124,26 +124,26 @@ export default function RootLayout({
         mainEntity: [
           {
             "@type": "Question",
-            name: "¿Cuánto tarda un proyecto digital con AdDing?",
+            name: "¿Qué tipo de negocios atienden?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Depende del alcance, pero la mayoría de proyectos para PYMES en Costa Rica se ejecutan entre 2 y 6 semanas con entregables claros en cada etapa."
+              text: "Trabajamos con PYMES, marcas personales y empresas en crecimiento que buscan resultados concretos en digital con ecosistemas completos de generación de leads."
             }
           },
           {
             "@type": "Question",
-            name: "¿Trabajan solo en Costa Rica?",
+            name: "¿En cuánto tiempo podría ver resultados?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Nuestra base está en Costa Rica y trabajamos con marcas locales y regionales que buscan crecer con marketing digital medible."
+              text: "La fase de fundación toma entre 2 y 5 semanas. Desde el segundo mes ya empezás a ver leads consistentes y métricas de crecimiento medibles."
             }
           },
           {
             "@type": "Question",
-            name: "¿Qué incluyen sus servicios de IA y automatización?",
+            name: "¿Pueden ayudarme aunque no tenga equipo interno?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Diseñamos agentes de IA, automatizaciones y flujos que reducen tareas manuales, mejoran tiempos de respuesta y aumentan conversiones."
+              text: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica para que podás avanzar sin fricción."
             }
           }
         ]
