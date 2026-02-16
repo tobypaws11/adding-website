@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: #008ff0;
+  --black: #000000;
+  --yellow: #fabd05;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+}
+
+.section-label {
+  @apply text-xs font-medium uppercase tracking-[0.22em] text-brand-blue;
+}
+
+.section-title {
+  @apply mt-4 font-title text-4xl font-bold leading-tight tracking-tight text-brand-black md:text-5xl;
+}
+
+.section-subtitle {
+  @apply mt-5 max-w-2xl text-base leading-relaxed text-black/65 md:text-lg;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
