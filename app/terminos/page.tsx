@@ -13,7 +13,7 @@ export default function TerminosPage() {
       <h1 className="mt-6 font-title text-4xl font-bold text-white">Términos y Condiciones</h1>
       <p className="mt-2 text-sm text-white/40">Última actualización: febrero 2026</p>
 
-      <div className="prose mt-8 max-w-none text-black/75">
+      <div className="prose-dark mt-8 max-w-none">
         <h2>1. Identificación</h2>
         <p>
           Este sitio web es propiedad y operado por <strong>CINTA MK FUTURISTA LIMITADA</strong>, cédula jurídica

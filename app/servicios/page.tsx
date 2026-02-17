@@ -117,7 +117,7 @@ export default function ServiciosPage() {
         <section className="py-16 md:py-24">
           <div className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-8 md:space-y-16">
             {services.map((svc, idx) => (
-              <div key={svc.code} className={`grid lg:grid-cols-2 gap-8 md:gap-16 border border-white/10 ${idx % 2 === 0 ? "bg-carbon-gray" : "bg-matte-black"} p-8 md:p-16 relative overflow-hidden group hover:border-primary/20 transition-all`}>
+              <div key={svc.code} id={`svc-${String(idx + 1).padStart(2, "0")}`} className={`grid lg:grid-cols-2 gap-8 md:gap-16 border border-white/10 ${idx % 2 === 0 ? "bg-carbon-gray" : "bg-matte-black"} p-8 md:p-16 relative overflow-hidden group hover:border-primary/20 transition-all`}>
                 <div className="absolute top-4 right-4 md:top-6 md:right-6 text-[9px] font-mono text-white/10">{svc.code}</div>
                 <div>
                   <div className={`w-14 h-14 border ${svc.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>

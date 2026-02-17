@@ -12,14 +12,15 @@ export function Nav() {
     { href: "/servicios", label: t("nav.servicios") },
     { href: "/por-que-adding", label: t("nav.porque") },
     { href: "/blog", label: t("nav.blog") },
-    { href: "#contact", label: t("nav.contacto") },
+    { href: "/nosotros", label: t("nav.nosotros") },
+    { href: "/contacto", label: t("nav.contacto") },
   ];
 
   return (
     <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-matte-black/90 backdrop-blur-xl">
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
         <Link href="/" className="inline-flex shrink-0 items-center" aria-label="AdDing Agency">
-          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" width={180} height={50} className="h-10 w-auto md:h-12" />
+          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" width={220} height={60} className="h-12 w-auto md:h-14 lg:h-16" />
         </Link>
         <div className="hidden lg:flex items-center gap-12 xl:gap-16">
           {links.map((link) =>
@@ -38,9 +39,9 @@ export function Nav() {
           <button onClick={toggle} className="border border-white/10 px-3 py-1.5 text-[9px] font-bold uppercase tracking-luxury text-white/40 hover:text-primary hover:border-primary/40 transition-all">
             {lang === "es" ? "EN" : "ES"}
           </button>
-          <a href="#contact" className="hidden sm:inline-block border border-primary/40 text-primary px-4 md:px-8 py-2.5 md:py-3 text-[9px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
+          <Link href="/contacto" className="hidden sm:inline-block border border-primary/40 text-primary px-4 md:px-8 py-2.5 md:py-3 text-[9px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
             {t("nav.hablemos")}
-          </a>
+          </Link>
           <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-white/60 hover:text-primary transition-all" aria-label="Menu">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
               {menuOpen ? <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /> : <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />}
@@ -62,9 +63,9 @@ export function Nav() {
               </Link>
             )
           )}
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury uppercase text-primary">
+          <Link href="/contacto" onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury uppercase text-primary">
             {t("nav.hablemos")}
-          </a>
+          </Link>
         </div>
       )}
     </nav>

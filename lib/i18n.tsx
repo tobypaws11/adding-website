@@ -220,6 +220,46 @@ const translations: Translations = {
   "svcpage.cta": { es: "¿Querés saber más sobre algún servicio?", en: "Want to learn more about a service?" },
   "svcpage.cta.btn": { es: "Hablemos por WhatsApp", en: "Let's chat on WhatsApp" },
 
+  // Nav extras
+  "nav.nosotros": { es: "Nosotros", en: "About" },
+
+  // About page
+  "about.hero.title": { es: "Somos AdDing", en: "We are AdDing" },
+  "about.hero.sub": { es: "Una agencia digital impulsada por inteligencia artificial, nacida en Costa Rica para transformar negocios.", en: "An AI-powered digital agency, born in Costa Rica to transform businesses." },
+  "about.mission.label": { es: "Nuestra misión", en: "Our mission" },
+  "about.mission.title": { es: "Impulsar el crecimiento de empresas y emprendimientos", en: "Drive growth for businesses and startups" },
+  "about.mission.p": { es: "Creemos que cada negocio merece acceso a herramientas digitales de primer nivel. No importa si sos una PYME que está empezando o una empresa establecida, nuestro objetivo es construir ecosistemas digitales que generen resultados reales y sostenibles.", en: "We believe every business deserves access to first-class digital tools. Whether you're a startup or an established company, our goal is to build digital ecosystems that generate real, sustainable results." },
+  "about.vision.label": { es: "Nuestra visión", en: "Our vision" },
+  "about.vision.title": { es: "Ver un futuro brillante para cada marca", en: "See a bright future for every brand" },
+  "about.vision.p": { es: "\"SEE YOU IN A BRIGHT FUTURE\" no es solo un tagline. Es nuestra promesa. Queremos que cada cliente que trabaje con nosotros vea resultados tangibles y construya un negocio digital que funcione incluso mientras duerme.", en: "\"SEE YOU IN A BRIGHT FUTURE\" isn't just a tagline. It's our promise. We want every client who works with us to see tangible results and build a digital business that works even while they sleep." },
+  "about.values.label": { es: "Nuestros valores", en: "Our values" },
+  "about.values.title": { es: "Lo que nos define", en: "What defines us" },
+  "about.v1.title": { es: "Innovación constante", en: "Constant innovation" },
+  "about.v1.desc": { es: "Usamos las últimas tecnologías y metodologías. Si hay una forma mejor de hacer algo, la encontramos.", en: "We use the latest technologies and methodologies. If there's a better way to do something, we find it." },
+  "about.v2.title": { es: "Resultados sobre promesas", en: "Results over promises" },
+  "about.v2.desc": { es: "No vendemos humo. Cada acción que tomamos está orientada a generar impacto medible en tu negocio.", en: "We don't sell smoke. Every action we take is aimed at generating measurable impact on your business." },
+  "about.v3.title": { es: "Transparencia radical", en: "Radical transparency" },
+  "about.v3.desc": { es: "Dashboards en tiempo real, reportes claros y comunicación directa. Siempre vas a saber qué estamos haciendo y por qué.", en: "Real-time dashboards, clear reports, and direct communication. You'll always know what we're doing and why." },
+  "about.v4.title": { es: "Compromiso genuino", en: "Genuine commitment" },
+  "about.v4.desc": { es: "No somos un proveedor más. Nos involucramos en tu negocio como si fuera nuestro, porque tu éxito es nuestro éxito.", en: "We're not just another vendor. We get involved in your business as if it were ours, because your success is our success." },
+  "about.tagline": { es: "SEE YOU IN A BRIGHT FUTURE.", en: "SEE YOU IN A BRIGHT FUTURE." },
+  "about.location": { es: "Costa Rica", en: "Costa Rica" },
+  "about.location.desc": { es: "Con base en Alajuela, operamos de forma remota para clientes en toda Latinoamérica y el mundo.", en: "Based in Alajuela, we operate remotely for clients throughout Latin America and the world." },
+
+  // Contact page
+  "contact.hero.title": { es: "Hablemos", en: "Let's talk" },
+  "contact.hero.sub": { es: "¿Tenés un proyecto en mente? ¿Querés hacer crecer tu negocio en digital? Contactanos y te respondemos en menos de 24 horas.", en: "Have a project in mind? Want to grow your business digitally? Contact us and we'll respond within 24 hours." },
+  "contact.wa.title": { es: "WhatsApp", en: "WhatsApp" },
+  "contact.wa.desc": { es: "La forma más rápida de contactarnos. Respondemos en minutos.", en: "The fastest way to reach us. We respond in minutes." },
+  "contact.wa.btn": { es: "Escribinos por WhatsApp", en: "Message us on WhatsApp" },
+  "contact.email.title": { es: "Email", en: "Email" },
+  "contact.email.desc": { es: "Para consultas formales o propuestas detalladas.", en: "For formal inquiries or detailed proposals." },
+  "contact.location.title": { es: "Ubicación", en: "Location" },
+  "contact.location.desc": { es: "City Mall, Venture X, Alajuela, Costa Rica. Operamos de forma remota para clientes en todo el mundo.", en: "City Mall, Venture X, Alajuela, Costa Rica. We operate remotely for clients worldwide." },
+  "contact.hours.title": { es: "Horario", en: "Hours" },
+  "contact.hours.desc": { es: "Lunes a viernes, 9:00 AM a 6:00 PM (hora de Costa Rica, GMT-6)", en: "Monday to Friday, 9:00 AM to 6:00 PM (Costa Rica time, GMT-6)" },
+  "contact.social.title": { es: "Seguinos en redes", en: "Follow us" },
+
   // Email
   "email.subject": { es: "Consulta desde addingagency.com", en: "Inquiry from addingagency.com" },
 };

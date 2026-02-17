@@ -42,7 +42,7 @@ export function Hero() {
           </div>
         </div>
 
-        <h1 className="text-5xl sm:text-7xl lg:text-[10rem] font-black leading-[0.9] tracking-tighter mb-8 md:mb-12 font-display uppercase">
+        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 md:mb-12 font-display uppercase">
           {t("hero.h1.1")}<br />
           <span className="text-primary italic relative">
             {t("hero.h1.3")}
@@ -50,7 +50,7 @@ export function Hero() {
           </span>
         </h1>
 
-        <p className="text-lg md:text-xl lg:text-2xl text-white/40 font-light max-w-4xl mx-auto mb-12 md:mb-20 leading-relaxed tracking-tight-luxury">
+        <p className="text-base md:text-lg lg:text-xl text-white/50 font-light max-w-3xl mx-auto mb-12 md:mb-20 leading-relaxed">
           {t("hero.p")}
         </p>
 

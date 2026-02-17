@@ -19,7 +19,8 @@ export function Services() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="text-center mb-16 md:mb-24">
           <span className="text-[10px] font-black tracking-[0.6em] text-primary uppercase">{t("services.label")}</span>
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
+          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
+          <p className="text-white/40 text-base md:text-lg font-light max-w-3xl mx-auto mt-4 leading-relaxed">{t("services.subtitle")}</p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
           {modules.map((mod, idx) => (
