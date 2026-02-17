@@ -17,7 +17,7 @@ export default function TerminosPage() {
         <h2>1. Identificación</h2>
         <p>
           Este sitio web es propiedad y operado por <strong>CINTA MK FUTURISTA LIMITADA</strong>, cédula jurídica
-          <strong> 3-102-862791</strong>, con domicilio en Alajuela, Costa Rica (Centro Comercial City Mall, Oficinas de Venture X),
+          <strong> 3-102-862791</strong>, con domicilio en Heredia, Costa Rica (Centro Comercial City Mall, Oficinas de Venture X),
           bajo la marca comercial <strong>AdDing Agency</strong>.
         </p>
         <p>Correo de contacto: <a href="mailto:hola@addingagency.com">hola@addingagency.com</a></p>
@@ -39,8 +39,8 @@ export default function TerminosPage() {
 
         <h2>4. Propiedad Intelectual</h2>
         <p>
-          Todo el contenido del Sitio — incluyendo textos, gráficos, logotipos, íconos, imágenes, código fuente,
-          diseño y estructura — es propiedad de CINTA MK FUTURISTA LIMITADA o de sus licenciantes y está protegido
+          Todo el contenido del Sitio, incluyendo textos, gráficos, logotipos, íconos, imágenes, código fuente,
+          diseño y estructura, es propiedad de CINTA MK FUTURISTA LIMITADA o de sus licenciantes y está protegido
           por las leyes de propiedad intelectual de Costa Rica y tratados internacionales.
         </p>
         <p>

@@ -144,8 +144,8 @@ const translations: Translations = {
 
   // Footer
   "footer.tagline": {
-    es: "Impulsamos PYMES con estrategias digitales inteligentes, humanas y efectivas.",
-    en: "We empower SMBs with smart, human, and effective digital strategies."
+    es: "Impulsamos empresas y emprendimientos con estrategias digitales inteligentes, tecnológicas y efectivas.",
+    en: "We empower businesses and startups with smart, technology-driven, and effective digital strategies."
   },
   "footer.servicios": { es: "Servicios", en: "Services" },
   "footer.empresa": { es: "Empresa", en: "Company" },
@@ -165,6 +165,63 @@ const translations: Translations = {
   "cmp.title1": { es: "Clínico", en: "Clinical" },
   "cmp.title2": { es: "Convencional", en: "Conventional" },
   "cmp.gain": { es: "Ganancia Calculada", en: "Calculated Gain" },
+
+  // Blog
+  "blog.visit": { es: "Ir al Blog", en: "Visit Blog" },
+  "blog.back": { es: "Volver al inicio", en: "Back to home" },
+  "blog.categories": { es: "Categorías", en: "Categories" },
+  "blog.cat.seo": { es: "SEO y Posicionamiento", en: "SEO & Rankings" },
+  "blog.cat.ai": { es: "Inteligencia Artificial", en: "Artificial Intelligence" },
+  "blog.cat.auto": { es: "Automatización", en: "Automation" },
+  "blog.cat.leads": { es: "Generación de Leads", en: "Lead Generation" },
+  "blog.cat.marketing": { es: "Marketing Digital", en: "Digital Marketing" },
+  "blog.subscribe.title": { es: "Suscribite al newsletter", en: "Subscribe to our newsletter" },
+  "blog.subscribe.p": { es: "Recibí las últimas guías y estrategias directo en tu correo.", en: "Get the latest guides and strategies straight to your inbox." },
+  "blog.subscribe.placeholder": { es: "Tu correo electrónico", en: "Your email address" },
+  "blog.subscribe.btn": { es: "Suscribirme", en: "Subscribe" },
+
+  // Why AdDing page
+  "whypage.hero.title": { es: "Por qué elegir AdDing", en: "Why choose AdDing" },
+  "whypage.hero.sub": { es: "No somos una agencia más. Somos tu sistema de crecimiento digital.", en: "We're not just another agency. We're your digital growth system." },
+  "whypage.approach.label": { es: "Nuestro enfoque", en: "Our approach" },
+  "whypage.approach.title": { es: "Ecosistemas, no campañas aisladas", en: "Ecosystems, not isolated campaigns" },
+  "whypage.approach.p1": { es: "Mientras otras agencias te venden campañas sueltas de ads o publicaciones en redes sociales, nosotros construimos un sistema completo que funciona las 24 horas. Cada pieza del ecosistema alimenta la siguiente: desde la prospección automatizada hasta la retención de clientes.", en: "While other agencies sell you disconnected ad campaigns or social media posts, we build a complete system that works 24/7. Each piece of the ecosystem feeds the next: from automated prospecting to customer retention." },
+  "whypage.approach.p2": { es: "Nuestro Flywheel automatizado conecta cada etapa del recorrido del cliente. No dependés de una sola fuente de tráfico ni de esfuerzos manuales. El sistema crece solo.", en: "Our automated Flywheel connects every stage of the customer journey. You don't depend on a single traffic source or manual efforts. The system grows on its own." },
+  "whypage.diff.label": { es: "Lo que nos diferencia", en: "What sets us apart" },
+  "whypage.diff.title": { es: "Construido diferente", en: "Built different" },
+  "whypage.d1.title": { es: "IA en cada paso", en: "AI at every step" },
+  "whypage.d1.desc": { es: "Usamos inteligencia artificial para automatizar respuestas, calificar leads, personalizar contenido y optimizar campañas. No es un slogan, es nuestra operación diaria.", en: "We use AI to automate responses, qualify leads, personalize content, and optimize campaigns. It's not a slogan, it's our daily operation." },
+  "whypage.d2.title": { es: "Métricas de negocio, no vanidad", en: "Business metrics, not vanity" },
+  "whypage.d2.desc": { es: "No te reportamos likes ni seguidores. Trabajamos con KPIs reales: leads calificados, costo por adquisición, tasa de conversión y retorno de inversión. Los números que importan.", en: "We don't report likes or followers. We work with real KPIs: qualified leads, cost per acquisition, conversion rate, and ROI. The numbers that matter." },
+  "whypage.d3.title": { es: "Transparencia total", en: "Total transparency" },
+  "whypage.d3.desc": { es: "Dashboard en tiempo real donde podés ver exactamente de dónde vienen tus leads, cuáles convierten y cuánto te está costando cada cliente nuevo. Sin sorpresas.", en: "Real-time dashboard where you can see exactly where your leads come from, which convert, and how much each new client is costing you. No surprises." },
+  "whypage.d4.title": { es: "Equipo dedicado", en: "Dedicated team" },
+  "whypage.d4.desc": { es: "No sos un número más en una cartera de 50 clientes. Trabajamos con un grupo selecto de empresas para darle a cada una la atención que merece.", en: "You're not just a number in a portfolio of 50 clients. We work with a select group of companies to give each one the attention it deserves." },
+  "whypage.d5.title": { es: "Optimización continua", en: "Continuous optimization" },
+  "whypage.d5.desc": { es: "Análisis semanal de métricas y ajustes estratégicos. Cada mes es mejor que el anterior porque el sistema aprende y se adapta.", en: "Weekly metrics analysis and strategic adjustments. Each month is better than the last because the system learns and adapts." },
+  "whypage.d6.title": { es: "Tecnología de punta", en: "Cutting-edge tech" },
+  "whypage.d6.desc": { es: "Next.js, React, automatización con IA, CRM inteligente, email marketing automatizado. Usamos las mejores herramientas del mercado para construir tu ecosistema.", en: "Next.js, React, AI automation, smart CRM, automated email marketing. We use the best tools on the market to build your ecosystem." },
+  "whypage.process.label": { es: "Nuestro proceso", en: "Our process" },
+  "whypage.process.title": { es: "Así trabajamos", en: "How we work" },
+  "whypage.step1.title": { es: "Diagnóstico", en: "Diagnosis" },
+  "whypage.step1.desc": { es: "Analizamos tu negocio, tu mercado y tu competencia. Identificamos oportunidades y definimos la estrategia.", en: "We analyze your business, market, and competition. We identify opportunities and define the strategy." },
+  "whypage.step2.title": { es: "Fundación", en: "Foundation" },
+  "whypage.step2.desc": { es: "Construimos los cimientos: sitio web optimizado, CRM, flujos de automatización y canales de captación.", en: "We build the foundations: optimized website, CRM, automation flows, and acquisition channels." },
+  "whypage.step3.title": { es: "Activación", en: "Activation" },
+  "whypage.step3.desc": { es: "Encendemos el Flywheel: campañas, contenido, SEO, email marketing. Todo conectado y automatizado.", en: "We turn on the Flywheel: campaigns, content, SEO, email marketing. All connected and automated." },
+  "whypage.step4.title": { es: "Optimización", en: "Optimization" },
+  "whypage.step4.desc": { es: "Medimos, ajustamos y mejoramos. Cada semana analizamos resultados y optimizamos el sistema para mejor rendimiento.", en: "We measure, adjust, and improve. Each week we analyze results and optimize the system for better performance." },
+  "whypage.cta": { es: "¿Listo para construir tu ecosistema?", en: "Ready to build your ecosystem?" },
+  "whypage.cta.btn": { es: "Agendá tu consulta gratis", en: "Book your free consultation" },
+
+  // Services page
+  "svcpage.hero.title": { es: "Nuestros servicios", en: "Our services" },
+  "svcpage.hero.sub": { es: "Todo lo que necesitás para dominar el mundo digital. Sin campañas aisladas, solo ecosistemas de crecimiento.", en: "Everything you need to dominate the digital world. No isolated campaigns, just growth ecosystems." },
+  "svcpage.cta": { es: "¿Querés saber más sobre algún servicio?", en: "Want to learn more about a service?" },
+  "svcpage.cta.btn": { es: "Hablemos por WhatsApp", en: "Let's chat on WhatsApp" },
+
+  // Email
+  "email.subject": { es: "Consulta desde addingagency.com", en: "Inquiry from addingagency.com" },
 };
 
 interface I18nContextType {

@@ -1,3 +1,4 @@
+import { BlogPreview } from "@/components/BlogPreview";
 import { Comparison } from "@/components/Comparison";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Services />
         <WhyAdding />
         <Comparison />
+        <BlogPreview />
       </main>
       <Footer />
       <WhatsAppButton />

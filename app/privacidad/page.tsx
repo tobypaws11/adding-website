@@ -17,7 +17,7 @@ export default function PrivacidadPage() {
         <h2>1. Responsable del Tratamiento</h2>
         <p>
           <strong>CINTA MK FUTURISTA LIMITADA</strong>, cédula jurídica <strong>3-102-862791</strong>, con domicilio
-          en Alajuela, Costa Rica (Centro Comercial City Mall, Oficinas de Venture X), operando bajo la marca
+          en Heredia, Costa Rica (Centro Comercial City Mall, Oficinas de Venture X), operando bajo la marca
           <strong> AdDing Agency</strong>, es responsable del tratamiento de tus datos personales.
         </p>
         <p>Correo de contacto: <a href="mailto:hola@addingagency.com">hola@addingagency.com</a></p>

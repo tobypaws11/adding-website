@@ -86,7 +86,7 @@ export function WhyAdding() {
                 </div>
               </div>
             </div>
-            <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="inline-block bg-white text-matte-black px-12 py-5 text-[10px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
+            <a href="#contact" className="inline-block bg-white text-matte-black px-12 py-5 text-[10px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
               {t("nav.hablemos")}
             </a>
           </div>
