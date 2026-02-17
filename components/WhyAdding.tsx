@@ -60,7 +60,7 @@ export function WhyAdding() {
           {/* Description */}
           <div className="lg:col-span-5 space-y-8 md:space-y-12">
             <div>
-              <span className="text-[11px] font-black uppercase tracking-[0.5em] text-primary">{t("why.label")}</span>
+              <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
               <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6 uppercase">{t("why.title")}</h2>
               <p className="text-white/40 text-base md:text-lg leading-relaxed mt-6 md:mt-8 font-light tracking-tight-luxury">
                 {t("why.subtitle")}
@@ -72,8 +72,8 @@ export function WhyAdding() {
                   <span className="material-symbols-outlined text-primary text-2xl">security</span>
                 </div>
                 <div>
-                  <h4 className="text-sm font-black uppercase tracking-widest mb-2">{t("why.p1.title")}</h4>
-                  <p className="text-[11px] text-white/30 font-medium uppercase leading-relaxed">{t("why.p1.desc")}</p>
+                  <h4 className="text-sm font-black tracking-widest mb-2">{t("why.p1.title")}</h4>
+                  <p className="text-[11px] text-white/30 font-medium leading-relaxed">{t("why.p1.desc")}</p>
                 </div>
               </div>
               <div className="flex gap-6 md:gap-8 group">
@@ -81,12 +81,12 @@ export function WhyAdding() {
                   <span className="material-symbols-outlined text-primary text-2xl">schema</span>
                 </div>
                 <div>
-                  <h4 className="text-sm font-black uppercase tracking-widest mb-2">{t("why.p2.title")}</h4>
-                  <p className="text-[11px] text-white/30 font-medium uppercase leading-relaxed">{t("why.p2.desc")}</p>
+                  <h4 className="text-sm font-black tracking-widest mb-2">{t("why.p2.title")}</h4>
+                  <p className="text-[11px] text-white/30 font-medium leading-relaxed">{t("why.p2.desc")}</p>
                 </div>
               </div>
             </div>
-            <a href="#contact" className="inline-block bg-white text-matte-black px-12 py-5 text-[10px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
+            <a href="#contact" className="inline-block bg-white text-matte-black px-12 py-5 text-xs font-black tracking-luxury hover:bg-primary hover:text-white transition-all">
               {t("nav.hablemos")}
             </a>
           </div>

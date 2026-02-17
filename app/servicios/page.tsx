@@ -99,14 +99,14 @@ export default function ServiciosPage() {
   return (
     <>
       <Nav />
-      <main className="pt-20">
+      <main className="pt-28">
         {/* Hero */}
         <section className="relative py-24 md:py-40 overflow-hidden">
           <div className="absolute inset-0 grid-tech opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-matte-black" />
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-[10px] font-black tracking-[0.6em] text-primary uppercase">{t("services.label")}</span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter mt-4 md:mt-6">{t("svcpage.hero.title")}</h1>
+            <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("services.label")}</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6">{t("svcpage.hero.title")}</h1>
             <p className="text-white/40 text-lg md:text-xl font-light max-w-3xl mx-auto mt-6 md:mt-8 leading-relaxed">
               {t("svcpage.hero.sub")}
             </p>
@@ -123,7 +123,7 @@ export default function ServiciosPage() {
                   <div className={`w-14 h-14 border ${svc.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>
                     <span className={`material-symbols-outlined text-2xl ${svc.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{svc.icon}</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-4">{t(svc.titleKey)}</h2>
+                  <h2 className="text-3xl md:text-4xl font-black tracking-tighter mb-4">{t(svc.titleKey)}</h2>
                   <p className="text-white/50 text-base md:text-lg font-light leading-relaxed">{t(svc.descKey)}</p>
                 </div>
                 <div>
@@ -147,8 +147,8 @@ export default function ServiciosPage() {
         {/* CTA */}
         <section className="py-16 md:py-32 bg-carbon-gray border-t border-white/5">
           <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
-            <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8">{t("svcpage.cta")}</h2>
-            <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="inline-block bg-primary text-white px-12 md:px-16 py-5 md:py-7 text-[10px] font-black uppercase tracking-[0.4em] hover:scale-105 transition-all shadow-[0_0_40px_rgba(0,143,240,0.4)]">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-8">{t("svcpage.cta")}</h2>
+            <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="inline-block bg-primary text-white px-12 md:px-16 py-5 md:py-7 text-xs font-black tracking-[0.3em] hover:scale-105 transition-all shadow-[0_0_40px_rgba(0,143,240,0.4)]">
               {t("svcpage.cta.btn")}
             </a>
             <div className="mt-8">

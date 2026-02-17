@@ -11,25 +11,25 @@ export function Nav() {
   const links = [
     { href: "/servicios", label: t("nav.servicios") },
     { href: "/por-que-adding", label: t("nav.porque") },
-    { href: "/blog", label: t("nav.blog") },
     { href: "/nosotros", label: t("nav.nosotros") },
+    { href: "/blog", label: t("nav.blog") },
     { href: "/contacto", label: t("nav.contacto") },
   ];
 
   return (
     <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-matte-black/90 backdrop-blur-xl">
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-24 md:h-28 flex items-center justify-between">
         <Link href="/" className="inline-flex shrink-0 items-center" aria-label="AdDing Agency">
-          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" width={220} height={60} className="h-12 w-auto md:h-14 lg:h-16" />
+          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" width={260} height={72} className="h-14 w-auto md:h-16 lg:h-20" />
         </Link>
         <div className="hidden lg:flex items-center gap-12 xl:gap-16">
           {links.map((link) =>
             link.href.startsWith("#") ? (
-              <a key={link.href} href={link.href} className="text-[10px] font-bold tracking-luxury uppercase opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              <a key={link.href} href={link.href} className="text-xs font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
                 {link.label}
               </a>
             ) : (
-              <Link key={link.href} href={link.href} className="text-[10px] font-bold tracking-luxury uppercase opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              <Link key={link.href} href={link.href} className="text-xs font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
                 {link.label}
               </Link>
             )
@@ -54,16 +54,16 @@ export function Nav() {
         <div className="lg:hidden border-t border-white/5 bg-matte-black/95 backdrop-blur-xl px-6 py-6 space-y-4">
           {links.map((link) =>
             link.href.startsWith("#") ? (
-              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury uppercase text-white/60 hover:text-primary transition-all">
+              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury text-white/60 hover:text-primary transition-all">
                 {link.label}
               </a>
             ) : (
-              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury uppercase text-white/60 hover:text-primary transition-all">
+              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury text-white/60 hover:text-primary transition-all">
                 {link.label}
               </Link>
             )
           )}
-          <Link href="/contacto" onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury uppercase text-primary">
+          <Link href="/contacto" onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury text-primary">
             {t("nav.hablemos")}
           </Link>
         </div>

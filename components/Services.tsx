@@ -18,8 +18,8 @@ export function Services() {
     <section id="modules" className="bg-matte-black py-24 md:py-48 relative overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="text-center mb-16 md:mb-24">
-          <span className="text-[10px] font-black tracking-[0.6em] text-primary uppercase">{t("services.label")}</span>
-          <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
+          <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("services.label")}</span>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
           <p className="text-white/40 text-base md:text-lg font-light max-w-3xl mx-auto mt-4 leading-relaxed">{t("services.subtitle")}</p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
@@ -29,7 +29,7 @@ export function Services() {
               <div className={`w-12 h-12 border ${mod.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8 md:mb-12`}>
                 <span className={`material-symbols-outlined ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{mod.icon}</span>
               </div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-luxury mb-4 md:mb-6">{t(mod.titleKey)}</h3>
+              <h3 className="text-xl md:text-2xl font-black tracking-luxury mb-4 md:mb-6">{t(mod.titleKey)}</h3>
               <p className="text-white/40 leading-relaxed text-sm mb-8 md:mb-12">{t(mod.descKey)}</p>
               <div className="flex items-center justify-between mt-auto pt-6 md:pt-8 border-t border-white/5">
                 <span className="text-[10px] font-mono text-accent-yellow">STATUS: {mod.status}</span>

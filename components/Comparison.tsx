@@ -9,8 +9,8 @@ export function Comparison() {
     <section id="telemetry" className="bg-matte-black py-24 md:py-40 border-t border-white/5">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center text-center mb-16 md:mb-40">
-          <span className="text-[10px] font-black tracking-[0.6em] text-primary uppercase mb-6 md:mb-8">{t("cmp.label")}</span>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tighter mb-8 md:mb-12">
+          <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase mb-6 md:mb-8">{t("cmp.label")}</span>
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter mb-8 md:mb-12">
             {t("cmp.title1")} <span className="text-white/20">vs.</span> {t("cmp.title2")}
           </h2>
           <div className="w-24 h-[1px] bg-primary" />
@@ -23,7 +23,7 @@ export function Comparison() {
               {["c1", "c2", "c3"].map((key) => (
                 <li key={key} className="flex items-center gap-4 md:gap-8 opacity-20">
                   <span className="material-symbols-outlined text-red-500">cancel</span>
-                  <span className="text-base md:text-xl font-black uppercase tracking-widest">{t(`why.${key}.them`)}</span>
+                  <span className="text-base md:text-xl font-black tracking-widest">{t(`why.${key}.them`)}</span>
                 </li>
               ))}
             </ul>
@@ -38,7 +38,7 @@ export function Comparison() {
               {["c1", "c2", "c3"].map((key) => (
                 <li key={key} className="flex items-center gap-4 md:gap-8">
                   <span className="material-symbols-outlined text-primary scale-110 md:scale-125">check_circle</span>
-                  <span className="text-base md:text-xl font-black uppercase tracking-widest">{t(`why.${key}.us`)}</span>
+                  <span className="text-base md:text-xl font-black tracking-widest">{t(`why.${key}.us`)}</span>
                 </li>
               ))}
             </ul>

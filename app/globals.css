@@ -5,7 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 120px;
   }
   body {
     @apply bg-matte-black text-white antialiased;
@@ -15,7 +15,7 @@
     }
   }
   section[id] {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 120px;
   }
   ::selection {
     background: rgba(0, 143, 240, 0.3);

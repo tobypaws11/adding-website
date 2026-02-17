@@ -6,7 +6,7 @@ export function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-28 overflow-hidden">
       <div className="absolute inset-0 grid-tech opacity-20" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/50 to-matte-black" />
 
@@ -34,6 +34,11 @@ export function Hero() {
           <div>UPTIME: <span className="text-white">99.9%</span></div>
         </div>
 
+        {/* Logo */}
+        <div className="mb-8 md:mb-12">
+          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" className="h-16 md:h-20 lg:h-24 w-auto mx-auto" />
+        </div>
+
         {/* Version badge */}
         <div className="inline-block mb-10 md:mb-16">
           <div className="flex items-center gap-4 px-6 py-2 border border-white/10 bg-white/5 backdrop-blur-md">
@@ -42,7 +47,7 @@ export function Hero() {
           </div>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 md:mb-12 font-display uppercase">
+        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 md:mb-12 font-display">
           {t("hero.h1.1")}<br />
           <span className="text-primary italic relative">
             {t("hero.h1.3")}
@@ -55,7 +60,7 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
-          <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="bg-primary text-white px-10 md:px-16 py-5 md:py-7 text-[10px] font-black uppercase tracking-[0.4em] hover:scale-105 transition-all shadow-[0_0_40px_rgba(0,143,240,0.4)]">
+          <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="bg-primary text-white px-10 md:px-16 py-5 md:py-7 text-xs font-black tracking-[0.3em] hover:scale-105 transition-all shadow-[0_0_40px_rgba(0,143,240,0.4)]">
             {t("hero.cta")}
           </a>
           <a href="#modules" className="flex items-center gap-4 md:gap-6 group cursor-pointer">
