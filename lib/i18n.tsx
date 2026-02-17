@@ -38,7 +38,7 @@ const translations: Translations = {
 
   // Services
   "services.label": { es: "Servicios", en: "Services" },
-  "services.title": { es: "Todo Lo Que Necesitás Para Crecer en Digital", en: "Everything You Need to Grow Digitally" },
+  "services.title": { es: "Todo lo que necesitás para crecer en digital", en: "Everything you need to grow digitally" },
   "services.subtitle": {
     es: "Construimos ecosistemas digitales completos para PYMES, desde la primera visita hasta el cliente fiel, acompañándote en cada etapa del recorrido del cliente con automatización y mejora continua.",
     en: "We build complete digital ecosystems for SMBs, from first visit to loyal customer, guiding you through every stage of the customer journey with automation and continuous improvement."
@@ -58,7 +58,7 @@ const translations: Translations = {
 
   // Why AdDing
   "why.label": { es: "POR QUÉ AdDing", en: "WHY AdDing" },
-  "why.title": { es: "No Somos Una Agencia Más. Somos Tu Sistema de Crecimiento.", en: "We're Not Just Another Agency. We're Your Growth System." },
+  "why.title": { es: "No somos una agencia más. Somos tu sistema de crecimiento.", en: "We're not just another agency. We're your growth system." },
   "why.subtitle": {
     es: "Especialistas en crear ecosistemas digitales automatizados que transforman prospectos en clientes leales. No hacemos campañas aisladas, construimos crecimiento predecible.",
     en: "Specialists in building automated digital ecosystems that turn prospects into loyal customers. We don't run isolated campaigns, we build predictable growth."
@@ -106,12 +106,12 @@ const translations: Translations = {
 
   // Blog
   "blog.label": { es: "Blog", en: "Blog" },
-  "blog.title": { es: "Estamos Construyendo Algo Bueno", en: "We're Building Something Great" },
+  "blog.title": { es: "En construcción", en: "Under construction" },
   "blog.p": {
     es: "Muy pronto vas a encontrar guías accionables sobre SEO, marketing digital, automatización y agentes de IA para hacer crecer tu negocio.",
     en: "Soon you'll find actionable guides on SEO, digital marketing, automation, and AI agents to grow your business."
   },
-  "blog.soon": { es: "Próximamente", en: "Coming Soon" },
+  "blog.soon": { es: "Próximamente", en: "Coming soon" },
 
   // FAQ
   "faq.label": { es: "Preguntas frecuentes", en: "FAQ" },
@@ -181,14 +181,14 @@ const translations: Translations = {
   "blog.subscribe.btn": { es: "Suscribirme", en: "Subscribe" },
 
   // Why AdDing page
-  "whypage.hero.title": { es: "Por Qué Elegir AdDing", en: "Why Choose AdDing" },
+  "whypage.hero.title": { es: "Por qué elegir AdDing", en: "Why choose AdDing" },
   "whypage.hero.sub": { es: "No somos una agencia más. Somos tu sistema de crecimiento digital.", en: "We're not just another agency. We're your digital growth system." },
   "whypage.approach.label": { es: "Nuestro enfoque", en: "Our approach" },
-  "whypage.approach.title": { es: "Ecosistemas, No Campañas Aisladas", en: "Ecosystems, Not Isolated Campaigns" },
+  "whypage.approach.title": { es: "Ecosistemas, no campañas aisladas", en: "Ecosystems, not isolated campaigns" },
   "whypage.approach.p1": { es: "Mientras otras agencias te venden campañas sueltas de ads o publicaciones en redes sociales, nosotros construimos un sistema completo que funciona las 24 horas. Cada pieza del ecosistema alimenta la siguiente: desde la prospección automatizada hasta la retención de clientes.", en: "While other agencies sell you disconnected ad campaigns or social media posts, we build a complete system that works 24/7. Each piece of the ecosystem feeds the next: from automated prospecting to customer retention." },
   "whypage.approach.p2": { es: "Nuestro Flywheel automatizado conecta cada etapa del recorrido del cliente. No dependés de una sola fuente de tráfico ni de esfuerzos manuales. El sistema crece solo.", en: "Our automated Flywheel connects every stage of the customer journey. You don't depend on a single traffic source or manual efforts. The system grows on its own." },
   "whypage.diff.label": { es: "Lo que nos diferencia", en: "What sets us apart" },
-  "whypage.diff.title": { es: "Construido Diferente", en: "Built Different" },
+  "whypage.diff.title": { es: "Construido diferente", en: "Built different" },
   "whypage.d1.title": { es: "IA en cada paso", en: "AI at every step" },
   "whypage.d1.desc": { es: "Usamos inteligencia artificial para automatizar respuestas, calificar leads, personalizar contenido y optimizar campañas. No es un slogan, es nuestra operación diaria.", en: "We use AI to automate responses, qualify leads, personalize content, and optimize campaigns. It's not a slogan, it's our daily operation." },
   "whypage.d2.title": { es: "Métricas de negocio, no vanidad", en: "Business metrics, not vanity" },
@@ -202,7 +202,7 @@ const translations: Translations = {
   "whypage.d6.title": { es: "Tecnología de punta", en: "Cutting-edge tech" },
   "whypage.d6.desc": { es: "Next.js, React, automatización con IA, CRM inteligente, email marketing automatizado. Usamos las mejores herramientas del mercado para construir tu ecosistema.", en: "Next.js, React, AI automation, smart CRM, automated email marketing. We use the best tools on the market to build your ecosystem." },
   "whypage.process.label": { es: "Nuestro proceso", en: "Our process" },
-  "whypage.process.title": { es: "Así Trabajamos", en: "How We Work" },
+  "whypage.process.title": { es: "Así trabajamos", en: "How we work" },
   "whypage.step1.title": { es: "Diagnóstico", en: "Diagnosis" },
   "whypage.step1.desc": { es: "Analizamos tu negocio, tu mercado y tu competencia. Identificamos oportunidades y definimos la estrategia.", en: "We analyze your business, market, and competition. We identify opportunities and define the strategy." },
   "whypage.step2.title": { es: "Fundación", en: "Foundation" },
@@ -211,29 +211,29 @@ const translations: Translations = {
   "whypage.step3.desc": { es: "Encendemos el Flywheel: campañas, contenido, SEO, email marketing. Todo conectado y automatizado.", en: "We turn on the Flywheel: campaigns, content, SEO, email marketing. All connected and automated." },
   "whypage.step4.title": { es: "Optimización", en: "Optimization" },
   "whypage.step4.desc": { es: "Medimos, ajustamos y mejoramos. Cada semana analizamos resultados y optimizamos el sistema para mejor rendimiento.", en: "We measure, adjust, and improve. Each week we analyze results and optimize the system for better performance." },
-  "whypage.cta": { es: "¿Listo Para Construir Tu Ecosistema?", en: "Ready to Build Your Ecosystem?" },
+  "whypage.cta": { es: "¿Listo para construir tu ecosistema?", en: "Ready to build your ecosystem?" },
   "whypage.cta.btn": { es: "Agendá tu consulta gratis", en: "Book your free consultation" },
 
   // Services page
-  "svcpage.hero.title": { es: "Nuestros Servicios", en: "Our Services" },
+  "svcpage.hero.title": { es: "Nuestros servicios", en: "Our services" },
   "svcpage.hero.sub": { es: "Todo lo que necesitás para dominar el mundo digital. Sin campañas aisladas, solo ecosistemas de crecimiento.", en: "Everything you need to dominate the digital world. No isolated campaigns, just growth ecosystems." },
-  "svcpage.cta": { es: "¿Querés Saber Más Sobre Algún Servicio?", en: "Want to Learn More About a Service?" },
+  "svcpage.cta": { es: "¿Querés saber más sobre algún servicio?", en: "Want to learn more about a service?" },
   "svcpage.cta.btn": { es: "Hablemos por WhatsApp", en: "Let's chat on WhatsApp" },
 
   // Nav extras
   "nav.nosotros": { es: "NOSOTROS", en: "ABOUT" },
 
   // About page
-  "about.hero.title": { es: "Somos AdDing", en: "We Are AdDing" },
+  "about.hero.title": { es: "Somos AdDing", en: "We are AdDing" },
   "about.hero.sub": { es: "Una agencia digital impulsada por inteligencia artificial, nacida en Costa Rica para transformar negocios.", en: "An AI-powered digital agency, born in Costa Rica to transform businesses." },
   "about.mission.label": { es: "Nuestra misión", en: "Our mission" },
-  "about.mission.title": { es: "Impulsar el Crecimiento de Empresas y Emprendimientos", en: "Drive Growth for Businesses and Startups" },
+  "about.mission.title": { es: "Impulsar el crecimiento de empresas y emprendimientos", en: "Drive growth for businesses and startups" },
   "about.mission.p": { es: "Creemos que cada negocio merece acceso a herramientas digitales de primer nivel. No importa si sos una PYME que está empezando o una empresa establecida, nuestro objetivo es construir ecosistemas digitales que generen resultados reales y sostenibles.", en: "We believe every business deserves access to first-class digital tools. Whether you're a startup or an established company, our goal is to build digital ecosystems that generate real, sustainable results." },
   "about.vision.label": { es: "Nuestra visión", en: "Our vision" },
-  "about.vision.title": { es: "Ver Un Futuro Brillante Para Cada Marca", en: "See a Bright Future for Every Brand" },
+  "about.vision.title": { es: "Ver un futuro brillante para cada marca", en: "See a bright future for every brand" },
   "about.vision.p": { es: "\"SEE YOU IN A BRIGHT FUTURE\" no es solo un tagline. Es nuestra promesa. Queremos que cada cliente que trabaje con nosotros vea resultados tangibles y construya un negocio digital que funcione incluso mientras duerme.", en: "\"SEE YOU IN A BRIGHT FUTURE\" isn't just a tagline. It's our promise. We want every client who works with us to see tangible results and build a digital business that works even while they sleep." },
   "about.values.label": { es: "Nuestros valores", en: "Our values" },
-  "about.values.title": { es: "Lo Que Nos Define", en: "What Defines Us" },
+  "about.values.title": { es: "Lo que nos define", en: "What defines us" },
   "about.v1.title": { es: "Innovación constante", en: "Constant innovation" },
   "about.v1.desc": { es: "Usamos las últimas tecnologías y metodologías. Si hay una forma mejor de hacer algo, la encontramos.", en: "We use the latest technologies and methodologies. If there's a better way to do something, we find it." },
   "about.v2.title": { es: "Resultados sobre promesas", en: "Results over promises" },
@@ -247,7 +247,7 @@ const translations: Translations = {
   "about.location.desc": { es: "Con base en Heredia, operamos de forma remota para clientes en toda Latinoamérica y el mundo.", en: "Based in Heredia, we operate remotely for clients throughout Latin America and the world." },
 
   // Contact page
-  "contact.hero.title": { es: "Hablemos", en: "Let's Talk" },
+  "contact.hero.title": { es: "Hablemos", en: "Let's talk" },
   "contact.hero.sub": { es: "¿Tenés un proyecto en mente? ¿Querés hacer crecer tu negocio en digital? Contactanos y te respondemos en menos de 24 horas.", en: "Have a project in mind? Want to grow your business digitally? Contact us and we'll respond within 24 hours." },
   "contact.wa.title": { es: "WhatsApp", en: "WhatsApp" },
   "contact.wa.desc": { es: "La forma más rápida de contactarnos. Respondemos en minutos.", en: "The fastest way to reach us. We respond in minutes." },
