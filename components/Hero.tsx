@@ -36,7 +36,7 @@ export function Hero() {
 
         {/* Logo */}
         <div className="mb-8 md:mb-12">
-          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" className="h-16 md:h-20 lg:h-24 w-auto mx-auto" />
+          <img src="/logos/logo-adding-blanco-notext.svg" alt="AdDing Agency" className="h-24 md:h-32 lg:h-40 w-auto mx-auto" />
         </div>
 
         {/* Version badge */}

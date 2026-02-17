@@ -28,7 +28,7 @@ export default function ContactoPage() {
           <div className="absolute inset-0 grid-tech opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-matte-black" />
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("nav.contacto")}</span>
+            <span className="text-sm md:text-base lg:text-lg font-black tracking-[0.4em] text-primary uppercase">{t("nav.contacto")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6">
               {t("contact.hero.title")}
             </h1>
@@ -92,7 +92,7 @@ export default function ContactoPage() {
 
             {/* Social links */}
             <div className="mt-16 md:mt-24 text-center">
-              <h4 className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase mb-8">{t("contact.social.title")}</h4>
+              <h4 className="text-sm md:text-base lg:text-lg font-black tracking-[0.4em] text-primary uppercase mb-8">{t("contact.social.title")}</h4>
               <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                 {socials.map((s) => (
                   <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="border border-white/10 px-6 py-3 text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary hover:border-primary/30 transition-all">

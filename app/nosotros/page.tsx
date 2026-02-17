@@ -28,7 +28,7 @@ export default function NosotrosPage() {
             <div className="w-full h-full stitch-core-glass rounded-full animate-pulse" style={{ animationDuration: "8s" }} />
           </div>
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("nav.nosotros")}</span>
+            <span className="text-sm md:text-base lg:text-lg font-black tracking-[0.4em] text-primary uppercase">{t("nav.nosotros")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6 leading-[0.9]">
               {t("about.hero.title")}
             </h1>
@@ -53,7 +53,7 @@ export default function NosotrosPage() {
             {/* Mission */}
             <div className="grid lg:grid-cols-2 gap-12 md:gap-24 items-center">
               <div>
-                <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("about.mission.label")}</span>
+                <span className="text-sm md:text-base lg:text-lg font-black tracking-[0.4em] text-primary uppercase">{t("about.mission.label")}</span>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tighter mt-4 leading-tight">{t("about.mission.title")}</h2>
               </div>
               <div>
@@ -64,7 +64,7 @@ export default function NosotrosPage() {
             {/* Vision */}
             <div className="grid lg:grid-cols-2 gap-12 md:gap-24 items-center">
               <div className="lg:order-2">
-                <span className="text-xs md:text-sm font-black tracking-[0.4em] text-accent-yellow uppercase">{t("about.vision.label")}</span>
+                <span className="text-sm md:text-base lg:text-lg font-black tracking-[0.4em] text-accent-yellow uppercase">{t("about.vision.label")}</span>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tighter mt-4 leading-tight">{t("about.vision.title")}</h2>
               </div>
               <div className="lg:order-1">
@@ -78,8 +78,8 @@ export default function NosotrosPage() {
         <section className="py-16 md:py-32 bg-carbon-gray border-y border-white/5">
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="text-center mb-16 md:mb-24">
-              <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("about.values.label")}</span>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tighter mt-4">{t("about.values.title")}</h2>
+              <span className="text-sm md:text-base lg:text-lg font-black tracking-[0.4em] text-primary uppercase">{t("about.values.label")}</span>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter mt-4">{t("about.values.title")}</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
               {values.map((v, idx) => (
