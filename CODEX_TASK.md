@@ -1,90 +1,85 @@
-# Codex Task: v1.6 Fixes
+# Codex Task: Apply Typography Formula
 
-## CRITICAL: "AdDing" brand name casing
-The CSS class `uppercase` on headings converts "AdDing" to "ADDING". This is WRONG.
-Fix: For ANY heading/text that contains the brand name "AdDing", do NOT use `uppercase` CSS class. 
-Instead, write the text with manual casing. The brand name must ALWAYS render as "AdDing" (capital A, capital D, lowercase everything else).
+## The Formula (from brand guidelines discussion)
 
-Search ALL files for text containing "Adding" or "AdDing" in translations (lib/i18n.tsx) and components, and ensure:
-- If the element has `uppercase` class, either remove it or split the text so "AdDing" is in a separate span without uppercase
-- In i18n.tsx translations, the brand name should be "AdDing"
+**Eyebrow labels** (small category text above headings): ALL CAPS + wide letter-spacing (tracking-widest)
+**Headlines (H1, H2)**: Sentence case (only first letter capitalized), large and bold
+**Body copy**: Clean and legible, normal case
 
-Affected areas (at minimum):
-- Nav links: "POR QUÉ ADDING" should show "Por Qué AdDing" 
-- Page titles: "POR QUÉ ELEGIR ADDING" → "Por Qué Elegir AdDing"
-- Section labels like "SERVICIOS" with tracking-[0.6em] are fine (they don't contain the brand name)
-- But "POR QUÉ ADDING" label does contain it
+### Example:
+```
+EYEBROW (ALL CAPS + WIDE TRACKING)
 
-Strategy: For headings that contain "AdDing", remove `uppercase` class and manually capitalize in the translation strings. For section labels (small blue text), same approach.
+Headline principal en sentence case, grande y bold.
 
-## Nav: Nosotros before Blog
-Change nav link order to: Servicios | Por Qué AdDing | Nosotros | Blog | Contacto
-
-File: components/Nav.tsx - reorder the links array.
-
-## Logo in hero
-Add the AdDing logo prominently in the Hero section, above the main heading. Use:
-```html
-<img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" className="h-16 md:h-20 lg:h-24 w-auto mx-auto mb-8" />
+Body copy limpio y legible.
 ```
 
-## Nav logo still too small
-Current: h-12 md:h-14 lg:h-16. Make it: h-14 md:h-16 lg:h-20
-Also increase nav height: h-20 md:h-24 → h-22 md:h-28
+## CRITICAL: "AdDing" brand name
+The brand name is "AdDing" (capital A, capital D). This must ALWAYS render correctly.
+- In eyebrow labels that use ALL CAPS via CSS `uppercase` class: the word "AdDing" gets turned into "ADDING" which is wrong
+- For ANY element with CSS `uppercase` that contains "AdDing": remove the `uppercase` class and manually write the text in ALL CAPS but keep "AdDing" as-is
 
-## Section label font sizes too small
-The small blue section labels (e.g., "SERVICIOS", "POR QUÉ ADDING") use `text-[10px]` which is way too small.
-Change ALL instances of section labels from `text-[10px]` to `text-xs md:text-sm` across:
-- components/Services.tsx
-- components/WhyAdding.tsx  
-- components/Comparison.tsx
-- components/BlogPreview.tsx
-- app/por-que-adding/page.tsx
-- app/servicios/page.tsx
-- app/nosotros/page.tsx
-- app/contacto/page.tsx
-- app/blog/page.tsx
+## Current State Analysis
 
-Also for nav link text, change from `text-[10px]` to `text-xs`.
-For CTA buttons, change from `text-[10px]` to `text-xs`.
-For footer section headers, change from `text-[10px]` to `text-xs`.
+The site currently has the right idea but needs consistency cleanup:
 
-## Location: Use "Heredia" only
-In i18n.tsx:
-- "about.location.desc": Change to just mention "Heredia, Costa Rica" — remove City Mall / Venture X reference
-- "contact.location.desc": Same — just "Heredia, Costa Rica" not exact address
-- In Footer.tsx: Change "Heredia, Costa Rica" (it currently says this, keep it)
+### What's correct:
+- Eyebrow labels mostly use `uppercase` CSS with wide tracking ✅
+- Headlines are in sentence case ✅  
+- "AdDing" is preserved in most places ✅
 
-In legal pages (app/terminos/page.tsx, app/privacidad/page.tsx):
-- Change address from "Heredia, Costa Rica (Centro Comercial City Mall, Oficinas de Venture X)" to just "Heredia, Costa Rica"
+### What needs fixing:
 
-## About page: base in Heredia
-Update about.location.desc to say based in Heredia.
+1. **Eyebrow labels** should ALL use: `text-xs font-black uppercase tracking-[0.4em] text-primary`
+   - EXCEPT when they contain "AdDing" — then remove `uppercase` and write manually like "POR QUÉ AdDing"
 
-## Nosotros page: "Compromiso genuino" card overflow
-In app/nosotros/page.tsx, the values grid cards may overflow. Ensure text doesn't overflow:
-- Add `overflow-hidden` to card containers
-- Or reduce padding / text size if needed
+2. **Check ALL section labels across ALL pages** are consistent:
+   - Look for `text-xs md:text-sm font-black tracking-[0.4em] uppercase` pattern
+   - Make sure they have `uppercase` (or manual caps if containing "AdDing")
+   
+3. **Check ALL H1/H2 headings** — they should NOT have `uppercase` class
+   - They should be sentence case in the translation text
+   - Font should be large, black weight, tight tracking
 
-## Remove newsletter from blog page
-In app/blog/page.tsx, remove the entire newsletter signup section (the div with subscribe title, email input, button).
+4. **Nav link text** should NOT be uppercase (they're navigation, not labels). Currently they use manual ALL CAPS in translations like "SERVICIOS", "BLOG" etc. This is correct per the formula — nav items act as micro-copy/labels.
 
-## Contact page: hours
-Change "contact.hours.desc" — the text should just say business hours (Lunes a viernes, 9:00 AM - 6:00 PM, hora Costa Rica GMT-6). This is already correct, just verify.
+5. **CTA buttons** text should be ALL CAPS (they're buttons = micro-copy)
 
-## Summary of files to modify:
-1. lib/i18n.tsx — brand name fixes, location updates
-2. components/Nav.tsx — reorder links, bigger logo, bigger text
-3. components/Hero.tsx — add logo image
-4. components/Services.tsx — bigger labels
-5. components/WhyAdding.tsx — bigger labels
-6. components/Comparison.tsx — bigger labels
-7. components/BlogPreview.tsx — bigger labels
-8. components/Footer.tsx — bigger labels
-9. app/por-que-adding/page.tsx — bigger labels, brand name fix
-10. app/servicios/page.tsx — bigger labels, brand name fix
-11. app/nosotros/page.tsx — bigger labels, overflow fix
-12. app/contacto/page.tsx — bigger labels, location fix
-13. app/blog/page.tsx — bigger labels, remove newsletter
-14. app/terminos/page.tsx — location fix
-15. app/privacidad/page.tsx — location fix
+6. **Footer section headers** should be ALL CAPS + wide tracking (they're labels)
+
+7. **Service card titles** (h3 in service modules) — these should be sentence case, bold
+
+## Files to check:
+- `lib/i18n.tsx` — verify all translation strings have correct casing
+- `components/Nav.tsx`
+- `components/Hero.tsx` 
+- `components/Services.tsx`
+- `components/WhyAdding.tsx`
+- `components/Comparison.tsx`
+- `components/BlogPreview.tsx`
+- `components/Footer.tsx`
+- `app/por-que-adding/page.tsx`
+- `app/servicios/page.tsx`
+- `app/nosotros/page.tsx`
+- `app/contacto/page.tsx`
+- `app/blog/page.tsx`
+
+## Additional cleanup:
+- Make sure CTA button text in i18n.tsx is ALL CAPS (like "HABLEMOS", "INICIAR ARQUITECTURA")
+- Footer section header translations should be ALL CAPS
+- Service titles in cards should be sentence case
+- All font sizes should be reasonable (no text-[8px] or text-[9px] — minimum text-xs)
+
+## DO NOT:
+- Change the overall design or layout
+- Change colors
+- Change component structure
+- Add new pages or sections
+- Remove anything
+- Change any URLs or links
+
+## ONLY:
+- Fix text casing (uppercase vs sentence case) per the formula above
+- Ensure consistent font sizing for labels (minimum text-xs)
+- Fix any remaining text-[8px], text-[9px], text-[10px] instances to at least text-xs
