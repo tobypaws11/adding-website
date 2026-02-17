@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-poppins"
+  variable: "--font-inter"
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  display: "swap",
+  variable: "--font-jetbrains"
 });
 
 const siteUrl = "https://www.addingagency.com";
@@ -153,8 +159,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="es-CR">
-      <body className={`${poppins.variable} bg-white font-body text-brand-black antialiased`}>
+    <html lang="es-CR" className="dark">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+      </head>
+      <body className={`${inter.variable} ${jetbrains.variable} font-sans`}>
         <Providers>{children}</Providers>
         <script
           type="application/ld+json"

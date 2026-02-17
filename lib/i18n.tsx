@@ -16,15 +16,15 @@ const translations: Translations = {
 
   // Hero
   "hero.badge": { es: "Agencia IA en Costa Rica", en: "AI Agency in Costa Rica" },
-  "hero.h1.1": { es: "Construimos", en: "We build" },
-  "hero.h1.2": { es: "ecosistemas digitales", en: "digital ecosystems" },
-  "hero.h1.3": { es: "que generan crecimiento.", en: "that drive growth." },
+  "hero.h1.1": { es: "Ingeniería", en: "Engineering" },
+  "hero.h1.2": { es: "", en: "" },
+  "hero.h1.3": { es: "Superior", en: "Superiority" },
   "hero.p": {
-    es: "No hacemos campañas aisladas. Creamos sistemas automatizados de generación de leads que convierten prospectos en clientes leales, con IA, data y mejora continua.",
-    en: "We don't run isolated campaigns. We build automated lead generation systems that turn prospects into loyal customers, with AI, data, and continuous improvement."
+    es: "Eliminá la entropía presupuestaria con integración de datos de alta fidelidad. Diseñado para rendimiento a escala industrial y visibilidad radical.",
+    en: "Eliminate budget entropy through high-fidelity data stitching. Designed for industrial-scale performance and radical visibility."
   },
-  "hero.cta": { es: "Agendá una llamada", en: "Book a call" },
-  "hero.link": { es: "Ver servicios", en: "See services" },
+  "hero.cta": { es: "Iniciar Arquitectura", en: "Initialize Architecture" },
+  "hero.link": { es: "Documentación Técnica", en: "Technical Docs" },
   "hero.flywheel.title": { es: "Tu Flywheel de crecimiento", en: "Your Growth Flywheel" },
   "hero.flywheel.sub": { es: "Ecosistema automatizado", en: "Automated ecosystem" },
   "hero.flywheel.each": { es: "Cada etapa alimenta la siguiente: crecimiento continuo", en: "Each stage feeds the next: continuous growth" },
@@ -155,6 +155,16 @@ const translations: Translations = {
   "footer.privacy": { es: "Política de Privacidad", en: "Privacy Policy" },
   "footer.creado": { es: "Creado por", en: "Built by" },
   "footer.derechos": { es: "Todos los derechos reservados.", en: "All rights reserved." },
+
+  // Hub terminal
+  "hub.line1": { es: "Inicializando mapeo de funnel neural...", en: "Initializing neural funnel mapping..." },
+  "hub.line2": { es: "Conectando a Google.Hub...", en: "Connecting to Google.Hub..." },
+
+  // Comparison
+  "cmp.label": { es: "Delta de Rendimiento", en: "Performance Delta" },
+  "cmp.title1": { es: "Clínico", en: "Clinical" },
+  "cmp.title2": { es: "Convencional", en: "Conventional" },
+  "cmp.gain": { es: "Ganancia Calculada", en: "Calculated Gain" },
 };
 
 interface I18nContextType {

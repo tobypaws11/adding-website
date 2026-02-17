@@ -1,13 +1,9 @@
-import { BlogPreview } from "@/components/BlogPreview";
-import { CTA } from "@/components/CTA";
-import { FAQ } from "@/components/FAQ";
+import { Comparison } from "@/components/Comparison";
 import { Footer } from "@/components/Footer";
-import { Guarantee } from "@/components/Guarantee";
 import { Hero } from "@/components/Hero";
 import { LogosBar } from "@/components/LogosBar";
 import { Nav } from "@/components/Nav";
 import { Services } from "@/components/Services";
-import { Testimonials } from "@/components/Testimonials";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhyAdding } from "@/components/WhyAdding";
 
@@ -20,11 +16,7 @@ export default function HomePage() {
         <LogosBar />
         <Services />
         <WhyAdding />
-        <Guarantee />
-        <Testimonials />
-        <BlogPreview />
-        <FAQ />
-        <CTA />
+        <Comparison />
       </main>
       <Footer />
       <WhatsAppButton />

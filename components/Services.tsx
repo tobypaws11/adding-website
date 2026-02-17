@@ -1,40 +1,40 @@
 "use client";
 
 import { useI18n } from "@/lib/i18n";
-import { Reveal } from "@/components/Reveal";
 
-const services = [
-  { icon: "🌐", titleKey: "svc.web.title", descKey: "svc.web.desc" },
-  { icon: "🤖", titleKey: "svc.ai.title", descKey: "svc.ai.desc" },
-  { icon: "📊", titleKey: "svc.seo.title", descKey: "svc.seo.desc" },
-  { icon: "🎯", titleKey: "svc.leads.title", descKey: "svc.leads.desc" },
-  { icon: "📧", titleKey: "svc.email.title", descKey: "svc.email.desc" },
-  { icon: "⚡", titleKey: "svc.auto.title", descKey: "svc.auto.desc" },
+const modules = [
+  { icon: "precision_manufacturing", titleKey: "svc.leads.title", descKey: "svc.leads.desc", status: "ACTIVE", code: "0x8842", color: "primary" },
+  { icon: "settings_input_component", titleKey: "svc.auto.title", descKey: "svc.auto.desc", status: "OPTIMIZED", code: "0x12FA", color: "accent-yellow" },
+  { icon: "data_exploration", titleKey: "svc.seo.title", descKey: "svc.seo.desc", status: "FLOWING", code: "0x33B1", color: "primary" },
+  { icon: "code", titleKey: "svc.web.title", descKey: "svc.web.desc", status: "DEPLOYED", code: "0x44C2", color: "primary" },
+  { icon: "smart_toy", titleKey: "svc.ai.title", descKey: "svc.ai.desc", status: "LEARNING", code: "0x55D3", color: "accent-yellow" },
+  { icon: "mail", titleKey: "svc.email.title", descKey: "svc.email.desc", status: "STREAMING", code: "0x66E4", color: "primary" },
 ];
 
 export function Services() {
   const { t } = useI18n();
 
   return (
-    <section id="servicios" className="py-20 md:py-28">
-      <div className="section-shell">
-        <Reveal>
-          <p className="section-label">{t("services.label")}</p>
-          <h2 className="section-title">{t("services.title")}</h2>
-          <p className="section-subtitle">{t("services.subtitle")}</p>
-        </Reveal>
-
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-          {services.map((svc, idx) => (
-            <Reveal key={svc.titleKey} delay={idx * 0.05}>
-              <article className="h-full rounded-3xl border border-transparent bg-[#F5F7FA] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue/20 hover:bg-white hover:shadow-soft">
-                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-blue/10 text-2xl">
-                  {svc.icon}
-                </div>
-                <h3 className="font-title text-xl font-semibold text-[#1D1D1F] sm:text-2xl">{t(svc.titleKey)}</h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-black/65">{t(svc.descKey)}</p>
-              </article>
-            </Reveal>
+    <section id="modules" className="bg-matte-black py-24 md:py-48 relative overflow-hidden">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
+        <div className="text-center mb-16 md:mb-24">
+          <span className="text-[10px] font-black tracking-[0.6em] text-primary uppercase">{t("services.label")}</span>
+          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
+        </div>
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
+          {modules.map((mod, idx) => (
+            <div key={mod.code} className="component-module brushed-texture p-8 md:p-12 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-4 font-mono text-[8px] opacity-20">MOD_{String(idx + 1).padStart(2, "0")}</div>
+              <div className={`w-12 h-12 border ${mod.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8 md:mb-12`}>
+                <span className={`material-symbols-outlined ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{mod.icon}</span>
+              </div>
+              <h3 className="text-xl md:text-2xl font-black uppercase tracking-luxury mb-4 md:mb-6">{t(mod.titleKey)}</h3>
+              <p className="text-white/40 leading-relaxed text-sm mb-8 md:mb-12">{t(mod.descKey)}</p>
+              <div className="flex items-center justify-between mt-auto pt-6 md:pt-8 border-t border-white/5">
+                <span className="text-[10px] font-mono text-accent-yellow">STATUS: {mod.status}</span>
+                <span className="text-[10px] font-mono text-white/20">{mod.code}</span>
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,107 +1,46 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { useI18n } from "@/lib/i18n";
 
 export function Nav() {
   const { t, lang, toggle } = useI18n();
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
-    { href: "#servicios", label: t("nav.servicios") },
-    { href: "#porque-adding", label: t("nav.porque") },
-    { href: "#blog", label: t("nav.blog") },
-    { href: "#contacto", label: t("nav.contacto") }
+    { href: "#modules", label: t("nav.servicios") },
+    { href: "#hub", label: t("nav.porque") },
+    { href: "#telemetry", label: t("nav.blog") },
+    { href: "#contact", label: t("nav.contacto") },
   ];
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
-      <div className="section-shell pt-4">
-        <motion.nav
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45, ease: "easeOut" }}
-          className={`rounded-full border px-4 py-3 md:px-6 ${
-            scrolled
-              ? "glass border-black/5 shadow-soft"
-              : "border-transparent bg-white/40 backdrop-blur-md"
-          }`}
-          aria-label="Principal"
-        >
-          <div className="flex items-center justify-between gap-4">
-            <Link href="/" className="inline-flex shrink-0 items-center" aria-label="AdDing Agency">
-              <Image src="/logos/logo-adding-negro.svg" alt="Logo de AdDing Agency" width={138} height={38} priority />
-            </Link>
-            <div className="hidden items-center gap-6 md:flex">
-              {links.map((link) => (
-                <a key={link.href} href={link.href} className="text-sm text-black/75 transition-colors hover:text-brand-blue">
-                  {link.label}
-                </a>
-              ))}
-              <button
-                onClick={toggle}
-                className="rounded-full border border-black/10 px-3 py-1 text-xs font-medium text-black/60 transition hover:border-brand-blue hover:text-brand-blue"
-                aria-label="Toggle language"
-              >
-                {lang === "es" ? "EN" : "ES"}
-              </button>
-              <a href="#contacto" className="inline-flex items-center rounded-full bg-brand-blue px-5 py-2 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-soft">
-                {t("nav.hablemos")}
-              </a>
-            </div>
-            {/* Mobile */}
-            <div className="flex items-center gap-2 md:hidden">
-              <button
-                onClick={toggle}
-                className="rounded-full border border-black/10 px-2.5 py-1 text-xs font-medium text-black/60"
-                aria-label="Toggle language"
-              >
-                {lang === "es" ? "EN" : "ES"}
-              </button>
-              <button
-                onClick={() => setMenuOpen(!menuOpen)}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full text-black/70"
-                aria-label="Menú"
-                aria-expanded={menuOpen}
-              >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  {menuOpen ? (
-                    <><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></>
-                  ) : (
-                    <><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></>
-                  )}
-                </svg>
-              </button>
-            </div>
+    <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-matte-black/90 backdrop-blur-xl">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+        <div className="flex items-center gap-4 md:gap-6">
+          <div className="w-10 h-10 flex items-center justify-center border border-primary/40 relative">
+            <div className="absolute inset-0 border border-primary/20 scale-125" />
+            <svg className="w-6 h-6 text-primary fill-current" viewBox="0 0 40 40">
+              <path d="M20 0L40 20L20 40L0 20L20 0ZM20 8L8 20L20 32L32 20L20 8Z" />
+            </svg>
           </div>
-        </motion.nav>
-
-        {menuOpen && (
-          <div className="mt-2 rounded-2xl border border-black/5 bg-white/95 p-4 shadow-soft backdrop-blur-lg md:hidden">
-            <div className="flex flex-col gap-3">
-              {links.map((link) => (
-                <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="rounded-xl px-4 py-2 text-sm font-medium text-black/75 transition hover:bg-brand-blue/5 hover:text-brand-blue">
-                  {link.label}
-                </a>
-              ))}
-              <a href="#contacto" onClick={() => setMenuOpen(false)} className="mt-1 inline-flex items-center justify-center rounded-full bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white">
-                {t("nav.hablemos")}
-              </a>
-            </div>
-          </div>
-        )}
+          <Link href="/" className="text-lg md:text-xl font-black tracking-luxury uppercase font-display">AdDing</Link>
+        </div>
+        <div className="hidden lg:flex items-center gap-12 xl:gap-16">
+          {links.map((link) => (
+            <a key={link.href} href={link.href} className="text-[10px] font-bold tracking-luxury uppercase opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              {link.label}
+            </a>
+          ))}
+        </div>
+        <div className="flex items-center gap-3 md:gap-4">
+          <button onClick={toggle} className="border border-white/10 px-3 py-1.5 text-[9px] font-bold uppercase tracking-luxury text-white/40 hover:text-primary hover:border-primary/40 transition-all">
+            {lang === "es" ? "EN" : "ES"}
+          </button>
+          <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="border border-primary/40 text-primary px-4 md:px-8 py-2.5 md:py-3 text-[9px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
+            {t("nav.hablemos")}
+          </a>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 }

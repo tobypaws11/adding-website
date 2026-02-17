@@ -1,34 +1,29 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}"
-  ],
+  darkMode: "class",
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        brand: {
-          blue: "#008FF0",
-          black: "#000000",
-          yellow: "#FABD05",
-          light: "#F0F7FF"
-        }
+        primary: "#008FF0",
+        "matte-black": "#050505",
+        "accent-yellow": "#FABD05",
+        "carbon-gray": "#0A0A0B",
+        "industrial-gray": "#1A1A1C",
       },
       fontFamily: {
-        body: ["var(--font-poppins)", "sans-serif"],
-        title: ["Helvetica Neue", "Inter", "Arial", "sans-serif"]
+        sans: ["var(--font-inter)", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        mono: ["var(--font-jetbrains)", "monospace"],
+        display: ["Helvetica Neue", "var(--font-inter)", "sans-serif"],
       },
-      boxShadow: {
-        card: "0 24px 70px rgba(0,0,0,0.08)",
-        soft: "0 8px 30px rgba(0, 143, 240, 0.15)"
+      letterSpacing: {
+        luxury: "0.35em",
+        "tight-luxury": "0.05em",
       },
-      backgroundImage: {
-        "hero-gradient": "linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 50%, #E8F4FD 100%)"
-      }
-    }
+    },
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;

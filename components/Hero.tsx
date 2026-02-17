@@ -1,78 +1,68 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 
-const flySteps = [
-  { icon: "🎯", key: "hero.fly.1" },
-  { icon: "🧠", key: "hero.fly.2" },
-  { icon: "💰", key: "hero.fly.3" },
-  { icon: "🚀", key: "hero.fly.4" },
-];
-
 export function Hero() {
-  const reduceMotion = useReducedMotion();
   const { t } = useI18n();
 
   return (
-    <section className="relative overflow-hidden bg-hero-gradient pb-20 pt-36 md:pt-44">
-      <div className="absolute -left-20 top-24 h-64 w-64 rounded-full bg-brand-blue/10 blur-3xl" aria-hidden="true" />
-      <div className="absolute -right-20 bottom-12 h-72 w-72 rounded-full bg-brand-yellow/15 blur-3xl" aria-hidden="true" />
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+      <div className="absolute inset-0 grid-tech opacity-20" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/50 to-matte-black" />
 
-      <div className="section-shell relative grid items-center gap-14 lg:grid-cols-[1.1fr_0.95fr]">
-        <div>
-          <p className="inline-flex items-center gap-2 rounded-full border border-brand-blue/15 bg-brand-blue/10 px-4 py-2 text-xs font-medium tracking-wide text-brand-blue">
-            <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-brand-yellow" /> {t("hero.badge")}
-          </p>
-          <h1 className="mt-8 font-title text-4xl font-bold leading-[0.98] tracking-tight text-[#1D1D1F] sm:text-5xl md:text-7xl">
-            <span className="font-thin">{t("hero.h1.1")}</span>
-            <br />
-            {t("hero.h1.2")}
-            <br />
-            <span className="text-brand-blue">{t("hero.h1.3")}</span>
-          </h1>
-          <p className="mt-7 max-w-xl text-base leading-relaxed text-black/65 sm:text-lg md:text-xl">
-            {t("hero.p")}
-          </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-soft">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.67-1.227A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.78 9.78 0 01-5.282-1.545l-.376-.228-2.772.729.741-2.71-.25-.396A9.78 9.78 0 012.182 12 9.818 9.818 0 0112 2.182 9.818 9.818 0 0121.818 12 9.818 9.818 0 0112 21.818z"/></svg>
-              {t("hero.cta")}
-            </a>
-            <a href="#servicios" className="inline-flex items-center gap-2 text-sm font-medium text-black/75 transition-colors hover:text-brand-blue">
-              {t("hero.link")} <span aria-hidden="true">→</span>
-            </a>
+      {/* Animated orb */}
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[600px] md:h-[600px] pointer-events-none opacity-40">
+        <div className="w-full h-full relative">
+          <div className="absolute inset-0 stitch-core-glass rounded-full animate-pulse" style={{ animationDuration: "8s" }} />
+          <div className="absolute inset-10 border border-primary/20 rounded-full animate-spin" style={{ animationDuration: "20s" }} />
+          <div className="absolute inset-20 border-t-2 border-primary/40 rounded-full animate-spin" style={{ animationDuration: "10s", animationDirection: "reverse" }} />
+          <div className="absolute top-1/2 left-0 w-full h-px bg-primary/20" />
+          <div className="absolute left-1/2 top-0 h-full w-px bg-primary/20" />
+        </div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl px-6 md:px-12 text-center">
+        {/* HUD elements - desktop only */}
+        <div className="absolute -top-24 left-0 hud-element space-y-1 text-left hidden xl:block">
+          <div>SYSTEM_STATUS: <span className="text-white">OPTIMIZED</span></div>
+          <div>STITCH_LINK: <span className="text-white">ENCRYPTED</span></div>
+          <div>CORE_TEMP: <span className="text-white">32°C</span></div>
+        </div>
+        <div className="absolute -top-24 right-0 space-y-1 text-right hidden xl:block font-mono text-[9px] uppercase text-accent-yellow" style={{ borderRight: "1px solid #FABD05", paddingRight: "8px" }}>
+          <div>DATA_FLOW: <span className="text-white">100%</span></div>
+          <div>LATENCY: <span className="text-white">0.02MS</span></div>
+          <div>UPTIME: <span className="text-white">99.9%</span></div>
+        </div>
+
+        {/* Version badge */}
+        <div className="inline-block mb-10 md:mb-16">
+          <div className="flex items-center gap-4 px-6 py-2 border border-white/10 bg-white/5 backdrop-blur-md">
+            <span className="w-2 h-2 bg-primary shadow-[0_0_10px_#008FF0]" />
+            <span className="text-[9px] font-mono tracking-luxury text-primary">PROJECT_ADDING_V2.4.0</span>
           </div>
         </div>
 
-        <motion.aside
-          initial={reduceMotion ? undefined : { opacity: 0, y: 30 }}
-          animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, ease: "easeOut" }}
-          className="relative"
-          aria-label="Flywheel de crecimiento"
-        >
-          <div className="rounded-3xl border border-black/5 bg-white p-6 shadow-card md:p-8">
-            <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-blue to-cyan-400 text-sm font-bold text-white">AD</div>
-              <div>
-                <h2 className="font-medium text-[#1D1D1F]">{t("hero.flywheel.title")}</h2>
-                <p className="text-sm text-black/50">{t("hero.flywheel.sub")}</p>
-              </div>
-            </div>
-            <div className="space-y-3">
-              {flySteps.map((step, i) => (
-                <div key={step.key} className="flex items-center gap-3 rounded-2xl bg-[#F5F7FA] p-3 transition-colors hover:bg-brand-blue/5">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-blue/10 text-lg">{step.icon}</span>
-                  <p className="text-sm font-semibold text-[#1D1D1F]">{t(step.key)}</p>
-                  {i < 3 && <span className="ml-auto text-brand-blue/40" aria-hidden="true">↓</span>}
-                  {i === 3 && <span className="ml-auto text-brand-yellow" aria-hidden="true">↻</span>}
-                </div>
-              ))}
-            </div>
-            <p className="mt-4 text-center text-xs text-black/40">{t("hero.flywheel.each")}</p>
-          </div>
-        </motion.aside>
+        <h1 className="text-5xl sm:text-7xl lg:text-[10rem] font-black leading-[0.9] tracking-tighter mb-8 md:mb-12 font-display uppercase">
+          {t("hero.h1.1")}<br />
+          <span className="text-primary italic relative">
+            {t("hero.h1.3")}
+            <span className="absolute -bottom-2 md:-bottom-4 left-0 w-1/3 h-[2px] bg-primary/50" />
+          </span>
+        </h1>
+
+        <p className="text-lg md:text-xl lg:text-2xl text-white/40 font-light max-w-4xl mx-auto mb-12 md:mb-20 leading-relaxed tracking-tight-luxury">
+          {t("hero.p")}
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
+          <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="bg-primary text-white px-10 md:px-16 py-5 md:py-7 text-[10px] font-black uppercase tracking-[0.4em] hover:scale-105 transition-all shadow-[0_0_40px_rgba(0,143,240,0.4)]">
+            {t("hero.cta")}
+          </a>
+          <a href="#modules" className="flex items-center gap-4 md:gap-6 group cursor-pointer">
+            <span className="text-[10px] font-bold uppercase tracking-luxury text-white/60 group-hover:text-primary transition-colors">{t("hero.link")}</span>
+            <div className="w-12 h-px bg-white/20 group-hover:w-20 transition-all group-hover:bg-primary" />
+          </a>
+        </div>
       </div>
     </section>
   );

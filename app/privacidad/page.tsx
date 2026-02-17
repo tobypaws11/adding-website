@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 export default function PrivacidadPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 pb-20 pt-32 md:pt-40">
-      <Link href="/" className="text-sm text-brand-blue hover:underline">← Volver al inicio</Link>
-      <h1 className="mt-6 font-title text-4xl font-bold text-brand-black">Política de Privacidad</h1>
-      <p className="mt-2 text-sm text-black/50">Última actualización: febrero 2026</p>
+      <Link href="/" className="text-sm text-primary hover:underline">← Volver al inicio</Link>
+      <h1 className="mt-6 font-title text-4xl font-bold text-white">Política de Privacidad</h1>
+      <p className="mt-2 text-sm text-white/40">Última actualización: febrero 2026</p>
 
       <div className="prose mt-8 max-w-none text-black/75">
         <h2>1. Responsable del Tratamiento</h2>

@@ -1,70 +1,96 @@
 "use client";
 
 import { useI18n } from "@/lib/i18n";
-import { Reveal } from "@/components/Reveal";
-
-const points = [
-  { titleKey: "why.p1.title", descKey: "why.p1.desc" },
-  { titleKey: "why.p2.title", descKey: "why.p2.desc" },
-  { titleKey: "why.p3.title", descKey: "why.p3.desc" },
-];
-
-const comparisons = [
-  { themKey: "why.c1.them", usKey: "why.c1.us" },
-  { themKey: "why.c2.them", usKey: "why.c2.us" },
-  { themKey: "why.c3.them", usKey: "why.c3.us" },
-  { themKey: "why.c4.them", usKey: "why.c4.us" },
-];
 
 export function WhyAdding() {
   const { t } = useI18n();
 
   return (
-    <section id="porque-adding" className="bg-[#1D1D1F] py-20 text-white md:py-28">
-      <div className="section-shell grid gap-12 lg:grid-cols-2 lg:items-center">
-        <Reveal>
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-yellow">{t("why.label")}</p>
-          <h2 className="mt-4 font-title text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
-            {t("why.title")}
-          </h2>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-            {t("why.subtitle")}
-          </p>
-          <div className="mt-10 space-y-8">
-            {points.map((point, idx) => (
-              <div key={point.titleKey} className="flex gap-4">
-                <span className="font-title text-3xl font-bold text-brand-blue sm:text-4xl">0{idx + 1}</span>
-                <div>
-                  <h3 className="font-title text-lg font-semibold sm:text-xl">{t(point.titleKey)}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">{t(point.descKey)}</p>
+    <section id="hub" className="bg-carbon-gray py-32 md:py-60 border-y border-white/5 relative">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12">
+        <div className="grid lg:grid-cols-12 gap-12 md:gap-24 items-center">
+          {/* Terminal */}
+          <div className="lg:col-span-7">
+            <div className="bg-matte-black border border-white/10 shadow-2xl overflow-hidden relative">
+              <div className="h-10 bg-industrial-gray border-b border-white/10 flex items-center px-4 md:px-6 justify-between">
+                <div className="flex gap-2">
+                  <div className="w-2.5 h-2.5 rounded-full bg-red-500/20 border border-red-500/40" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-accent-yellow/20 border border-accent-yellow/40" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-primary/20 border border-primary/40" />
+                </div>
+                <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest">ADDING_OS_TERMINAL_V.2.0</span>
+              </div>
+              <div className="p-5 md:p-8 font-mono text-[10px] md:text-[11px] leading-relaxed">
+                <div className="flex gap-4 mb-2">
+                  <span className="text-primary/60">[SYSTEM]</span>
+                  <span className="text-white/80">{t("hub.line1")}</span>
+                </div>
+                <div className="flex gap-4 mb-2">
+                  <span className="text-primary/60">[STITCH]</span>
+                  <span className="text-white/80">{t("hub.line2")} <span className="text-accent-yellow">SUCCESS</span></span>
+                </div>
+                <div className="flex gap-4 mb-6">
+                  <span className="text-primary/60">[DATA]</span>
+                  <span className="text-primary">STREAMING: 1,422 events/sec</span>
+                </div>
+                <div className="bg-white/5 p-4 md:p-6 mb-6 border-l-2 border-primary/40 overflow-x-auto">
+                  <code className="text-white/60 block text-[10px]">
+                    {`function processStitchNode(event) {`}<br />
+                    {`  const attribution = event.path.map(n => n.id);`}<br />
+                    {`  return {`}<br />
+                    {`    status: "VERIFIED",`}<br />
+                    {`    roi_delta: +0.428,`}<br />
+                    {`    timestamp: Date.now()`}<br />
+                    {`  };`}<br />
+                    {`}`}
+                  </code>
+                </div>
+                <div className="grid grid-cols-4 gap-2 md:gap-4">
+                  {["NODE_A", "NODE_B", "NODE_C", "NODE_D"].map((node, i) => (
+                    <div key={node} className={`h-16 md:h-20 relative border ${i === 1 ? "bg-accent-yellow/10 border-accent-yellow/20" : i === 3 ? "bg-white/5 border-white/10" : "bg-primary/10 border-primary/20"}`}>
+                      <div className={`absolute bottom-0 left-0 w-full ${i === 0 ? "h-1/2 bg-primary/20" : i === 1 ? "h-3/4 bg-accent-yellow/20" : i === 2 ? "h-1/4 bg-primary/20" : "h-1/3 bg-white/10"}`} />
+                      <div className={`absolute inset-0 flex items-center justify-center text-[9px] md:text-[10px] ${i === 1 ? "text-accent-yellow" : i === 3 ? "text-white/40" : "text-primary"}`}>{node}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-        </Reveal>
 
-        <Reveal>
-          <aside className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-7">
-            <div className="mb-4 grid grid-cols-2 gap-3">
-              <p className="text-xs font-semibold uppercase tracking-wider text-red-400/70">{t("why.cmp.them")}</p>
-              <p className="text-xs font-semibold uppercase tracking-wider text-emerald-400/70">{t("why.cmp.us")}</p>
+          {/* Description */}
+          <div className="lg:col-span-5 space-y-8 md:space-y-12">
+            <div>
+              <span className="text-[11px] font-black uppercase tracking-[0.5em] text-primary">{t("why.label")}</span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tighter leading-tight mt-4 md:mt-6 uppercase">{t("why.title")}</h2>
+              <p className="text-white/40 text-base md:text-lg leading-relaxed mt-6 md:mt-8 font-light tracking-tight-luxury">
+                {t("why.subtitle")}
+              </p>
             </div>
-            <div className="space-y-4">
-              {comparisons.map((c) => (
-                <div key={c.usKey} className="grid grid-cols-2 gap-3 border-b border-white/10 pb-4 last:border-0">
-                  <div className="flex items-start gap-2">
-                    <span className="mt-0.5 text-red-400" aria-hidden="true">✕</span>
-                    <p className="text-xs leading-relaxed text-white/50 sm:text-sm">{t(c.themKey)}</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="mt-0.5 text-emerald-400" aria-hidden="true">✓</span>
-                    <p className="text-xs font-medium leading-relaxed text-white/90 sm:text-sm">{t(c.usKey)}</p>
-                  </div>
+            <div className="space-y-8 md:space-y-12">
+              <div className="flex gap-6 md:gap-8 group">
+                <div className="w-12 h-12 flex-shrink-0 border border-primary/20 flex items-center justify-center bg-white/5">
+                  <span className="material-symbols-outlined text-primary text-2xl">security</span>
                 </div>
-              ))}
+                <div>
+                  <h4 className="text-sm font-black uppercase tracking-widest mb-2">{t("why.p1.title")}</h4>
+                  <p className="text-[11px] text-white/30 font-medium uppercase leading-relaxed">{t("why.p1.desc")}</p>
+                </div>
+              </div>
+              <div className="flex gap-6 md:gap-8 group">
+                <div className="w-12 h-12 flex-shrink-0 border border-primary/20 flex items-center justify-center bg-white/5">
+                  <span className="material-symbols-outlined text-primary text-2xl">schema</span>
+                </div>
+                <div>
+                  <h4 className="text-sm font-black uppercase tracking-widest mb-2">{t("why.p2.title")}</h4>
+                  <p className="text-[11px] text-white/30 font-medium uppercase leading-relaxed">{t("why.p2.desc")}</p>
+                </div>
+              </div>
             </div>
-          </aside>
-        </Reveal>
+            <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="inline-block bg-white text-matte-black px-12 py-5 text-[10px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
+              {t("nav.hablemos")}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
