@@ -47,7 +47,7 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-3 space-y-8 md:space-y-12">
-            <h5 className="text-[10px] font-black uppercase tracking-[0.5em] text-white">{t("footer.servicios")}</h5>
+            <h5 className="text-xs font-black uppercase tracking-[0.5em] text-white">{t("footer.servicios")}</h5>
             <ul className="space-y-4 md:space-y-6">
               {[
                 { title: t("svc.leads.title"), id: "svc-01" },
@@ -57,30 +57,30 @@ export function Footer() {
                 { title: t("svc.ai.title"), id: "svc-05" },
                 { title: t("svc.email.title"), id: "svc-06" },
               ].map((s) => (
-                <li key={s.id}><Link href={`/servicios#${s.id}`} className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{s.title}</Link></li>
+                <li key={s.id}><Link href={`/servicios#${s.id}`} className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{s.title}</Link></li>
               ))}
             </ul>
           </div>
 
           <div className="lg:col-span-3 space-y-8 md:space-y-12">
-            <h5 className="text-[10px] font-black uppercase tracking-[0.5em] text-white">{t("footer.empresa")}</h5>
+            <h5 className="text-xs font-black uppercase tracking-[0.5em] text-white">{t("footer.empresa")}</h5>
             <ul className="space-y-4 md:space-y-6">
-              <li><Link href="/servicios" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("nav.servicios")}</Link></li>
-              <li><Link href="/por-que-adding" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("nav.porque")}</Link></li>
-              <li><Link href="/nosotros" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("nav.nosotros")}</Link></li>
-              <li><Link href="/blog" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("nav.blog")}</Link></li>
-              <li><Link href="/contacto" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("nav.contacto")}</Link></li>
-              <li><Link href="/terminos" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("footer.terms")}</Link></li>
-              <li><Link href="/privacidad" className="text-xs font-bold text-white/40 hover:text-primary uppercase tracking-luxury transition-all">{t("footer.privacy")}</Link></li>
+              <li><Link href="/servicios" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.servicios")}</Link></li>
+              <li><Link href="/por-que-adding" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.porque")}</Link></li>
+              <li><Link href="/nosotros" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.nosotros")}</Link></li>
+              <li><Link href="/blog" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.blog")}</Link></li>
+              <li><Link href="/contacto" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.contacto")}</Link></li>
+              <li><Link href="/terminos" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("footer.terms")}</Link></li>
+              <li><Link href="/privacidad" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("footer.privacy")}</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 md:pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12">
-          <div className="text-[9px] font-mono text-white/20 uppercase tracking-[0.3em] text-center md:text-left">
+          <div className="text-xs font-mono text-white/20 uppercase tracking-[0.3em] text-center md:text-left">
             © {new Date().getFullYear()} CINTA MK FUTURISTA LIMITADA · CED. 3-102-862791
           </div>
-          <div className="text-[9px] font-mono text-white/20 uppercase tracking-[0.3em]">
+          <div className="text-xs font-mono text-white/20 uppercase tracking-[0.3em]">
             {t("footer.creado")} <a href="https://www.addingagency.com" className="text-primary hover:text-white transition-colors">AdDing Agency</a>
           </div>
         </div>

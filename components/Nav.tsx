@@ -36,10 +36,10 @@ export function Nav() {
           )}
         </div>
         <div className="flex items-center gap-3 md:gap-4">
-          <button onClick={toggle} className="border border-white/10 px-3 py-1.5 text-[9px] font-bold uppercase tracking-luxury text-white/40 hover:text-primary hover:border-primary/40 transition-all">
+          <button onClick={toggle} className="border border-white/10 px-3 py-1.5 text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary hover:border-primary/40 transition-all">
             {lang === "es" ? "EN" : "ES"}
           </button>
-          <Link href="/contacto" className="hidden sm:inline-block border border-primary/40 text-primary px-4 md:px-8 py-2.5 md:py-3 text-[9px] font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
+          <Link href="/contacto" className="hidden sm:inline-block border border-primary/40 text-primary px-4 md:px-8 py-2.5 md:py-3 text-xs font-black uppercase tracking-luxury hover:bg-primary hover:text-white transition-all">
             {t("nav.hablemos")}
           </Link>
           <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-white/60 hover:text-primary transition-all" aria-label="Menu">

@@ -39,7 +39,7 @@ export default function WhyAddingPage() {
             <div className="w-full h-full stitch-core-glass rounded-full animate-pulse" style={{ animationDuration: "8s" }} />
           </div>
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("why.label")}</span>
+            <span className="text-xs font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6 leading-[0.9]">
               {t("whypage.hero.title")}
             </h1>
@@ -54,7 +54,7 @@ export default function WhyAddingPage() {
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-2 gap-12 md:gap-24 items-center">
               <div>
-                <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("whypage.approach.label")}</span>
+                <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">{t("whypage.approach.label")}</span>
                 <h2 className="text-4xl md:text-5xl font-black tracking-tighter mt-4 md:mt-6 leading-tight">{t("whypage.approach.title")}</h2>
               </div>
               <div className="space-y-6">
@@ -68,7 +68,7 @@ export default function WhyAddingPage() {
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="relative p-6 md:p-8 border border-white/5 bg-matte-black group hover:border-primary/30 transition-all">
-                    <div className="text-[9px] font-mono text-primary/40 mb-4">STAGE_{String(i).padStart(2, "0")}</div>
+                    <div className="text-xs font-mono text-primary/40 mb-4">STAGE_{String(i).padStart(2, "0")}</div>
                     <h4 className="text-sm font-black tracking-widest mb-2">{t(`hero.fly.${i}`)}</h4>
                     {i < 4 && (
                       <div className="hidden lg:block absolute -right-6 top-1/2 -translate-y-1/2 text-primary/30 text-2xl z-10">→</div>
@@ -76,7 +76,7 @@ export default function WhyAddingPage() {
                   </div>
                 ))}
               </div>
-              <div className="text-center mt-8 text-[10px] font-mono text-accent-yellow uppercase tracking-widest">
+              <div className="text-center mt-8 text-xs font-mono text-accent-yellow uppercase tracking-widest">
                 {t("hero.flywheel.each")}
               </div>
             </div>
@@ -87,13 +87,13 @@ export default function WhyAddingPage() {
         <section className="py-16 md:py-32 bg-carbon-gray border-y border-white/5">
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="text-center mb-16 md:mb-24">
-              <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("whypage.diff.label")}</span>
+              <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">{t("whypage.diff.label")}</span>
               <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("whypage.diff.title")}</h2>
             </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
               {differentiators.map((d, idx) => (
                 <div key={d.key} className="component-module brushed-texture p-8 md:p-12 relative overflow-hidden group">
-                  <div className="absolute top-0 right-0 p-4 font-mono text-[8px] opacity-20">DIFF_{String(idx + 1).padStart(2, "0")}</div>
+                  <div className="absolute top-0 right-0 p-4 font-mono text-xs opacity-20">DIFF_{String(idx + 1).padStart(2, "0")}</div>
                   <div className={`w-12 h-12 border ${d.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>
                     <span className={`material-symbols-outlined ${d.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{d.icon}</span>
                   </div>
@@ -112,7 +112,7 @@ export default function WhyAddingPage() {
         <section className="py-16 md:py-32 border-t border-white/5">
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="text-center mb-16 md:mb-24">
-              <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("whypage.process.label")}</span>
+              <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">{t("whypage.process.label")}</span>
               <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("whypage.process.title")}</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
@@ -138,7 +138,7 @@ export default function WhyAddingPage() {
               {t("whypage.cta.btn")}
             </a>
             <div className="mt-8">
-              <Link href="/" className="text-[10px] font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all">
+              <Link href="/" className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all">
                 {t("blog.back")}
               </Link>
             </div>

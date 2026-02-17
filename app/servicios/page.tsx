@@ -105,7 +105,7 @@ export default function ServiciosPage() {
           <div className="absolute inset-0 grid-tech opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-matte-black" />
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("services.label")}</span>
+            <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">{t("services.label")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6">{t("svcpage.hero.title")}</h1>
             <p className="text-white/40 text-lg md:text-xl font-light max-w-3xl mx-auto mt-6 md:mt-8 leading-relaxed">
               {t("svcpage.hero.sub")}
@@ -118,7 +118,7 @@ export default function ServiciosPage() {
           <div className="max-w-[1600px] mx-auto px-6 md:px-12 space-y-8 md:space-y-16">
             {services.map((svc, idx) => (
               <div key={svc.code} id={`svc-${String(idx + 1).padStart(2, "0")}`} className={`grid lg:grid-cols-2 gap-8 md:gap-16 border border-white/10 ${idx % 2 === 0 ? "bg-carbon-gray" : "bg-matte-black"} p-8 md:p-16 relative overflow-hidden group hover:border-primary/20 transition-all`}>
-                <div className="absolute top-4 right-4 md:top-6 md:right-6 text-[9px] font-mono text-white/10">{svc.code}</div>
+                <div className="absolute top-4 right-4 md:top-6 md:right-6 text-xs font-mono text-white/10">{svc.code}</div>
                 <div>
                   <div className={`w-14 h-14 border ${svc.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>
                     <span className={`material-symbols-outlined text-2xl ${svc.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{svc.icon}</span>
@@ -127,7 +127,7 @@ export default function ServiciosPage() {
                   <p className="text-white/50 text-base md:text-lg font-light leading-relaxed">{t(svc.descKey)}</p>
                 </div>
                 <div>
-                  <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-primary mb-6">
+                  <h4 className="text-xs font-black uppercase tracking-[0.5em] text-primary mb-6">
                     {lang === "es" ? "Incluye" : "Includes"}
                   </h4>
                   <ul className="space-y-4">
@@ -152,7 +152,7 @@ export default function ServiciosPage() {
               {t("svcpage.cta.btn")}
             </a>
             <div className="mt-8">
-              <Link href="/" className="text-[10px] font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all">
+              <Link href="/" className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all">
                 {t("blog.back")}
               </Link>
             </div>

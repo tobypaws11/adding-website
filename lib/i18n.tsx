@@ -23,8 +23,8 @@ const translations: Translations = {
     es: "Eliminá la entropía presupuestaria con integración de datos de alta fidelidad. Diseñado para rendimiento a escala industrial y visibilidad radical.",
     en: "Eliminate budget entropy through high-fidelity data stitching. Designed for industrial-scale performance and radical visibility."
   },
-  "hero.cta": { es: "Iniciar Arquitectura", en: "Initialize Architecture" },
-  "hero.link": { es: "Documentación Técnica", en: "Technical Docs" },
+  "hero.cta": { es: "INICIAR ARQUITECTURA", en: "INITIALIZE ARCHITECTURE" },
+  "hero.link": { es: "DOCUMENTACIÓN TÉCNICA", en: "TECHNICAL DOCS" },
   "hero.flywheel.title": { es: "Tu Flywheel de crecimiento", en: "Your Growth Flywheel" },
   "hero.flywheel.sub": { es: "Ecosistema automatizado", en: "Automated ecosystem" },
   "hero.flywheel.each": { es: "Cada etapa alimenta la siguiente: crecimiento continuo", en: "Each stage feeds the next: continuous growth" },
@@ -43,15 +43,15 @@ const translations: Translations = {
     es: "Construimos ecosistemas digitales completos para PYMES, desde la primera visita hasta el cliente fiel, acompañándote en cada etapa del recorrido del cliente con automatización y mejora continua.",
     en: "We build complete digital ecosystems for SMBs, from first visit to loyal customer, guiding you through every stage of the customer journey with automation and continuous improvement."
   },
-  "svc.web.title": { es: "Diseño y Desarrollo Web", en: "Web Design & Development" },
+  "svc.web.title": { es: "Diseño y desarrollo web", en: "Web design & development" },
   "svc.web.desc": { es: "Sitios rápidos, modernos y optimizados para convertir visitas en oportunidades reales de negocio.", en: "Fast, modern sites optimized to turn visits into real business opportunities." },
-  "svc.ai.title": { es: "Agentes de IA", en: "AI Agents" },
+  "svc.ai.title": { es: "Agentes de IA", en: "AI agents" },
   "svc.ai.desc": { es: "Asistentes inteligentes que responden, califican leads y automatizan tareas clave las 24 horas del día.", en: "Smart assistants that respond, qualify leads, and automate key tasks around the clock." },
-  "svc.seo.title": { es: "SEO y Marketing Digital", en: "SEO & Digital Marketing" },
+  "svc.seo.title": { es: "SEO y marketing digital", en: "SEO & digital marketing" },
   "svc.seo.desc": { es: "Estrategias orientadas a datos para posicionarte orgánicamente y generar tráfico calificado constante.", en: "Data-driven strategies to rank organically and generate consistent qualified traffic." },
-  "svc.leads.title": { es: "Ecosistemas de Leads", en: "Lead Ecosystems" },
+  "svc.leads.title": { es: "Ecosistemas de leads", en: "Lead ecosystems" },
   "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. Nada de campañas aisladas, solo sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. No isolated campaigns, just predictable growth systems." },
-  "svc.email.title": { es: "Email Marketing y Newsletter", en: "Email Marketing & Newsletter" },
+  "svc.email.title": { es: "Email marketing y newsletter", en: "Email marketing & newsletter" },
   "svc.email.desc": { es: "Secuencias automatizadas, nutrición inteligente y newsletters que mantienen a tus prospectos comprometidos hasta la conversión.", en: "Automated sequences, intelligent nurturing, and newsletters that keep prospects engaged until conversion." },
   "svc.auto.title": { es: "Automatización", en: "Automation" },
   "svc.auto.desc": { es: "CRM, seguimientos, onboarding y flujos conectados que ahorran tiempo, reducen errores y escalan sin fricción.", en: "CRM, follow-ups, onboarding, and connected flows that save time, reduce errors, and scale without friction." },
@@ -140,19 +140,19 @@ const translations: Translations = {
     es: "Agendá una llamada gratuita y descubrí cómo podemos convertir tu presencia digital en crecimiento real para tu negocio.",
     en: "Book a free call and discover how we can turn your digital presence into real growth for your business."
   },
-  "cta.btn": { es: "Agendá tu llamada gratis", en: "Book your free call" },
+  "cta.btn": { es: "AGENDÁ TU LLAMADA GRATIS", en: "BOOK YOUR FREE CALL" },
 
   // Footer
   "footer.tagline": {
     es: "Impulsamos empresas y emprendimientos con estrategias digitales inteligentes, tecnológicas y efectivas.",
     en: "We empower businesses and startups with smart, technology-driven, and effective digital strategies."
   },
-  "footer.servicios": { es: "Servicios", en: "Services" },
-  "footer.empresa": { es: "Empresa", en: "Company" },
-  "footer.contacto": { es: "Contacto", en: "Contact" },
+  "footer.servicios": { es: "SERVICIOS", en: "SERVICES" },
+  "footer.empresa": { es: "EMPRESA", en: "COMPANY" },
+  "footer.contacto": { es: "CONTACTO", en: "CONTACT" },
   "footer.legal": { es: "Legal", en: "Legal" },
-  "footer.terms": { es: "Términos y Condiciones", en: "Terms & Conditions" },
-  "footer.privacy": { es: "Política de Privacidad", en: "Privacy Policy" },
+  "footer.terms": { es: "TÉRMINOS Y CONDICIONES", en: "TERMS & CONDITIONS" },
+  "footer.privacy": { es: "POLÍTICA DE PRIVACIDAD", en: "PRIVACY POLICY" },
   "footer.creado": { es: "Creado por", en: "Built by" },
   "footer.derechos": { es: "Todos los derechos reservados.", en: "All rights reserved." },
 
@@ -167,8 +167,8 @@ const translations: Translations = {
   "cmp.gain": { es: "Ganancia Calculada", en: "Calculated Gain" },
 
   // Blog
-  "blog.visit": { es: "Ir al Blog", en: "Visit Blog" },
-  "blog.back": { es: "Volver al inicio", en: "Back to home" },
+  "blog.visit": { es: "IR AL BLOG", en: "VISIT BLOG" },
+  "blog.back": { es: "VOLVER AL INICIO", en: "BACK TO HOME" },
   "blog.categories": { es: "Categorías", en: "Categories" },
   "blog.cat.seo": { es: "SEO y Posicionamiento", en: "SEO & Rankings" },
   "blog.cat.ai": { es: "Inteligencia Artificial", en: "Artificial Intelligence" },
@@ -178,7 +178,7 @@ const translations: Translations = {
   "blog.subscribe.title": { es: "Suscribite al newsletter", en: "Subscribe to our newsletter" },
   "blog.subscribe.p": { es: "Recibí las últimas guías y estrategias directo en tu correo.", en: "Get the latest guides and strategies straight to your inbox." },
   "blog.subscribe.placeholder": { es: "Tu correo electrónico", en: "Your email address" },
-  "blog.subscribe.btn": { es: "Suscribirme", en: "Subscribe" },
+  "blog.subscribe.btn": { es: "SUSCRIBIRME", en: "SUBSCRIBE" },
 
   // Why AdDing page
   "whypage.hero.title": { es: "Por qué elegir AdDing", en: "Why choose AdDing" },
@@ -212,13 +212,13 @@ const translations: Translations = {
   "whypage.step4.title": { es: "Optimización", en: "Optimization" },
   "whypage.step4.desc": { es: "Medimos, ajustamos y mejoramos. Cada semana analizamos resultados y optimizamos el sistema para mejor rendimiento.", en: "We measure, adjust, and improve. Each week we analyze results and optimize the system for better performance." },
   "whypage.cta": { es: "¿Listo para construir tu ecosistema?", en: "Ready to build your ecosystem?" },
-  "whypage.cta.btn": { es: "Agendá tu consulta gratis", en: "Book your free consultation" },
+  "whypage.cta.btn": { es: "AGENDÁ TU CONSULTA GRATIS", en: "BOOK YOUR FREE CONSULTATION" },
 
   // Services page
   "svcpage.hero.title": { es: "Nuestros servicios", en: "Our services" },
   "svcpage.hero.sub": { es: "Todo lo que necesitás para dominar el mundo digital. Sin campañas aisladas, solo ecosistemas de crecimiento.", en: "Everything you need to dominate the digital world. No isolated campaigns, just growth ecosystems." },
   "svcpage.cta": { es: "¿Querés saber más sobre algún servicio?", en: "Want to learn more about a service?" },
-  "svcpage.cta.btn": { es: "Hablemos por WhatsApp", en: "Let's chat on WhatsApp" },
+  "svcpage.cta.btn": { es: "HABLEMOS POR WHATSAPP", en: "LET'S CHAT ON WHATSAPP" },
 
   // Nav extras
   "nav.nosotros": { es: "NOSOTROS", en: "ABOUT" },
@@ -251,7 +251,7 @@ const translations: Translations = {
   "contact.hero.sub": { es: "¿Tenés un proyecto en mente? ¿Querés hacer crecer tu negocio en digital? Contactanos y te respondemos en menos de 24 horas.", en: "Have a project in mind? Want to grow your business digitally? Contact us and we'll respond within 24 hours." },
   "contact.wa.title": { es: "WhatsApp", en: "WhatsApp" },
   "contact.wa.desc": { es: "La forma más rápida de contactarnos. Respondemos en minutos.", en: "The fastest way to reach us. We respond in minutes." },
-  "contact.wa.btn": { es: "Escribinos por WhatsApp", en: "Message us on WhatsApp" },
+  "contact.wa.btn": { es: "ESCRIBINOS POR WHATSAPP", en: "MESSAGE US ON WHATSAPP" },
   "contact.email.title": { es: "Email", en: "Email" },
   "contact.email.desc": { es: "Para consultas formales o propuestas detalladas.", en: "For formal inquiries or detailed proposals." },
   "contact.location.title": { es: "Ubicación", en: "Location" },

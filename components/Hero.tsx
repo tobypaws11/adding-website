@@ -28,7 +28,7 @@ export function Hero() {
           <div>STITCH_LINK: <span className="text-white">ENCRYPTED</span></div>
           <div>CORE_TEMP: <span className="text-white">32°C</span></div>
         </div>
-        <div className="absolute -top-24 right-0 space-y-1 text-right hidden xl:block font-mono text-[9px] uppercase text-accent-yellow" style={{ borderRight: "1px solid #FABD05", paddingRight: "8px" }}>
+        <div className="absolute -top-24 right-0 space-y-1 text-right hidden xl:block font-mono text-xs uppercase text-accent-yellow" style={{ borderRight: "1px solid #FABD05", paddingRight: "8px" }}>
           <div>DATA_FLOW: <span className="text-white">100%</span></div>
           <div>LATENCY: <span className="text-white">0.02MS</span></div>
           <div>UPTIME: <span className="text-white">99.9%</span></div>
@@ -43,7 +43,7 @@ export function Hero() {
         <div className="inline-block mb-10 md:mb-16">
           <div className="flex items-center gap-4 px-6 py-2 border border-white/10 bg-white/5 backdrop-blur-md">
             <span className="w-2 h-2 bg-primary shadow-[0_0_10px_#008FF0]" />
-            <span className="text-[9px] font-mono tracking-luxury text-primary">PROJECT_ADDING_V2.4.0</span>
+            <span className="text-xs font-mono tracking-luxury text-primary">PROJECT_ADDING_V2.4.0</span>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ export function Hero() {
             {t("hero.cta")}
           </a>
           <a href="#modules" className="flex items-center gap-4 md:gap-6 group cursor-pointer">
-            <span className="text-[10px] font-bold uppercase tracking-luxury text-white/60 group-hover:text-primary transition-colors">{t("hero.link")}</span>
+            <span className="text-xs font-bold uppercase tracking-luxury text-white/60 group-hover:text-primary transition-colors">{t("hero.link")}</span>
             <div className="w-12 h-px bg-white/20 group-hover:w-20 transition-all group-hover:bg-primary" />
           </a>
         </div>

@@ -10,7 +10,7 @@ export function BlogPreview() {
     <section id="blog" className="bg-carbon-gray py-24 md:py-40 border-t border-white/5">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="text-center mb-16 md:mb-24">
-          <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary uppercase">{t("blog.label")}</span>
+          <span className="text-xs font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("blog.title")}</h2>
         </div>
 
@@ -18,7 +18,7 @@ export function BlogPreview() {
           <div className="border border-white/10 bg-matte-black p-12 md:p-20 relative overflow-hidden">
             {/* Construction animation */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-            <div className="absolute top-4 right-4 text-[9px] font-mono text-accent-yellow uppercase tracking-widest">STATUS: BUILDING</div>
+            <div className="absolute top-4 right-4 text-xs font-mono text-accent-yellow uppercase tracking-widest">STATUS: BUILDING</div>
 
             <div className="text-6xl md:text-8xl mb-8">🏗️</div>
             <h3 className="text-2xl md:text-3xl font-black tracking-luxury mb-6">{t("blog.soon")}</h3>

@@ -18,9 +18,9 @@ export function WhyAdding() {
                   <div className="w-2.5 h-2.5 rounded-full bg-accent-yellow/20 border border-accent-yellow/40" />
                   <div className="w-2.5 h-2.5 rounded-full bg-primary/20 border border-primary/40" />
                 </div>
-                <span className="text-[9px] font-mono text-white/40 uppercase tracking-widest">ADDING_OS_TERMINAL_V.2.0</span>
+                <span className="text-xs font-mono text-white/40 uppercase tracking-widest">ADDING_OS_TERMINAL_V.2.0</span>
               </div>
-              <div className="p-5 md:p-8 font-mono text-[10px] md:text-[11px] leading-relaxed">
+              <div className="p-5 md:p-8 font-mono text-xs md:text-[11px] leading-relaxed">
                 <div className="flex gap-4 mb-2">
                   <span className="text-primary/60">[SYSTEM]</span>
                   <span className="text-white/80">{t("hub.line1")}</span>
@@ -34,7 +34,7 @@ export function WhyAdding() {
                   <span className="text-primary">STREAMING: 1,422 events/sec</span>
                 </div>
                 <div className="bg-white/5 p-4 md:p-6 mb-6 border-l-2 border-primary/40 overflow-x-auto">
-                  <code className="text-white/60 block text-[10px]">
+                  <code className="text-white/60 block text-xs">
                     {`function processStitchNode(event) {`}<br />
                     {`  const attribution = event.path.map(n => n.id);`}<br />
                     {`  return {`}<br />
@@ -49,7 +49,7 @@ export function WhyAdding() {
                   {["NODE_A", "NODE_B", "NODE_C", "NODE_D"].map((node, i) => (
                     <div key={node} className={`h-16 md:h-20 relative border ${i === 1 ? "bg-accent-yellow/10 border-accent-yellow/20" : i === 3 ? "bg-white/5 border-white/10" : "bg-primary/10 border-primary/20"}`}>
                       <div className={`absolute bottom-0 left-0 w-full ${i === 0 ? "h-1/2 bg-primary/20" : i === 1 ? "h-3/4 bg-accent-yellow/20" : i === 2 ? "h-1/4 bg-primary/20" : "h-1/3 bg-white/10"}`} />
-                      <div className={`absolute inset-0 flex items-center justify-center text-[9px] md:text-[10px] ${i === 1 ? "text-accent-yellow" : i === 3 ? "text-white/40" : "text-primary"}`}>{node}</div>
+                      <div className={`absolute inset-0 flex items-center justify-center text-xs md:text-xs ${i === 1 ? "text-accent-yellow" : i === 3 ? "text-white/40" : "text-primary"}`}>{node}</div>
                     </div>
                   ))}
                 </div>
@@ -60,8 +60,8 @@ export function WhyAdding() {
           {/* Description */}
           <div className="lg:col-span-5 space-y-8 md:space-y-12">
             <div>
-              <span className="text-xs md:text-sm font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
-              <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6 uppercase">{t("why.title")}</h2>
+              <span className="text-xs font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
+              <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6">{t("why.title")}</h2>
               <p className="text-white/40 text-base md:text-lg leading-relaxed mt-6 md:mt-8 font-light tracking-tight-luxury">
                 {t("why.subtitle")}
               </p>
