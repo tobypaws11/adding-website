@@ -23,12 +23,11 @@ type Client = {
 };
 
 const clients: Client[] = [
-  { name: "MDM Mobiliario", img: "/clients/mdm.jpg",    imgClass: "h-20 md:h-24 w-auto object-contain rounded" },
+  { name: "MDM Mobiliario", img: "/clients/mdm.jpg",    imgClass: "h-24 md:h-28 w-auto object-contain rounded" },
   { name: "Trumix",         img: "/clients/trumix.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
-  { name: "Iris Studio",    img: "/clients/iris.png",   imgClass: "h-16 md:h-20 w-auto object-contain" },
+  { name: "Iris Studio",    img: "/clients/iris.png",   imgClass: "h-20 md:h-24 w-auto object-contain" },
   { name: "Eventicos",      inline: true },
-  { name: "Villa Solstice" },
-  { name: "Ezelandscape" },
+  // Villa Solstice & Ezelandscape — logos pendientes, hidden for now
 ];
 
 export function LogosBar() {
