@@ -39,7 +39,7 @@ export default function WhyAddingPage() {
             <div className="w-full h-full stitch-core-glass rounded-full animate-pulse" style={{ animationDuration: "8s" }} />
           </div>
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-sm font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
+            <span className="text-base font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6 leading-[0.9]">
               {t("whypage.hero.title")}
             </h1>
@@ -54,7 +54,7 @@ export default function WhyAddingPage() {
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-2 gap-12 md:gap-24 items-center">
               <div>
-                <span className="text-sm font-black uppercase tracking-[0.4em] text-primary">{t("whypage.approach.label")}</span>
+                <span className="text-base font-black uppercase tracking-[0.4em] text-primary">{t("whypage.approach.label")}</span>
                 <h2 className="text-4xl md:text-5xl font-black tracking-tighter mt-4 md:mt-6 leading-tight">{t("whypage.approach.title")}</h2>
               </div>
               <div className="space-y-6">
@@ -87,7 +87,7 @@ export default function WhyAddingPage() {
         <section className="py-16 md:py-32 bg-carbon-gray border-y border-white/5">
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="text-center mb-16 md:mb-24">
-              <span className="text-sm font-black uppercase tracking-[0.4em] text-primary">{t("whypage.diff.label")}</span>
+              <span className="text-base font-black uppercase tracking-[0.4em] text-primary">{t("whypage.diff.label")}</span>
               <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("whypage.diff.title")}</h2>
             </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
@@ -112,7 +112,7 @@ export default function WhyAddingPage() {
         <section className="py-16 md:py-32 border-t border-white/5">
           <div className="max-w-[1600px] mx-auto px-6 md:px-12">
             <div className="text-center mb-16 md:mb-24">
-              <span className="text-sm font-black uppercase tracking-[0.4em] text-primary">{t("whypage.process.label")}</span>
+              <span className="text-base font-black uppercase tracking-[0.4em] text-primary">{t("whypage.process.label")}</span>
               <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("whypage.process.title")}</h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">

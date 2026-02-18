@@ -105,7 +105,7 @@ export default function ServiciosPage() {
           <div className="absolute inset-0 grid-tech opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-matte-black" />
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-sm font-black uppercase tracking-[0.4em] text-primary">{t("services.label")}</span>
+            <span className="text-base font-black uppercase tracking-[0.4em] text-primary">{t("services.label")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6">{t("svcpage.hero.title")}</h1>
             <p className="text-white/40 text-lg md:text-xl font-light max-w-3xl mx-auto mt-6 md:mt-8 leading-relaxed">
               {t("svcpage.hero.sub")}

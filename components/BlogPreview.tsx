@@ -10,7 +10,7 @@ export function BlogPreview() {
     <section id="blog" className="bg-carbon-gray py-24 md:py-40 border-t border-white/5">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="text-center mb-16 md:mb-24">
-          <span className="text-sm font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
+          <span className="text-base font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("blog.title")}</h2>
         </div>
 

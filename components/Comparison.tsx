@@ -9,7 +9,7 @@ export function Comparison() {
     <section id="telemetry" className="bg-matte-black py-24 md:py-40 border-t border-white/5">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center text-center mb-16 md:mb-40">
-          <span className="text-sm font-black uppercase tracking-[0.4em] text-primary mb-6 md:mb-8">{t("cmp.label")}</span>
+          <span className="text-base font-black uppercase tracking-[0.4em] text-primary mb-6 md:mb-8">{t("cmp.label")}</span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter mb-8 md:mb-12">
             {t("cmp.title1")} <span className="text-white/20">vs.</span> {t("cmp.title2")}
           </h2>
