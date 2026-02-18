@@ -57,7 +57,7 @@ const translations: Translations = {
   "svc.auto.desc": { es: "CRM, seguimientos, onboarding y flujos conectados que ahorran tiempo, reducen errores y escalan sin fricción.", en: "CRM, follow-ups, onboarding, and connected flows that save time, reduce errors, and scale without friction." },
 
   // Why AdDing
-  "why.label": { es: "POR QUÉ AdDing", en: "WHY AdDing" },
+  "why.label": { es: "POR QUÉ ADDING", en: "WHY ADDING" },
   "why.title": { es: "No somos una agencia más. Somos tu sistema de crecimiento.", en: "We're not just another agency. We're your growth system." },
   "why.subtitle": {
     es: "Especialistas en crear ecosistemas digitales automatizados que transforman prospectos en clientes leales. No hacemos campañas aisladas, construimos crecimiento predecible.",

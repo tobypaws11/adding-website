@@ -21,7 +21,7 @@ export function WhyAdding() {
                 </div>
                 <span className="text-xs font-mono text-white/40 uppercase tracking-widest">ADDING_OS_TERMINAL_V.2.0</span>
               </div>
-              <div className="p-5 md:p-8 font-mono text-xs md:text-[11px] leading-relaxed">
+              <div className="p-5 md:p-8 font-mono text-xs md:text-sm leading-relaxed">
                 <div className="flex gap-4 mb-2">
                   <span className="text-primary/60">[SYSTEM]</span>
                   <span className="text-white/80">{t("hub.line1")}</span>
@@ -63,7 +63,7 @@ export function WhyAdding() {
             <div>
               <span className="text-2xl font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
               <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6">{t("why.title")}</h2>
-              <p className="text-white/40 text-base md:text-lg leading-relaxed mt-6 md:mt-8 font-light tracking-tight-luxury">
+              <p className="text-white/60 text-base md:text-lg leading-relaxed mt-6 md:mt-8 font-light tracking-tight-luxury">
                 {t("why.subtitle")}
               </p>
             </div>
@@ -73,8 +73,8 @@ export function WhyAdding() {
                   <span className="material-symbols-outlined text-primary text-2xl">security</span>
                 </div>
                 <div>
-                  <h4 className="text-sm font-black tracking-widest mb-2">{t("why.p1.title")}</h4>
-                  <p className="text-[11px] text-white/30 font-medium leading-relaxed">{t("why.p1.desc")}</p>
+                  <h4 className="text-base font-bold mb-2">{t("why.p1.title")}</h4>
+                  <p className="text-sm text-white/60 font-light leading-relaxed">{t("why.p1.desc")}</p>
                 </div>
               </div>
               <div className="flex gap-6 md:gap-8 group">
@@ -82,8 +82,8 @@ export function WhyAdding() {
                   <span className="material-symbols-outlined text-primary text-2xl">schema</span>
                 </div>
                 <div>
-                  <h4 className="text-sm font-black tracking-widest mb-2">{t("why.p2.title")}</h4>
-                  <p className="text-[11px] text-white/30 font-medium leading-relaxed">{t("why.p2.desc")}</p>
+                  <h4 className="text-base font-bold mb-2">{t("why.p2.title")}</h4>
+                  <p className="text-sm text-white/60 font-light leading-relaxed">{t("why.p2.desc")}</p>
                 </div>
               </div>
             </div>

@@ -13,9 +13,9 @@ const config: Config = {
         "industrial-gray": "#1A1A1C",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+        sans: ["var(--font-poppins)", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
         mono: ["var(--font-jetbrains)", "monospace"],
-        display: ["Helvetica Neue", "var(--font-inter)", "sans-serif"],
+        display: ["Helvetica Neue", "Helvetica", "Arial Black", "var(--font-poppins)", "sans-serif"],
       },
       letterSpacing: {
         luxury: "0.35em",

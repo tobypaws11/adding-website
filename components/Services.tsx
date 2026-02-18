@@ -48,7 +48,7 @@ export function Services() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-white/40 leading-relaxed text-sm flex-1">{t(mod.descKey)}</p>
+                <p className="text-white/60 leading-relaxed text-sm flex-1">{t(mod.descKey)}</p>
 
                 {/* Footer */}
                 <div className="flex items-center gap-2 mt-6 pt-4 border-t border-white/5">

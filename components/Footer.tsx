@@ -27,7 +27,7 @@ export function Footer() {
             <p className="text-white/30 max-w-xl text-base md:text-lg font-light leading-relaxed tracking-tight-luxury">
               {t("footer.tagline")}
             </p>
-            <div className="space-y-3 text-sm text-white/40">
+            <div className="space-y-3 text-sm text-white/60">
               <div><a href="mailto:hola@addingagency.com?subject=Consulta%20desde%20addingagency.com" className="hover:text-primary transition-all">hola@addingagency.com</a></div>
               <div>
                 <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="hover:text-primary transition-all inline-flex items-center gap-2">
@@ -57,7 +57,7 @@ export function Footer() {
                 { title: t("svc.ai.title"), id: "svc-05" },
                 { title: t("svc.email.title"), id: "svc-06" },
               ].map((s) => (
-                <li key={s.id}><Link href={`/servicios#${s.id}`} className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{s.title}</Link></li>
+                <li key={s.id}><Link href={`/servicios#${s.id}`} className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{s.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -65,13 +65,13 @@ export function Footer() {
           <div className="lg:col-span-3 space-y-8 md:space-y-12">
             <h5 className="text-xs font-black uppercase tracking-[0.5em] text-white">{t("footer.empresa")}</h5>
             <ul className="space-y-4 md:space-y-6">
-              <li><Link href="/servicios" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.servicios")}</Link></li>
-              <li><Link href="/por-que-adding" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.porque")}</Link></li>
-              <li><Link href="/nosotros" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.nosotros")}</Link></li>
-              <li><Link href="/blog" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.blog")}</Link></li>
-              <li><Link href="/contacto" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("nav.contacto")}</Link></li>
-              <li><Link href="/terminos" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("footer.terms")}</Link></li>
-              <li><Link href="/privacidad" className="text-xs font-bold text-white/40 hover:text-primary tracking-luxury transition-all">{t("footer.privacy")}</Link></li>
+              <li><Link href="/servicios" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.servicios")}</Link></li>
+              <li><Link href="/por-que-adding" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.porque")}</Link></li>
+              <li><Link href="/nosotros" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.nosotros")}</Link></li>
+              <li><Link href="/blog" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.blog")}</Link></li>
+              <li><Link href="/contacto" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.contacto")}</Link></li>
+              <li><Link href="/terminos" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("footer.terms")}</Link></li>
+              <li><Link href="/privacidad" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("footer.privacy")}</Link></li>
             </ul>
           </div>
         </div>
