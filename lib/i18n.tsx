@@ -11,6 +11,7 @@ const translations: Translations = {
   "nav.servicios": { es: "SERVICIOS", en: "SERVICES" },
   "nav.porque": { es: "POR QUÉ ADDING", en: "WHY ADDING" },
   "nav.blog": { es: "BLOG", en: "BLOG" },
+  "nav.portfolio": { es: "PORTAFOLIO", en: "PORTFOLIO" },
   "nav.contacto": { es: "CONTACTO", en: "CONTACT" },
   "nav.hablemos": { es: "HABLEMOS", en: "LET'S TALK" },
 
@@ -55,6 +56,12 @@ const translations: Translations = {
   "svc.email.desc": { es: "Secuencias automatizadas, nutrición inteligente y newsletters que mantienen a tus prospectos comprometidos hasta que convierten.", en: "Automated sequences, intelligent nurturing, and newsletters that keep prospects engaged until they convert." },
   "svc.auto.title": { es: "Automatización", en: "Automation" },
   "svc.auto.desc": { es: "CRM, seguimientos, onboarding y flujos conectados que ahorran tiempo, reducen errores y escalan sin fricción.", en: "CRM, follow-ups, onboarding, and connected flows that save time, reduce errors, and scale without friction." },
+
+  // Portfolio
+  "portfolio.eyebrow": { es: "NUESTRO TRABAJO", en: "OUR WORK" },
+  "portfolio.title": { es: "Proyectos que hablan\npor sí solos.", en: "Projects that speak\nfor themselves." },
+  "portfolio.subtitle": { es: "Cada proyecto es un ecosistema digital diseñado para generar resultados reales.", en: "Every project is a digital ecosystem designed to generate real results." },
+  "portfolio.cta": { es: "¿Querés ser el próximo?", en: "Want to be next?" },
 
   // Why AdDing
   "why.label": { es: "POR QUÉ ADDING", en: "WHY ADDING" },

@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { LogosBar } from "@/components/LogosBar";
 import { Nav } from "@/components/Nav";
+import { PortfolioPreview } from "@/components/PortfolioPreview";
 import { Services } from "@/components/Services";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhyAdding } from "@/components/WhyAdding";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <main className="page-enter">
         <Hero />
         <LogosBar />
+        <PortfolioPreview />
         <Services />
         <WhyAdding />
         <Comparison />
