@@ -60,7 +60,7 @@ export function WhyAdding() {
           {/* Description */}
           <div className="lg:col-span-5 space-y-8 md:space-y-12">
             <div>
-              <span className="text-xs font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
+              <span className="text-sm font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
               <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6">{t("why.title")}</h2>
               <p className="text-white/40 text-base md:text-lg leading-relaxed mt-6 md:mt-8 font-light tracking-tight-luxury">
                 {t("why.subtitle")}
