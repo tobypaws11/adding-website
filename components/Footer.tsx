@@ -53,7 +53,7 @@ export function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-14 md:py-20">
 
         {/* Main grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-12 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-12 mb-10 md:mb-14 items-start">
 
           {/* Brand column */}
           <div className="lg:col-span-5 flex flex-col gap-6">
