@@ -27,7 +27,7 @@ export default function BlogPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-matte-black" />
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
             <span className="text-2xl font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6">{t("blog.title")}</h1>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mt-4 md:mt-6">{t("blog.title")}</h1>
             <p className="text-white/40 text-lg md:text-xl font-light max-w-2xl mx-auto mt-6 md:mt-8 leading-relaxed">
               {t("blog.p")}
             </p>
@@ -42,7 +42,7 @@ export default function BlogPage() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent-yellow/60 to-transparent" />
               <div className="absolute top-4 right-4 md:top-6 md:right-6 text-xs font-mono text-accent-yellow uppercase tracking-widest animate-pulse">STATUS: BUILDING</div>
               <div className="text-7xl md:text-9xl mb-8">🏗️</div>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-6">{t("blog.soon")}</h2>
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-6">{t("blog.soon")}</h2>
               <p className="text-white/40 text-base md:text-lg font-light leading-relaxed max-w-xl mx-auto">
                 {t("blog.p")}
               </p>

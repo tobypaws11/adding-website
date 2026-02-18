@@ -36,7 +36,7 @@ export function Hero() {
           <span className="text-xs font-mono tracking-widest uppercase text-gradient-animated">{t("hero.badge")}</span>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-6 md:mb-8 font-display">
+        <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tight mb-6 md:mb-8 font-display">
           {t("hero.h1.1")}<br />
           <span className="text-primary italic relative">
             <TypeWriter text={t("hero.h1.3")} delay={45} startDelay={800} />

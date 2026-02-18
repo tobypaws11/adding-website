@@ -11,7 +11,7 @@ export function BlogPreview() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="text-center mb-16 md:mb-24">
           <span className="text-2xl font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter mt-4 md:mt-6">{t("blog.title")}</h2>
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight mt-4 md:mt-6">{t("blog.title")}</h2>
         </div>
 
         <div className="max-w-3xl mx-auto text-center">

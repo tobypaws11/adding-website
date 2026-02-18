@@ -21,7 +21,7 @@ export function Services() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <Reveal className="text-center mb-16 md:mb-24">
           <span className="text-2xl font-black uppercase tracking-[0.4em] text-primary">{t("services.label")}</span>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight mt-4 md:mt-6">{t("services.title")}</h2>
           <p className="text-white/40 text-base md:text-lg font-light max-w-3xl mx-auto mt-4 leading-relaxed">{t("services.subtitle")}</p>
         </Reveal>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
