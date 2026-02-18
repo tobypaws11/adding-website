@@ -9,7 +9,7 @@ type Translations = Record<string, Record<Lang, string>>;
 const translations: Translations = {
   // Nav
   "nav.servicios": { es: "SERVICIOS", en: "SERVICES" },
-  "nav.porque": { es: "POR QUÉ AdDing", en: "WHY AdDing" },
+  "nav.porque": { es: "POR QUÉ ADDING", en: "WHY ADDING" },
   "nav.blog": { es: "BLOG", en: "BLOG" },
   "nav.contacto": { es: "CONTACTO", en: "CONTACT" },
   "nav.hablemos": { es: "HABLEMOS", en: "LET'S TALK" },
