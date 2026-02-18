@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
 const modules = [
@@ -23,20 +24,23 @@ export function Services() {
           <p className="text-white/40 text-base md:text-lg font-light max-w-3xl mx-auto mt-4 leading-relaxed">{t("services.subtitle")}</p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
-          {modules.map((mod, idx) => (
-            <div key={mod.code} className="component-module brushed-texture p-8 md:p-12 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 p-4 font-mono text-xs opacity-20">MOD_{String(idx + 1).padStart(2, "0")}</div>
-              <div className={`w-12 h-12 border ${mod.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8 md:mb-12`}>
-                <span className={`material-symbols-outlined ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{mod.icon}</span>
-              </div>
-              <h3 className="text-xl md:text-2xl font-black tracking-luxury mb-4 md:mb-6">{t(mod.titleKey)}</h3>
-              <p className="text-white/40 leading-relaxed text-sm mb-8 md:mb-12">{t(mod.descKey)}</p>
-              <div className="flex items-center justify-between mt-auto pt-6 md:pt-8 border-t border-white/5">
-                <span className="text-xs font-mono text-accent-yellow">STATUS: {mod.status}</span>
-                <span className="text-xs font-mono text-white/20">{mod.code}</span>
-              </div>
-            </div>
-          ))}
+          {modules.map((mod, idx) => {
+            const anchor = `/servicios#svc-${String(idx + 1).padStart(2, "0")}`;
+            return (
+              <Link key={mod.code} href={anchor} className="component-module brushed-texture p-8 md:p-12 relative overflow-hidden group block hover:border-primary/40 transition-all cursor-pointer">
+                <div className="absolute top-0 right-0 p-4 font-mono text-xs opacity-20">MOD_{String(idx + 1).padStart(2, "0")}</div>
+                <div className={`w-12 h-12 border ${mod.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8 md:mb-12`}>
+                  <span className={`material-symbols-outlined ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{mod.icon}</span>
+                </div>
+                <h3 className="text-xl md:text-2xl font-black tracking-luxury mb-4 md:mb-6 group-hover:text-primary transition-colors">{t(mod.titleKey)}</h3>
+                <p className="text-white/40 leading-relaxed text-sm mb-8 md:mb-12">{t(mod.descKey)}</p>
+                <div className="flex items-center justify-between mt-auto pt-6 md:pt-8 border-t border-white/5">
+                  <span className="text-xs font-mono text-accent-yellow">STATUS: {mod.status}</span>
+                  <span className="text-xs font-mono text-white/20 group-hover:text-primary/40 transition-colors">VER MÁS →</span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
