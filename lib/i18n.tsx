@@ -52,7 +52,7 @@ const translations: Translations = {
   "svc.leads.title": { es: "Ecosistemas de leads", en: "Lead ecosystems" },
   "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. Nada de campañas aisladas, solo sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. No isolated campaigns, just predictable growth systems." },
   "svc.email.title": { es: "Email marketing y newsletter", en: "Email marketing & newsletter" },
-  "svc.email.desc": { es: "Secuencias automatizadas, nutrición inteligente y newsletters que mantienen a tus prospectos comprometidos hasta la conversión.", en: "Automated sequences, intelligent nurturing, and newsletters that keep prospects engaged until conversion." },
+  "svc.email.desc": { es: "Secuencias automatizadas, nutrición inteligente y newsletters que mantienen a tus prospectos comprometidos hasta que convierten.", en: "Automated sequences, intelligent nurturing, and newsletters that keep prospects engaged until they convert." },
   "svc.auto.title": { es: "Automatización", en: "Automation" },
   "svc.auto.desc": { es: "CRM, seguimientos, onboarding y flujos conectados que ahorran tiempo, reducen errores y escalan sin fricción.", en: "CRM, follow-ups, onboarding, and connected flows that save time, reduce errors, and scale without friction." },
 
@@ -90,7 +90,7 @@ const translations: Translations = {
   "guarantee.1.title": { es: "Equipo especializado", en: "Specialized team" },
   "guarantee.1.desc": { es: "Expertos en marketing digital, automatización y generación de leads para negocios B2B y B2C.", en: "Experts in digital marketing, automation, and lead generation for B2B and B2C businesses." },
   "guarantee.2.title": { es: "Proceso transparente", en: "Transparent process" },
-  "guarantee.2.desc": { es: "Dashboard en tiempo real donde verás exactamente de dónde vienen tus leads y cuáles convierten mejor.", en: "Real-time dashboard where you'll see exactly where your leads come from and which convert best." },
+  "guarantee.2.desc": { es: "Dashboard en tiempo real donde vas a ver exactamente de dónde vienen tus leads y cuáles convierten mejor.", en: "Real-time dashboard where you'll see exactly where your leads come from and which convert best." },
   "guarantee.3.title": { es: "Optimización continua", en: "Continuous optimization" },
   "guarantee.3.desc": { es: "Análisis semanal de métricas y ajustes estratégicos para mejorar resultados mes tras mes.", en: "Weekly metrics analysis and strategic adjustments to improve results month after month." },
   "guarantee.4.title": { es: "Comunicación constante", en: "Constant communication" },
@@ -128,7 +128,7 @@ const translations: Translations = {
   },
   "faq.q3": { es: "¿Pueden ayudarme aunque no tenga equipo interno?", en: "Can you help me even without an internal team?" },
   "faq.a3": {
-    es: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica para que podás avanzar sin fricción. Estrategia, contenido, ads, CRM, email, todo incluido.",
+    es: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica para que puedas avanzar sin fricción. Estrategia, contenido, ads, CRM, email, todo incluido.",
     en: "Yes. We integrate as your external marketing, execution, and analytics team so you can move forward without friction. Strategy, content, ads, CRM, email, all included."
   },
 
