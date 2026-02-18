@@ -59,8 +59,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        width: 2048,
+        height: 2048,
         alt: "AdDing Agency - Agencia digital y de IA en Costa Rica"
       }
     ]
@@ -185,11 +185,18 @@ export default function RootLayout({
   return (
     <html lang="es-CR" className="dark">
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        {/* Favicon */}
+        <link rel="icon" href="/logos/logo-icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/logos/logo-icon.svg" />
+        {/* Robots */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        {/* Geo */}
         <meta name="geo.region" content="CR-H" />
         <meta name="geo.placename" content="Heredia, Costa Rica" />
         <meta name="geo.position" content="9.9977;-84.1173" />
         <meta name="ICBM" content="9.9977, -84.1173" />
+        {/* Fonts */}
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className={`${poppins.variable} ${jetbrains.variable} font-sans`}>
 
