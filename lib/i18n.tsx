@@ -15,16 +15,16 @@ const translations: Translations = {
   "nav.hablemos": { es: "HABLEMOS", en: "LET'S TALK" },
 
   // Hero
-  "hero.badge": { es: "Agencia IA en Costa Rica", en: "AI Agency in Costa Rica" },
-  "hero.h1.1": { es: "INGENIERÍA", en: "ENGINEERING" },
+  "hero.badge": { es: "Agencia digital con IA · Costa Rica", en: "AI-Powered Digital Agency · Costa Rica" },
+  "hero.h1.1": { es: "CRECIMIENTO", en: "DIGITAL" },
   "hero.h1.2": { es: "", en: "" },
-  "hero.h1.3": { es: "SUPERIOR", en: "SUPERIORITY" },
+  "hero.h1.3": { es: "DIGITAL", en: "GROWTH" },
   "hero.p": {
-    es: "Eliminá la entropía presupuestaria con integración de datos de alta fidelidad. Diseñado para rendimiento a escala industrial y visibilidad radical.",
-    en: "Eliminate budget entropy through high-fidelity data stitching. Designed for industrial-scale performance and radical visibility."
+    es: "Construimos el ecosistema digital que convierte prospectos en clientes leales. Más leads, más ventas, más retención: todo conectado, todo automatizado.",
+    en: "We build the digital ecosystem that turns prospects into loyal customers. More leads, more sales, more retention: all connected, all automated."
   },
-  "hero.cta": { es: "INICIAR ARQUITECTURA", en: "INITIALIZE ARCHITECTURE" },
-  "hero.link": { es: "DOCUMENTACIÓN TÉCNICA", en: "TECHNICAL DOCS" },
+  "hero.cta": { es: "AGENDÁ TU LLAMADA GRATIS", en: "BOOK YOUR FREE CALL" },
+  "hero.link": { es: "CONOCÉ NUESTROS SERVICIOS", en: "EXPLORE OUR SERVICES" },
   "hero.flywheel.title": { es: "Tu Flywheel de crecimiento", en: "Your Growth Flywheel" },
   "hero.flywheel.sub": { es: "Ecosistema automatizado", en: "Automated ecosystem" },
   "hero.flywheel.each": { es: "Cada etapa alimenta la siguiente: crecimiento continuo", en: "Each stage feeds the next: continuous growth" },
