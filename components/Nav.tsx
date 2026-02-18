@@ -22,14 +22,14 @@ export function Nav() {
         <Link href="/" className="inline-flex shrink-0 items-center" aria-label="AdDing Agency">
           <img src="/logos/logo-icon.svg" alt="AdDing" className="h-10 w-auto md:h-12" />
         </Link>
-        <div className="hidden lg:flex items-center gap-12 xl:gap-16">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-10">
           {links.map((link) =>
             link.href.startsWith("#") ? (
-              <a key={link.href} href={link.href} className="text-sm font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              <a key={link.href} href={link.href} className="text-sm font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all whitespace-nowrap">
                 {link.label}
               </a>
             ) : (
-              <Link key={link.href} href={link.href} className="text-sm font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              <Link key={link.href} href={link.href} className="text-sm font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all whitespace-nowrap">
                 {link.label}
               </Link>
             )
