@@ -27,7 +27,7 @@ const projects = [
     year: "2025",
     tagline: "Sitio web de alta gama para mueblería de diseño",
     tags: ["Next.js", "Diseño Web", "Lead Gen"],
-    url: "#",
+    url: "https://mdm.cr/",
     screenshot: "/portfolio/mdm.jpg",
     status: "live",
   },
@@ -38,7 +38,7 @@ const projects = [
     year: "2025",
     tagline: "El directorio de eventos número uno de Costa Rica",
     tags: ["Plataforma", "Eventos", "Monetización"],
-    url: "https://eventicos.cr",
+    url: "https://eventicos.net",
     screenshot: "/portfolio/eventicos.jpg",
     status: "live",
   },
@@ -49,7 +49,7 @@ const projects = [
     year: "2026",
     tagline: "Control de plagas profesional — presencia digital impecable",
     tags: ["Diseño Web", "Branding Digital"],
-    url: "#",
+    url: "https://trumix.net/",
     screenshot: "/portfolio/trumix.jpg",
     status: "live",
   },
@@ -140,22 +140,39 @@ export default function PortafolioPage() {
               <Reveal key={project.id} delay={(i % 3) * 100 as 0 | 100 | 200}>
                 <div className="group relative card-glow bg-white/[0.02] border border-white/5 overflow-hidden transition-all duration-500 hover:border-primary/30">
                   {/* Image */}
-                  <div className="relative aspect-video overflow-hidden">
-                    <Image
-                      src={project.screenshot}
-                      alt={project.name}
-                      width={1200}
-                      height={675}
-                      loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    {/* Blue overlay on hover */}
-                    <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-500 flex items-center justify-center">
-                      <span className="text-white font-bold text-sm tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        Ver proyecto →
-                      </span>
+                  {project.status === "live" && project.url !== "#" ? (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="block relative aspect-video overflow-hidden">
+                      <Image
+                        src={project.screenshot}
+                        alt={project.name}
+                        width={1200}
+                        height={675}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/80 transition-all duration-500 flex items-center justify-center">
+                        <span className="text-white font-bold text-sm tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          Ver proyecto →
+                        </span>
+                      </div>
+                    </a>
+                  ) : (
+                    <div className="relative aspect-video overflow-hidden">
+                      <Image
+                        src={project.screenshot}
+                        alt={project.name}
+                        width={1200}
+                        height={675}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-accent-yellow/0 group-hover:bg-accent-yellow/10 transition-all duration-500 flex items-center justify-center">
+                        <span className="text-accent-yellow font-bold text-sm tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                          En Desarrollo
+                        </span>
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* Content */}
                   <div className="p-6">
