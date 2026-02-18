@@ -16,9 +16,9 @@ const projects = [
     year: "2025",
     tagline: "Directorio creativo para fotógrafos y realizadores en Costa Rica",
     tags: ["Next.js", "Marketplace", "UX/UI"],
-    url: "https://iris-studio-three.vercel.app",
+    url: "#",
     screenshot: "/portfolio/iris-studio.jpg",
-    status: "live",
+    status: "development",
   },
   {
     id: "mdm",

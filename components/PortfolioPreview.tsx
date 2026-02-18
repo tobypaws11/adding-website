@@ -11,7 +11,7 @@ const featured = [
     category: "Marketplace",
     tagline: "Directorio creativo para fotógrafos y realizadores en Costa Rica",
     screenshot: "/portfolio/iris-studio.jpg",
-    url: "https://iris-studio-three.vercel.app",
+    url: "#",
   },
   {
     id: "mdm",
