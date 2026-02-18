@@ -27,6 +27,9 @@ const siteDescription =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "iV7BVvS-5bOM47ekOfOnnPjpEe1b0VSxZOuaSQ8FgdU",
+  },
   title: {
     default: siteTitle,
     template: "%s | AdDing Agency"
