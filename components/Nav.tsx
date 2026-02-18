@@ -25,11 +25,11 @@ export function Nav() {
         <div className="hidden lg:flex items-center gap-12 xl:gap-16">
           {links.map((link) =>
             link.href.startsWith("#") ? (
-              <a key={link.href} href={link.href} className="text-xs font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              <a key={link.href} href={link.href} className="text-sm font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
                 {link.label}
               </a>
             ) : (
-              <Link key={link.href} href={link.href} className="text-xs font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
+              <Link key={link.href} href={link.href} className="text-sm font-bold tracking-luxury opacity-40 hover:opacity-100 hover:text-primary transition-all">
                 {link.label}
               </Link>
             )
@@ -54,16 +54,16 @@ export function Nav() {
         <div className="lg:hidden border-t border-white/5 bg-matte-black/95 backdrop-blur-xl px-6 py-6 space-y-4">
           {links.map((link) =>
             link.href.startsWith("#") ? (
-              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury text-white/60 hover:text-primary transition-all">
+              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-sm font-bold tracking-luxury text-white/60 hover:text-primary transition-all">
                 {link.label}
               </a>
             ) : (
-              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury text-white/60 hover:text-primary transition-all">
+              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="block text-sm font-bold tracking-luxury text-white/60 hover:text-primary transition-all">
                 {link.label}
               </Link>
             )
           )}
-          <Link href="/contacto" onClick={() => setMenuOpen(false)} className="block text-xs font-bold tracking-luxury text-primary">
+          <Link href="/contacto" onClick={() => setMenuOpen(false)} className="block text-sm font-bold tracking-luxury text-primary">
             {t("nav.hablemos")}
           </Link>
         </div>
