@@ -186,8 +186,8 @@ export default function RootLayout({
     <html lang="es-CR" className="dark">
       <head>
         {/* Favicon */}
-        <link rel="icon" href="/logos/logo-icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/logos/logo-icon.svg" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         {/* Robots */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         {/* Geo */}
