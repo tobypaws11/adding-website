@@ -76,7 +76,7 @@ export default function WhyAddingPage() {
                   </div>
                 ))}
               </div>
-              <div className="text-center mt-8 text-xs font-mono text-accent-yellow uppercase tracking-widest">
+              <div className="text-center mt-8 text-sm font-mono text-accent-yellow uppercase tracking-widest">
                 {t("hero.flywheel.each")}
               </div>
             </div>
@@ -118,9 +118,9 @@ export default function WhyAddingPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
               {steps.map((step, idx) => (
                 <div key={step.key} className="relative border border-white/10 bg-carbon-gray p-8 md:p-12 group hover:border-primary/30 transition-all">
-                  <div className={`text-5xl md:text-6xl font-black ${step.color === "accent-yellow" ? "text-accent-yellow/20" : "text-primary/20"} mb-6`}>{step.num}</div>
-                  <h4 className="text-lg font-black tracking-widest mb-3">{t(`whypage.${step.key}.title`)}</h4>
-                  <p className="text-white/40 text-sm leading-relaxed">{t(`whypage.${step.key}.desc`)}</p>
+                  <div className={`text-5xl md:text-6xl font-black ${step.color === "accent-yellow" ? "text-accent-yellow/40" : "text-primary/40"} mb-6`}>{step.num}</div>
+                  <h4 className="text-lg font-black mb-3">{t(`whypage.${step.key}.title`)}</h4>
+                  <p className="text-white/60 text-base leading-relaxed">{t(`whypage.${step.key}.desc`)}</p>
                   {idx < 3 && (
                     <div className="hidden lg:block absolute -right-6 top-1/2 -translate-y-1/2 text-white/10 text-2xl z-10">→</div>
                   )}
