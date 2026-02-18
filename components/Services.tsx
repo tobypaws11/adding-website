@@ -32,14 +32,14 @@ export function Services() {
               <Reveal key={mod.titleKey} variant="scale" delay={delays[idx % 6]}>
               <Link
                 href={anchor}
-                className="group flex flex-col border border-white/8 bg-white/2 hover:border-primary/30 hover:bg-primary/3 transition-all duration-300 p-8 md:p-10 h-full"
+                className="group flex flex-col border border-white/8 bg-white/2 hover:border-primary/30 hover:bg-primary/3 transition-all duration-300 p-6 md:p-10 h-full card-glow neon-scan"
               >
                 {/* Icon + tag row */}
                 <div className="flex items-start justify-between mb-6 md:mb-8">
                   <div className={`w-12 h-12 border ${mod.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center`}>
                     <span className={`material-symbols-outlined text-xl ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{mod.icon}</span>
                   </div>
-                  <span className={`text-[10px] font-black tracking-[0.3em] ${mod.color === "accent-yellow" ? "text-accent-yellow/50" : "text-primary/50"}`}>{mod.tag}</span>
+                  <span className={`text-xs font-black tracking-[0.3em] ${mod.color === "accent-yellow" ? "text-accent-yellow/50" : "text-primary/50"}`}>{mod.tag}</span>
                 </div>
 
                 {/* Title */}

@@ -83,14 +83,14 @@ export function Footer() {
         </div>
 
         <div className="pt-8 md:pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
-          <div className="text-xs text-white/30 text-center md:text-left">
-            © {new Date().getFullYear()} CINTA MK FUTURISTA LIMITADA · {t("footer.derechos")}
+          <div className="text-xs font-mono tracking-wider text-white/30 text-center md:text-left">
+            © {new Date().getFullYear()} CINTA MK FUTURISTA LIMITADA · CED. 3-102-862791 · {t("footer.derechos")}
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/terminos" className="text-xs text-white/30 hover:text-primary transition-colors">
+            <Link href="/terminos" className="text-xs font-mono tracking-wider text-white/30 hover:text-primary transition-colors">
               {lang === "es" ? "Términos y condiciones" : "Terms & Conditions"}
             </Link>
-            <Link href="/privacidad" className="text-xs text-white/30 hover:text-primary transition-colors">
+            <Link href="/privacidad" className="text-xs font-mono tracking-wider text-white/30 hover:text-primary transition-colors">
               {lang === "es" ? "Privacidad" : "Privacy"}
             </Link>
           </div>

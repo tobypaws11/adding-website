@@ -22,7 +22,7 @@ export default function ContactoPage() {
   return (
     <>
       <Nav />
-      <main className="pt-20">
+      <main className="pt-20 page-enter">
         {/* Hero */}
         <section className="relative py-24 md:py-40 overflow-hidden">
           <div className="absolute inset-0 grid-tech opacity-10" />

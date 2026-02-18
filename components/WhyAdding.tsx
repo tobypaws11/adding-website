@@ -11,8 +11,8 @@ export function WhyAdding() {
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-12 gap-12 md:gap-24 items-center">
           {/* Terminal */}
-          <div className="lg:col-span-7">
-            <div className="bg-matte-black border border-white/10 shadow-2xl overflow-hidden relative">
+          <Reveal variant="left" threshold={0.1} className="lg:col-span-7">
+            <div className="bg-matte-black border border-white/10 shadow-2xl overflow-hidden relative card-glow">
               <div className="h-10 bg-industrial-gray border-b border-white/10 flex items-center px-4 md:px-6 justify-between">
                 <div className="flex gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-red-500/20 border border-red-500/40" />
@@ -56,10 +56,10 @@ export function WhyAdding() {
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* Description */}
-          <Reveal variant="left" className="lg:col-span-5 space-y-8 md:space-y-12">
+          <Reveal variant="right" className="lg:col-span-5 space-y-8 md:space-y-12">
             <div>
               <span className="text-2xl font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
               <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6">{t("why.title")}</h2>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+import { TypeWriter } from "@/components/TypeWriter";
 
 export function Hero() {
   const { t } = useI18n();
@@ -12,11 +13,13 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-matte-black/50 to-matte-black" />
 
       {/* Animated orb */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[700px] md:h-[700px] pointer-events-none opacity-30">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[700px] md:h-[700px] pointer-events-none opacity-30">
         <div className="w-full h-full relative">
           <div className="absolute inset-0 stitch-core-glass rounded-full animate-pulse" style={{ animationDuration: "8s" }} />
           <div className="absolute inset-10 border border-primary/20 rounded-full animate-spin" style={{ animationDuration: "20s" }} />
           <div className="absolute inset-20 border-t-2 border-primary/40 rounded-full animate-spin" style={{ animationDuration: "10s", animationDirection: "reverse" }} />
+          <div className="absolute inset-32 border border-primary/10 rounded-full animate-orb-ring" style={{ animationDelay: "1s" }} />
+          <div className="absolute -inset-8 border border-primary/5 rounded-full animate-pulse" style={{ animationDuration: "12s" }} />
         </div>
       </div>
 
@@ -24,19 +27,19 @@ export function Hero() {
 
         {/* Logo */}
         <div className="mb-6 md:mb-10 animate-float">
-          <img src="/logos/logo-full.svg" alt="AdDing Agency" className="h-40 sm:h-48 md:h-56 w-auto mx-auto" />
+          <img src="/logos/logo-full.svg" alt="AdDing Agency" className="h-40 sm:h-48 md:h-56 w-auto mx-auto" fetchPriority="high" decoding="async" />
         </div>
 
         {/* Agency badge */}
         <div className="inline-flex items-center gap-3 mb-10 md:mb-14 px-5 py-2 border border-primary/20 bg-primary/5 backdrop-blur-md">
           <span className="w-1.5 h-1.5 bg-primary rounded-full shadow-[0_0_8px_#008FF0] animate-pulse" />
-          <span className="text-xs font-mono tracking-widest text-primary uppercase">{t("hero.badge")}</span>
+          <span className="text-xs font-mono tracking-widest uppercase text-gradient-animated">{t("hero.badge")}</span>
         </div>
 
         <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-6 md:mb-8 font-display">
           {t("hero.h1.1")}<br />
           <span className="text-primary italic relative">
-            {t("hero.h1.3")}
+            <TypeWriter text={t("hero.h1.3")} delay={45} startDelay={800} />
             <span className="absolute -bottom-2 md:-bottom-4 left-0 w-1/3 h-[2px] bg-primary/50" />
           </span>
         </h1>
@@ -63,6 +66,14 @@ export function Hero() {
             <div className="w-8 h-px bg-white/20 group-hover:w-14 transition-all group-hover:bg-primary" />
           </Link>
         </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 opacity-40 animate-bounce" aria-hidden="true">
+        <span className="text-[10px] font-mono tracking-[0.3em] text-white uppercase">Scroll</span>
+        <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+        </svg>
       </div>
     </section>
   );

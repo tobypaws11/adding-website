@@ -20,7 +20,7 @@ const jetbrains = JetBrains_Mono({
 const siteUrl = "https://www.addingagency.com";
 const siteTitle = "AdDing Agency | Agencia de Marketing Digital e IA en Costa Rica";
 const siteDescription =
-  "AdDing Agency impulsa PYMES en Costa Rica con diseño web, SEO, branding, video, automatización y agentes de IA orientados a resultados medibles.";
+  "AdDing Agency es una agencia digital con IA en Heredia, Costa Rica. Creamos ecosistemas digitales — diseño web, SEO, automatización y agentes de IA — para PYMES que quieren crecer de forma medible.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -31,15 +31,24 @@ export const metadata: Metadata = {
   description: siteDescription,
   keywords: [
     "agencia digital Costa Rica",
+    "agencia digital Heredia",
     "marketing digital para PYMES",
+    "marketing digital San José Costa Rica",
     "agentes de IA",
+    "agentes de inteligencia artificial",
+    "agencia de IA Costa Rica",
     "SEO Costa Rica",
     "diseño web en Costa Rica",
-    "automatización para negocios"
+    "diseño web Heredia Costa Rica",
+    "automatización para negocios",
+    "automatización empresarial Costa Rica",
+    "generación de leads Costa Rica",
+    "PYMES Costa Rica marketing",
   ],
   openGraph: {
     type: "website",
     locale: "es_CR",
+    alternateLocale: ["en_US"],
     url: siteUrl,
     title: siteTitle,
     description: siteDescription,
@@ -60,7 +69,11 @@ export const metadata: Metadata = {
     images: ["/og-image.png"]
   },
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    languages: {
+      "es-CR": "/",
+      "en": "/"
+    }
   }
 };
 
@@ -79,7 +92,13 @@ export default function RootLayout({
         url: "https://www.addingagency.com",
         logo: "https://www.addingagency.com/logos/logo-adding-negro.svg",
         sameAs: [
-          "https://wa.me/50670136366"
+          "https://www.linkedin.com/company/addingagencydotcom",
+          "https://www.instagram.com/addingagencydotcom/",
+          "https://www.facebook.com/addingagencydotcom/",
+          "https://x.com/AdDingAgencydot",
+          "https://www.youtube.com/channel/UC_-MOkVciT3NcvtKmUG22Lw",
+          "https://www.tiktok.com/@addingagencydotcom",
+          "https://www.pinterest.com/addingagencydotcom/"
         ],
         contactPoint: {
           "@type": "ContactPoint",
@@ -100,8 +119,9 @@ export default function RootLayout({
         telephone: "+50670136366",
         address: {
           "@type": "PostalAddress",
-          addressCountry: "CR",
-          addressRegion: "San Jose"
+          addressLocality: "Heredia",
+          addressRegion: "Heredia",
+          addressCountry: "CR"
         },
         areaServed: "Costa Rica",
         url: "https://www.addingagency.com"
@@ -163,6 +183,10 @@ export default function RootLayout({
     <html lang="es-CR" className="dark">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <meta name="geo.region" content="CR-H" />
+        <meta name="geo.placename" content="Heredia, Costa Rica" />
+        <meta name="geo.position" content="9.9977;-84.1173" />
+        <meta name="ICBM" content="9.9977, -84.1173" />
       </head>
       <body className={`${poppins.variable} ${jetbrains.variable} font-sans`}>
         <Providers>{children}</Providers>
