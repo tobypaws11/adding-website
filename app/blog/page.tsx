@@ -26,7 +26,7 @@ export default function BlogPage() {
           <div className="absolute inset-0 grid-tech opacity-10" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-matte-black" />
           <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 text-center">
-            <span className="text-base font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
+            <span className="text-2xl font-black uppercase tracking-[0.4em] text-primary">{t("blog.label")}</span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mt-4 md:mt-6">{t("blog.title")}</h1>
             <p className="text-white/40 text-lg md:text-xl font-light max-w-2xl mx-auto mt-6 md:mt-8 leading-relaxed">
               {t("blog.p")}
@@ -50,7 +50,7 @@ export default function BlogPage() {
 
             {/* Categories preview */}
             <div className="mb-16 md:mb-24">
-              <h3 className="text-center text-base font-black uppercase tracking-[0.4em] text-primary mb-12">{t("blog.categories")}</h3>
+              <h3 className="text-center text-2xl font-black uppercase tracking-[0.4em] text-primary mb-12">{t("blog.categories")}</h3>
               <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 {categories.map((cat) => (
                   <div key={cat.key} className="component-module brushed-texture p-6 md:p-8 text-center group cursor-default">
