@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 155" fill="none" stroke="#c9b99a" stroke-width="1.5" stroke-linecap="round">
+  <line x1="30" y1="80" x2="170" y2="80" />
+  <path d="M 65 80 A 35 35 0 0 1 135 80" />
+  <line x1="100" y1="40" x2="100" y2="22" />
+  <line x1="84" y1="44" x2="78" y2="28" />
+  <line x1="116" y1="44" x2="122" y2="28" />
+  <line x1="70" y1="54" x2="60" y2="42" />
+  <line x1="130" y1="54" x2="140" y2="42" />
+  <line x1="58" y1="67" x2="46" y2="58" />
+  <line x1="142" y1="67" x2="154" y2="58" />
+  <path d="M 50 88 Q 65 83 80 88 Q 95 93 110 88 Q 125 83 140 88" />
+  <path d="M 60 96 Q 75 91 90 96 Q 105 101 120 96 Q 135 91 150 96" />
+  <text x="100" y="122" text-anchor="middle" fill="#c9b99a" stroke="none" font-family="serif" font-size="13" letter-spacing="0.45em" font-weight="400">VILLA SOLSTICE</text>
+  <text x="100" y="140" text-anchor="middle" fill="#c9b99a" stroke="none" font-family="sans-serif" font-size="5.5" letter-spacing="0.55em" opacity="0.5">HACIENDA PINILLA • GUANACASTE</text>
+</svg>

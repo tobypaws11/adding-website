@@ -2,6 +2,26 @@
 
 import { useI18n } from "@/lib/i18n";
 
+function VillaSolsticeLogo() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 155" fill="none" stroke="#c9b99a" strokeWidth="1.5" strokeLinecap="round" className="h-14 md:h-16 w-auto shrink-0 opacity-70 hover:opacity-100 transition-opacity">
+      <line x1="30" y1="80" x2="170" y2="80" />
+      <path d="M 65 80 A 35 35 0 0 1 135 80" />
+      <line x1="100" y1="40" x2="100" y2="22" />
+      <line x1="84" y1="44" x2="78" y2="28" />
+      <line x1="116" y1="44" x2="122" y2="28" />
+      <line x1="70" y1="54" x2="60" y2="42" />
+      <line x1="130" y1="54" x2="140" y2="42" />
+      <line x1="58" y1="67" x2="46" y2="58" />
+      <line x1="142" y1="67" x2="154" y2="58" />
+      <path d="M 50 88 Q 65 83 80 88 Q 95 93 110 88 Q 125 83 140 88" />
+      <path d="M 60 96 Q 75 91 90 96 Q 105 101 120 96 Q 135 91 150 96" />
+      <text x="100" y="122" textAnchor="middle" fill="#c9b99a" stroke="none" fontFamily="serif" fontSize="13" letterSpacing="0.45em" fontWeight="400">VILLA SOLSTICE</text>
+      <text x="100" y="140" textAnchor="middle" fill="#c9b99a" stroke="none" fontFamily="sans-serif" fontSize="5.5" letterSpacing="0.55em" opacity="0.5">HACIENDA PINILLA • GUANACASTE</text>
+    </svg>
+  );
+}
+
 // Eventicos inline SVG — must be inline (not <img src=.svg>) so web fonts load
 function EventicosLogo() {
   return (
@@ -27,7 +47,8 @@ const clients: Client[] = [
   { name: "Trumix",         img: "/clients/trumix.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
   { name: "Iris Studio",    img: "/clients/iris.png",   imgClass: "h-20 md:h-24 w-auto object-contain" },
   { name: "Eventicos",      inline: true },
-  // Villa Solstice & Ezelandscape — logos pendientes, hidden for now
+  { name: "Villa Solstice", inline: true },
+  // Ezelandscape — logo pendiente
 ];
 
 export function LogosBar() {
@@ -43,6 +64,7 @@ export function LogosBar() {
       <div className="relative overflow-hidden">
         <div className="flex items-center animate-scroll gap-12 md:gap-20 w-max">
           {repeated.map((client, i) => {
+            if (client.inline && client.name === "Villa Solstice") return <VillaSolsticeLogo key={`${client.name}-${i}`} />;
             if (client.inline) return <EventicosLogo key={`${client.name}-${i}`} />;
             if (client.img) return (
               <img
