@@ -12,7 +12,7 @@ const clients: Client[] = [
   { name: "MDM Mobiliario", img: "/clients/mdm.jpg", imgClass: "h-14 md:h-16 w-auto object-contain rounded" },
   { name: "Trumix", img: "/clients/trumix.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
   { name: "Iris Studio", img: "/clients/iris.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
-  { name: "Eventicos" },
+  { name: "Eventicos", img: "/clients/eventicos.svg", imgClass: "h-8 md:h-10 w-auto object-contain" },
   { name: "Villa Solstice" },
   { name: "Ezelandscape" },
 ];

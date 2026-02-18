@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50" fill="none">
+  <text x="0" y="38" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="600" letter-spacing="-0.02em" fill="#ffffff">eventicos</text>
+  <g transform="translate(107, 2)">
+    <path d="M4 0 L4.8 3.2 L8 4 L4.8 4.8 L4 8 L3.2 4.8 L0 4 L3.2 3.2 Z" fill="#d4a843"/>
+    <path d="M10 1 L10.4 2.4 L11.8 2.8 L10.4 3.2 L10 4.6 L9.6 3.2 L8.2 2.8 L9.6 2.4 Z" fill="#d4a843" opacity="0.6"/>
+  </g>
+</svg>
