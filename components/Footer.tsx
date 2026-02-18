@@ -14,7 +14,7 @@ const socials = [
 ];
 
 export function Footer() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   return (
     <footer id="contact" className="bg-matte-black pt-24 md:pt-48 pb-12 md:pb-24 border-t border-white/5 relative">
@@ -46,42 +46,53 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-3 space-y-8 md:space-y-12">
+          <div className="lg:col-span-3 space-y-6">
             <h5 className="text-xs font-black uppercase tracking-[0.5em] text-white">{t("footer.servicios")}</h5>
-            <ul className="space-y-4 md:space-y-6">
+            <ul className="space-y-3">
               {[
                 { title: t("svc.leads.title"), id: "svc-01" },
-                { title: t("svc.auto.title"), id: "svc-02" },
-                { title: t("svc.seo.title"), id: "svc-03" },
-                { title: t("svc.web.title"), id: "svc-04" },
-                { title: t("svc.ai.title"), id: "svc-05" },
+                { title: t("svc.auto.title"),  id: "svc-02" },
+                { title: t("svc.seo.title"),   id: "svc-03" },
+                { title: t("svc.web.title"),   id: "svc-04" },
+                { title: t("svc.ai.title"),    id: "svc-05" },
                 { title: t("svc.email.title"), id: "svc-06" },
               ].map((s) => (
-                <li key={s.id}><Link href={`/servicios#${s.id}`} className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{s.title}</Link></li>
+                <li key={s.id}>
+                  <Link href={`/servicios#${s.id}`} className="text-sm text-white/60 hover:text-primary transition-colors">{s.title}</Link>
+                </li>
               ))}
             </ul>
           </div>
 
-          <div className="lg:col-span-3 space-y-8 md:space-y-12">
+          <div className="lg:col-span-3 space-y-6">
             <h5 className="text-xs font-black uppercase tracking-[0.5em] text-white">{t("footer.empresa")}</h5>
-            <ul className="space-y-4 md:space-y-6">
-              <li><Link href="/servicios" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.servicios")}</Link></li>
-              <li><Link href="/por-que-adding" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.porque")}</Link></li>
-              <li><Link href="/nosotros" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.nosotros")}</Link></li>
-              <li><Link href="/blog" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.blog")}</Link></li>
-              <li><Link href="/contacto" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("nav.contacto")}</Link></li>
-              <li><Link href="/terminos" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("footer.terms")}</Link></li>
-              <li><Link href="/privacidad" className="text-sm font-medium text-white/60 hover:text-primary transition-colors transition-all">{t("footer.privacy")}</Link></li>
+            <ul className="space-y-3">
+              {[
+                { href: "/servicios",     label: lang === "es" ? "Servicios" : "Services" },
+                { href: "/por-que-adding",label: lang === "es" ? "Por qué AdDing" : "Why AdDing" },
+                { href: "/nosotros",      label: lang === "es" ? "Nosotros" : "About" },
+                { href: "/blog",          label: "Blog" },
+                { href: "/contacto",      label: lang === "es" ? "Contacto" : "Contact" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-sm text-white/60 hover:text-primary transition-colors">{item.label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 md:pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12">
-          <div className="text-xs font-mono text-white/20 uppercase tracking-[0.3em] text-center md:text-left">
-            © {new Date().getFullYear()} CINTA MK FUTURISTA LIMITADA · CED. 3-102-862791
+        <div className="pt-8 md:pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
+          <div className="text-xs text-white/30 text-center md:text-left">
+            © {new Date().getFullYear()} CINTA MK FUTURISTA LIMITADA · {t("footer.derechos")}
           </div>
-          <div className="text-xs font-mono text-white/20 uppercase tracking-[0.3em]">
-            {t("footer.creado")} <a href="https://www.addingagency.com" className="text-primary hover:text-white transition-colors">AdDing Agency</a>
+          <div className="flex items-center gap-6">
+            <Link href="/terminos" className="text-xs text-white/30 hover:text-primary transition-colors">
+              {lang === "es" ? "Términos y condiciones" : "Terms & Conditions"}
+            </Link>
+            <Link href="/privacidad" className="text-xs text-white/30 hover:text-primary transition-colors">
+              {lang === "es" ? "Privacidad" : "Privacy"}
+            </Link>
           </div>
         </div>
       </div>
