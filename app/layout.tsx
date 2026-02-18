@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 2048,
-        height: 2048,
-        alt: "AdDing Agency - Agencia digital y de IA en Costa Rica"
+        width: 1200,
+        height: 630,
+        alt: "AdDing Agency - Agencia de Marketing Digital e IA en Costa Rica"
       }
     ]
   },
