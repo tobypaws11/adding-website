@@ -4,7 +4,7 @@ import { useI18n } from "@/lib/i18n";
 
 function VillaSolsticeLogo() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 155" fill="none" stroke="#c9b99a" strokeWidth="1.5" strokeLinecap="round" className="h-14 md:h-16 w-auto shrink-0 opacity-70 hover:opacity-100 transition-opacity">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 155" fill="none" stroke="#c9b99a" strokeWidth="1.5" strokeLinecap="round" className="h-16 md:h-20 w-auto shrink-0 opacity-70 hover:opacity-100 transition-opacity">
       <line x1="30" y1="80" x2="170" y2="80" />
       <path d="M 65 80 A 35 35 0 0 1 135 80" />
       <line x1="100" y1="40" x2="100" y2="22" />
@@ -43,9 +43,9 @@ type Client = {
 };
 
 const clients: Client[] = [
-  { name: "MDM Mobiliario", img: "/clients/mdm.jpg",    imgClass: "h-24 md:h-28 w-auto object-contain rounded" },
-  { name: "Trumix",         img: "/clients/trumix.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
-  { name: "Iris Studio",    img: "/clients/iris.png",   imgClass: "h-20 md:h-24 w-auto object-contain" },
+  { name: "MDM Mobiliario", img: "/clients/mdm.jpg",    imgClass: "h-20 md:h-24 w-auto object-contain rounded" },
+  { name: "Trumix",         img: "/clients/trumix.png", imgClass: "h-14 md:h-16 w-auto object-contain" },
+  { name: "Iris Studio",    img: "/clients/iris.png",   imgClass: "h-14 md:h-16 w-auto object-contain" },
   { name: "Eventicos",      inline: true },
   { name: "Villa Solstice", inline: true },
   // Ezelandscape — logo pendiente

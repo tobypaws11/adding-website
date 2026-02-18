@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+import { Reveal } from "@/components/Reveal";
 
 const modules = [
   { icon: "precision_manufacturing", titleKey: "svc.leads.title", descKey: "svc.leads.desc", tag: "FLYWHEEL", color: "primary" },
@@ -18,19 +19,20 @@ export function Services() {
   return (
     <section id="modules" className="bg-matte-black py-24 md:py-40 relative overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
-        <div className="text-center mb-16 md:mb-24">
+        <Reveal className="text-center mb-16 md:mb-24">
           <span className="text-2xl font-black uppercase tracking-[0.4em] text-primary">{t("services.label")}</span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter mt-4 md:mt-6">{t("services.title")}</h2>
           <p className="text-white/40 text-base md:text-lg font-light max-w-3xl mx-auto mt-4 leading-relaxed">{t("services.subtitle")}</p>
-        </div>
+        </Reveal>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
           {modules.map((mod, idx) => {
             const anchor = `/servicios#svc-${String(idx + 1).padStart(2, "0")}`;
+            const delays = [0, 100, 200, 300, 400, 500] as const;
             return (
+              <Reveal key={mod.titleKey} variant="scale" delay={delays[idx % 6]}>
               <Link
-                key={mod.titleKey}
                 href={anchor}
-                className="group flex flex-col border border-white/8 bg-white/2 hover:border-primary/30 hover:bg-primary/3 transition-all duration-300 p-8 md:p-10"
+                className="group flex flex-col border border-white/8 bg-white/2 hover:border-primary/30 hover:bg-primary/3 transition-all duration-300 p-8 md:p-10 h-full"
               >
                 {/* Icon + tag row */}
                 <div className="flex items-start justify-between mb-6 md:mb-8">
@@ -54,6 +56,7 @@ export function Services() {
                   <span className="text-primary/40 group-hover:text-primary transition-all group-hover:translate-x-1">→</span>
                 </div>
               </Link>
+              </Reveal>
             );
           })}
         </div>

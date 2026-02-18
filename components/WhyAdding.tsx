@@ -1,6 +1,7 @@
 "use client";
 
 import { useI18n } from "@/lib/i18n";
+import { Reveal } from "@/components/Reveal";
 
 export function WhyAdding() {
   const { t } = useI18n();
@@ -58,7 +59,7 @@ export function WhyAdding() {
           </div>
 
           {/* Description */}
-          <div className="lg:col-span-5 space-y-8 md:space-y-12">
+          <Reveal variant="left" className="lg:col-span-5 space-y-8 md:space-y-12">
             <div>
               <span className="text-2xl font-black tracking-[0.4em] text-primary">{t("why.label")}</span>
               <h2 className="text-3xl md:text-4xl font-black tracking-tighter leading-tight mt-4 md:mt-6">{t("why.title")}</h2>
@@ -89,7 +90,7 @@ export function WhyAdding() {
             <a href="#contact" className="inline-block bg-white text-matte-black px-12 py-5 text-xs font-black tracking-luxury hover:bg-primary hover:text-white transition-all">
               {t("nav.hablemos")}
             </a>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

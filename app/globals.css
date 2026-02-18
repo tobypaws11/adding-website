@@ -108,3 +108,64 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ── Scroll reveal animations ── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes scale-up {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(0,143,240,0.3); }
+  50%       { box-shadow: 0 0 50px rgba(0,143,240,0.7), 0 0 80px rgba(0,143,240,0.3); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Reveal base state */
+.reveal         { opacity: 0; }
+.reveal.visible { animation: fade-up 0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
+
+.reveal-right.visible  { animation: slide-right 0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
+.reveal-left.visible   { animation: slide-left  0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
+.reveal-scale.visible  { animation: scale-up    0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
+.reveal-fade.visible   { animation: fade-in     0.7s ease forwards; }
+
+/* Stagger delays */
+.delay-0   { animation-delay: 0ms; }
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+/* Utility animations */
+.animate-float     { animation: float 6s ease-in-out infinite; }
+.animate-glow-cta  { animation: glow-pulse 2.5s ease-in-out infinite; }
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(0,143,240,0.15) 50%, transparent 100%);
+  background-size: 200% auto;
+  animation: shimmer 2.5s linear infinite;
+}
