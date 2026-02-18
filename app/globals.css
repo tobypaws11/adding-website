@@ -72,11 +72,11 @@
 
 @keyframes scroll-carousel {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-33.333%); }
 }
 
 .animate-scroll {
-  animation: scroll-carousel 12s linear infinite;
+  animation: scroll-carousel 18s linear infinite;
 }
 
 .animate-scroll:hover {
