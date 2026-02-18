@@ -20,7 +20,7 @@ export function Nav() {
     <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-matte-black/90 backdrop-blur-xl">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-24 md:h-28 flex items-center justify-between">
         <Link href="/" className="inline-flex shrink-0 items-center" aria-label="AdDing Agency">
-          <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" width={260} height={72} className="h-14 w-auto md:h-16 lg:h-20" />
+          <img src="/logos/logo-sin-tagline.svg" alt="AdDing Agency" width={180} height={60} className="h-10 w-auto md:h-12" />
         </Link>
         <div className="hidden lg:flex items-center gap-12 xl:gap-16">
           {links.map((link) =>
