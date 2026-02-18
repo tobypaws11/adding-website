@@ -11,8 +11,8 @@ export function Nav() {
   const pathname = usePathname();
 
   const links = [
-    { href: "/portafolio", label: "Portafolio" },
     { href: "/servicios", label: t("nav.servicios") },
+    { href: "/portafolio", label: t("nav.portfolio") },
     { href: "/por-que-adding", label: t("nav.porque") },
     { href: "/nosotros", label: t("nav.nosotros") },
     { href: "/blog", label: t("nav.blog") },

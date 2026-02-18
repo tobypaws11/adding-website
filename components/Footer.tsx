@@ -154,6 +154,7 @@ export function Footer() {
             <ul className="flex flex-col gap-2.5">
               {[
                 { href: "/servicios",      label: lang === "es" ? "Servicios"        : "Services"   },
+                { href: "/portafolio",     label: lang === "es" ? "Portafolio"        : "Portfolio"  },
                 { href: "/por-que-adding", label: lang === "es" ? "Por qué AdDing"   : "Why AdDing" },
                 { href: "/nosotros",       label: lang === "es" ? "Nosotros"          : "About"      },
                 { href: "/blog",           label: "Blog"                                             },

@@ -166,8 +166,8 @@ export default function PortafolioPage() {
                         loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
-                      <div className="absolute inset-0 bg-accent-yellow/0 group-hover:bg-accent-yellow/10 transition-all duration-500 flex items-center justify-center">
-                        <span className="text-accent-yellow font-bold text-sm tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/70 transition-all duration-500 flex items-center justify-center">
+                        <span className="text-accent-yellow font-bold text-sm tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                           En Desarrollo
                         </span>
                       </div>

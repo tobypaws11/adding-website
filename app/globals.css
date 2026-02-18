@@ -9,7 +9,7 @@
   }
   body {
     @apply bg-matte-black text-white antialiased;
-    font-feature-settings: "ss01", "ss02", "cv01";
+    font-feature-settings: normal;
     selection {
       background: rgba(0, 143, 240, 0.3);
     }
