@@ -11,7 +11,7 @@ type Client = {
 const clients: Client[] = [
   { name: "MDM Mobiliario", img: "/clients/mdm.jpg", imgClass: "h-14 md:h-16 w-auto object-contain rounded" },
   { name: "Trumix", img: "/clients/trumix.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
-  { name: "Iris Studio" },
+  { name: "Iris Studio", img: "/clients/iris.png", imgClass: "h-10 md:h-12 w-auto object-contain" },
   { name: "Eventicos" },
   { name: "Villa Solstice" },
   { name: "Ezelandscape" },
