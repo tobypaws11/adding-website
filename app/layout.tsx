@@ -60,6 +60,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/"
+  },
+  other: {
+    "p:domain_verify": "7514327d9402e8e117cd708bbc327745"
   }
 };
 
