@@ -13,12 +13,13 @@ export interface BlogPost {
   tags: string[];
   metaTitle: string;
   metaDescription: string;
+  faq?: Array<{ question: string; answer: string }>;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "seo-vs-geo-costa-rica",
-    title: "Por Qué el SEO Ya No Es Suficiente: Cómo el GEO Está Cambiando el Juego en Costa Rica",
+    title: "Por qué el SEO ya no es suficiente: Cómo el GEO está Cambiando el juego en Costa Rica",
     excerpt:
       "Si tu negocio solo optimiza para Google, podés estar perdiendo las búsquedas que hoy pasan en ChatGPT y Gemini. Esta guía te muestra cómo adaptarte antes que tu competencia.",
     content: `
@@ -115,24 +116,46 @@ export const blogPosts: BlogPost[] = [
     category: "SEO",
     categoryKey: "seo",
     readingTime: 7,
-    publishedAt: "2026-01-30",
-    author: "Equipo AdDing",
-    authorRole: "Estrategia SEO + GEO",
+    publishedAt: "2026-02-20",
+    author: "José Molina",
+    authorRole: "Director de Estrategia Digital, AdDing Agency",
     coverGradient: "linear-gradient(135deg, rgba(37,99,235,0.24) 0%, rgba(34,211,238,0.08) 100%)",
     tags: ["seo", "geo", "chatgpt", "gemini", "marketing digital", "costa rica"],
     metaTitle: "SEO vs GEO en Costa Rica: lo que tenés que cambiar hoy",
     metaDescription:
       "Descubrí por qué el SEO ya no alcanza solo y cómo aplicar GEO para que tu negocio aparezca en respuestas de ChatGPT y Gemini en Costa Rica.",
+    faq: [
+      {
+        question: "¿Qué es GEO y cómo se diferencia del SEO?",
+        answer:
+          "GEO (Generative Engine Optimization) es la práctica de optimizar tu contenido para que motores de IA como ChatGPT y Gemini te entiendan, te citen y te recomienden. A diferencia del SEO tradicional que apunta a rankings de Google, el GEO busca que tu negocio aparezca dentro de respuestas generadas por inteligencia artificial.",
+      },
+      {
+        question: "¿Mi negocio en Costa Rica necesita GEO?",
+        answer:
+          "Si tus clientes potenciales usan ChatGPT, Gemini o el modo IA de Google para buscar soluciones, sí. En Costa Rica el mercado generativo todavía está en etapa temprana, lo que significa que las PYMES que actúen ahora tienen ventaja competitiva antes de que sature.",
+      },
+      {
+        question: "¿Tengo que abandonar el SEO para hacer GEO?",
+        answer:
+          "No. GEO complementa al SEO, no lo reemplaza. Las bases de buen SEO (contenido de calidad, velocidad, mobile) siguen siendo relevantes. Lo que cambia es agregar optimización semántica, estructura de contenido orientada a preguntas y señales de autoridad temática.",
+      },
+      {
+        question: "¿Cuánto tiempo tarda en verse resultados de GEO?",
+        answer:
+          "Depende de la autoridad existente del sitio y del nivel de competencia en el sector. En términos generales, con una estrategia consistente durante 2 a 4 meses se pueden observar mejoras en presencia dentro de respuestas generativas.",
+      },
+    ],
   },
   {
-    slug: "ia-para-pymes-costa-rica-2025",
-    title: "IA para Tu Negocio en Costa Rica: Qué Funciona, Qué No, y Por Dónde Empezar",
+    slug: "ia-para-pymes-costa-rica-2026",
+    title: "IA para tu negocio en Costa Rica: qué Funciona, qué no, y por dónde empezar",
     excerpt:
       "La inteligencia artificial no es solo para corporaciones. Mirá qué herramientas sí generan ventas y eficiencia en PYMES ticas, y cuáles solo te hacen perder tiempo.",
     content: `
       <p>Durante años, la conversación sobre inteligencia artificial parecía reservada para empresas gigantes con presupuestos enormes. Mientras tanto, la mayoría de PYMES en Costa Rica seguía pensando: "Eso suena bien, pero no es para mí". Hoy esa idea ya no aplica.</p>
-      <p>Hace poco trabajamos con un restaurante en Escazú que tenía buen producto, buena ubicación y buen servicio, pero un proceso de reservas lento: respondían mensajes manualmente, se les quedaban chats sin atender y perdían clientes fuera de horario. En menos de un mes, con automatización en WhatsApp y respuestas asistidas por IA, aumentaron aproximadamente un 40% las reservas confirmadas comparado con el mes anterior.</p>
-      <p>No contrataron un equipo de ingenieros. No montaron infraestructura compleja. No gastaron millones. Lo que hicieron fue aplicar IA de forma práctica y enfocada en una métrica de negocio concreta.</p>
+      <p>Imaginá un restaurante en Escazú con buen producto, buena ubicación y buen servicio, pero con un proceso de reservas lento: responden mensajes manualmente, se les quedan chats sin atender y pierden clientes fuera de horario. Con automatización en WhatsApp y respuestas asistidas por IA, un negocio así puede aumentar en un mes sus reservas confirmadas en un 40% comparado con el mes anterior.</p>
+      <p>Sin contratar un equipo de ingenieros. Sin infraestructura compleja. Sin gastar millones. Simplemente aplicando IA de forma práctica y enfocada en una métrica de negocio concreta.</p>
       <p>Si tenés una pyme, este artículo es para vos: qué sí funciona, qué no, cómo medir retorno y cómo empezar sin quemar presupuesto.</p>
 
       <h2>Desmitificando la IA para PYMES</h2>
@@ -212,12 +235,12 @@ export const blogPosts: BlogPost[] = [
         "Implementar IA sin estrategia es como comprar maquinaria industrial sin tener línea de producción."
       </blockquote>
 
-      <h2>El ROI real: ejemplos con números de negocios locales</h2>
-      <p>Hablemos de resultados concretos. Estos escenarios son típicos en PYMES ticas que optimizan bien:</p>
+      <h2>El ROI real: qué podés esperar</h2>
+      <p>Hablemos de resultados concretos. Estos son rangos típicos de mejora en PYMES que implementan IA con foco en conversión:</p>
       <ul>
-        <li><strong>Restaurante en Escazú:</strong> +40% en reservas confirmadas al automatizar respuesta inicial por WhatsApp y recordatorios.</li>
-        <li><strong>Clínica estética en San José:</strong> reducción de 55% en tiempo promedio de respuesta y aumento de 28% en citas agendadas.</li>
-        <li><strong>Empresa B2B en Heredia:</strong> secuencias automatizadas de seguimiento elevaron 22% la tasa de reunión sobre leads fríos.</li>
+        <li><strong>Negocios con reservas o citas (restaurantes, clínicas, centros de servicio):</strong> entre un 30% y 50% de aumento en reservas confirmadas al automatizar la respuesta inicial y los recordatorios por WhatsApp.</li>
+        <li><strong>Empresas de servicios con atención por mensajería:</strong> reducción de 40-60% en tiempo de respuesta promedio, con impacto directo en satisfacción y conversión inicial.</li>
+        <li><strong>Empresas B2B con ciclos de venta largos:</strong> secuencias de seguimiento automatizado pueden subir entre un 15% y 25% la tasa de reunión sobre leads que de otro modo se enfriarían.</li>
       </ul>
       <p>¿Por qué funciona? Porque la IA mejora tres variables críticas al mismo tiempo:</p>
       <ul>
@@ -261,23 +284,45 @@ export const blogPosts: BlogPost[] = [
     category: "IA",
     categoryKey: "ai",
     readingTime: 8,
-    publishedAt: "2026-01-18",
-    author: "Equipo AdDing",
-    authorRole: "Automatización e IA",
+    publishedAt: "2026-02-20",
+    author: "José Molina",
+    authorRole: "Director de Estrategia Digital, AdDing Agency",
     coverGradient: "linear-gradient(135deg, rgba(124,58,237,0.24) 0%, rgba(168,85,247,0.08) 100%)",
     tags: ["inteligencia artificial", "automatización", "pymes", "costa rica", "chatbots"],
-    metaTitle: "IA para PYMES en Costa Rica: guía práctica 2025",
+    metaTitle: "IA para PYMES en Costa Rica: guía práctica 2026",
     metaDescription:
       "Conocé 5 usos de IA que sí funcionan para PYMES en Costa Rica, errores comunes y un framework de 3 pasos para implementar con ROI real.",
+    faq: [
+      {
+        question: "¿Cuánto cuesta implementar IA en una PYME en Costa Rica?",
+        answer:
+          "Depende de la solución. Automatizaciones básicas de WhatsApp pueden arrancar desde menos de $100 al mes. Implementaciones más complejas con CRM y flujos avanzados van entre $300 y $800 mensuales, incluyendo configuración y mantenimiento. El criterio clave es comparar ese costo contra el valor del tiempo y las ventas que se recuperan.",
+      },
+      {
+        question: "¿Necesito personal técnico para usar herramientas de IA?",
+        answer:
+          "No necesariamente. La mayoría de herramientas de IA para PYMES hoy son no-code o low-code: se configuran visualmente, sin programación. Lo que sí se necesita es orientación estratégica para que la herramienta resuelva un problema real de negocio y no solo sea tecnología sin foco.",
+      },
+      {
+        question: "¿Cuál es el primer paso para implementar IA en mi negocio?",
+        answer:
+          "Identificar un proceso con fricción alta y valor claro. Ejemplo: atención de WhatsApp fuera de horario, seguimiento de leads, o generación de contenido repetitivo. Empezar ahí, medir el antes y después, y escalar lo que funcione.",
+      },
+      {
+        question: "¿La IA puede reemplazar a mis empleados?",
+        answer:
+          "No es el objetivo correcto ni el resultado típico. La IA potencia a los equipos al automatizar tareas repetitivas, lo que libera tiempo para trabajo de mayor valor. Un flujo de WhatsApp automatizado no reemplaza a un vendedor; le permite enfocarse en cerrar en lugar de responder preguntas básicas.",
+      },
+    ],
   },
   {
     slug: "por-que-tu-sitio-web-no-genera-leads",
-    title: "Tu Sitio Web Tiene Visitas Pero No Clientes: Las 7 Razones Más Comunes (y Cómo Arregarlas)",
+    title: "Tu sitio web tiene visitas pero no clientes: Las 7 razones más comunes (y cómo arreglarlas)",
     excerpt:
       "Tener tráfico no alcanza si tu sitio no convierte. Revisá las 7 fallas más comunes que frenan tus leads y cómo corregirlas en pocos días.",
     content: `
       <p>Muchos negocios invierten en diseño web, pauta y contenido para atraer visitas, pero cuando revisan resultados aparece el problema incómodo: tráfico sí, oportunidades reales no. Y eso frustra porque sentís que "todo está funcionando", menos lo que realmente importa.</p>
-      <p>Hace poco auditamos un sitio que recibía cerca de 800 visitas mensuales y generaba cero leads calificados. En 20 minutos encontramos bloqueos graves en mensaje, experiencia y conversión. El sitio no estaba "mal hecho"; estaba mal orientado para convertir.</p>
+      <p>Es común encontrar sitios que reciben cerca de 800 visitas mensuales y generan cero leads calificados. En una auditoría de conversión, se detectan bloqueos graves en mensaje, experiencia y flujo en menos de 20 minutos. El sitio no está "mal hecho"; está mal orientado para convertir.</p>
       <p>Si te pasa algo parecido, esta guía te va a ahorrar meses de prueba y error. Vamos directo a las 7 razones más comunes y cómo arreglar cada una con acciones concretas.</p>
 
       <h2>Las 7 razones más comunes por las que tu sitio no convierte</h2>
@@ -366,14 +411,36 @@ export const blogPosts: BlogPost[] = [
     category: "Leads",
     categoryKey: "leads",
     readingTime: 6,
-    publishedAt: "2025-12-09",
-    author: "Equipo AdDing",
-    authorRole: "CRO y Performance Web",
+    publishedAt: "2026-02-20",
+    author: "José Molina",
+    authorRole: "Director de Estrategia Digital, AdDing Agency",
     coverGradient: "linear-gradient(135deg, rgba(5,150,105,0.24) 0%, rgba(20,184,166,0.08) 100%)",
     tags: ["conversión", "leads", "landing page", "ux", "sitio web", "costa rica"],
-    metaTitle: "7 razones por las que tu web no genera leads",
+    metaTitle: "Por qué tu web no genera leads: las 7 razones y cómo arreglarlas",
     metaDescription:
       "Descubrí por qué tu sitio tiene visitas pero no clientes, aplicá la prueba de 5 segundos y corregí los 7 errores que más frenan conversiones.",
+    faq: [
+      {
+        question: "¿Por qué mi sitio web tiene visitas pero no genera clientes?",
+        answer:
+          "Las causas más frecuentes son: CTA genérico o invisible, velocidad lenta, falta de prueba social, formulario con demasiados campos, experiencia móvil deficiente y propuesta de valor poco clara. Un sitio puede tener buen diseño y aun así fallar en conversión si alguno de estos elementos no está bien resuelto.",
+      },
+      {
+        question: "¿Cuánto tiempo toma mejorar la conversión de un sitio web?",
+        answer:
+          "Con un plan enfocado, los cambios principales se pueden implementar en 5 a 7 días. Los resultados medibles (más formularios enviados, más chats iniciados) se empiezan a ver en las primeras 2 a 4 semanas siguientes, siempre que el tráfico existente sea suficiente para extraer conclusiones estadísticas.",
+      },
+      {
+        question: "¿Qué es la prueba de 5 segundos para un sitio web?",
+        answer:
+          "Es mostrarle tu página principal a alguien que no conoce tu negocio durante 5 segundos y luego preguntarle: ¿qué hace esta empresa?, ¿para quién es? y ¿qué acción esperan que hagás? Si no puede responder esas tres preguntas con claridad, tu home está perdiendo leads aunque tenga buen diseño.",
+      },
+      {
+        question: "¿Tengo que rehacer mi sitio web para mejorar las conversiones?",
+        answer:
+          "Rara vez. En la mayoría de los casos, se corrigen elementos puntuales: el titular principal, el CTA, la velocidad, la prueba social y el formulario. Rehacer desde cero es la opción más costosa y no siempre la más efectiva. Un diagnóstico previo ayuda a priorizar sin desperdiciar presupuesto.",
+      },
+    ],
   },
 ];
 

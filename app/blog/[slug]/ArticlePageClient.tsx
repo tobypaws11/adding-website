@@ -149,6 +149,20 @@ export function ArticlePageClient({ post, relatedPosts }: ArticlePageClientProps
               ))}
             </div>
 
+            {post.faq && post.faq.length > 0 && (
+              <section className="mt-16 border-t border-white/10 pt-12">
+                <h2 className="mb-8 text-2xl font-black tracking-tight text-white">Preguntas frecuentes</h2>
+                <div className="space-y-6">
+                  {post.faq.map((item, i) => (
+                    <div key={i} className="border border-white/10 p-6">
+                      <h3 className="mb-3 text-base font-bold text-white">{item.question}</h3>
+                      <p className="text-sm leading-relaxed text-white/65">{item.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             <div className="mb-12 rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/30 to-primary/10 p-8 md:p-10">
               <p className="text-sm font-black uppercase tracking-[0.25em] text-primary">Siguiente paso</p>
               <h2 className="mt-3 text-2xl font-black tracking-tight text-white md:text-3xl">
