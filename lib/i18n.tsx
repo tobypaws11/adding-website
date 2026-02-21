@@ -48,7 +48,7 @@ const translations: Translations = {
   "svc.web.desc": { es: "Sitios rápidos, modernos y optimizados para convertir visitas en oportunidades reales de negocio.", en: "Fast, modern sites optimized to turn visits into real business opportunities." },
   "svc.ai.title": { es: "Agentes de IA", en: "AI agents" },
   "svc.ai.desc": { es: "Asistentes inteligentes que responden, califican leads y automatizan tareas clave las 24 horas del día.", en: "Smart assistants that respond, qualify leads, and automate key tasks around the clock." },
-  "svc.seo.title": { es: "SEO y marketing digital", en: "SEO & digital marketing" },
+  "svc.seo.title": { es: "SEO, GEO y marketing digital", en: "SEO, GEO & digital marketing" },
   "svc.seo.desc": { es: "Estrategias de SEO y GEO (optimización para IA) orientadas a datos para posicionarte en buscadores tradicionales y en respuestas generativas de IA.", en: "SEO & GEO (AI search optimization) strategies to rank in traditional search engines and AI-generated answers." },
   "svc.leads.title": { es: "Ecosistemas de leads", en: "Lead ecosystems" },
   "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. Nada de campañas aisladas, solo sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. No isolated campaigns, just predictable growth systems." },
@@ -113,7 +113,7 @@ const translations: Translations = {
 
   // Blog
   "blog.label": { es: "Blog", en: "Blog" },
-  "blog.title": { es: "En construcción", en: "Under construction" },
+  "blog.title": { es: "Últimos artículos", en: "Latest articles" },
   "blog.p": {
     es: "Muy pronto vas a encontrar guías accionables sobre SEO, marketing digital, automatización y agentes de IA para hacer crecer tu negocio.",
     en: "Soon you'll find actionable guides on SEO, digital marketing, automation, and AI agents to grow your business."
