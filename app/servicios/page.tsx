@@ -43,8 +43,9 @@ const services = [
     code: "SVC_03",
     features: [
       { es: "Auditoría SEO técnica completa", en: "Complete technical SEO audit" },
-      { es: "Estrategia de keywords y contenido", en: "Keyword and content strategy" },
-      { es: "Optimización on-page y off-page", en: "On-page and off-page optimization" },
+      { es: "GEO: presencia en ChatGPT, Gemini y Google SGE", en: "GEO: appear in ChatGPT, Gemini & Google SGE" },
+      { es: "Estrategia de keywords y contenido semántico", en: "Keyword and semantic content strategy" },
+      { es: "Optimización on-page, off-page y schema markup", en: "On-page, off-page & schema markup optimization" },
       { es: "Google Ads y Meta Ads", en: "Google Ads and Meta Ads" },
       { es: "Reportes de posicionamiento mensual", en: "Monthly ranking reports" },
     ],
