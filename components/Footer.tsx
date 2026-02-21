@@ -22,7 +22,7 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-12 gap-12 md:gap-24 mb-24 md:mb-48">
           <div className="lg:col-span-6 space-y-8 md:space-y-16">
             <div className="flex items-center">
-              <img src="/logos/logo-adding-blanco-notext.svg" alt="AdDing Agency" width={200} height={55} className="h-16 w-auto md:h-20" />
+              <img src="/logos/logo-adding-blanco.svg" alt="AdDing Agency" width={200} height={55} className="h-12 w-auto md:h-14" />
             </div>
             <p className="text-white/30 max-w-xl text-base md:text-lg font-light leading-relaxed tracking-tight-luxury">
               {t("footer.tagline")}

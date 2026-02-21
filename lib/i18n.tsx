@@ -66,7 +66,7 @@ const translations: Translations = {
   "why.p1.title": { es: "Ecosistema, no campañas", en: "Ecosystem, not campaigns" },
   "why.p1.desc": { es: "Construimos un Flywheel automatizado donde cada etapa alimenta la siguiente: prospección, nutrición, cierre, retención y crecimiento.", en: "We build an automated Flywheel where each stage feeds the next: prospecting, nurturing, closing, retention, and growth." },
   "why.p2.title": { es: "IA y automatización real", en: "Real AI & automation" },
-  "why.p2.desc": { es: "Usamos tecnología en cada paso: agentes que responden 24/7, CRM automatizado, seguimientos inteligentes y optimización basada en data.", en: "We use AI at every step: agents that respond 24/7, automated CRM, smart follow-ups, and data-driven optimization." },
+  "why.p2.desc": { es: "Usamos inteligencia artificial en cada paso: agentes que responden 24/7, CRM automatizado, seguimientos inteligentes y optimización basada en data.", en: "We use AI at every step: agents that respond 24/7, automated CRM, smart follow-ups, and data-driven optimization." },
   "why.p3.title": { es: "Resultados medibles", en: "Measurable results" },
   "why.p3.desc": { es: "Trabajás con KPIs reales de negocio: leads calificados, costo por adquisición, conversión y retorno. Nada de métricas de vanidad.", en: "You work with real business KPIs: qualified leads, cost per acquisition, conversion, and ROI. No vanity metrics." },
   "why.cmp.them": { es: "Otros proveedores", en: "Other providers" },

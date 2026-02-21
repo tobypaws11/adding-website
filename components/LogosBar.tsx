@@ -10,7 +10,7 @@ export function LogosBar() {
   return (
     <section className="border-y border-white/5 bg-carbon-gray py-10 md:py-12">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
-        <p className="text-center text-sm md:text-base uppercase tracking-[0.4em] text-white/30 mb-6 md:mb-8 font-mono">{t("logos.label")}</p>
+        <p className="text-center text-[9px] uppercase tracking-[0.4em] text-white/30 mb-6 md:mb-8 font-mono">{t("logos.label")}</p>
         <div className="overflow-hidden">
           <div className="flex animate-scroll gap-8 md:gap-12">
             {[...brands, ...brands].map((brand, i) => (
