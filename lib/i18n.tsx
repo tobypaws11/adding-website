@@ -48,7 +48,7 @@ const translations: Translations = {
   "svc.ai.title": { es: "Agentes de IA", en: "AI Agents" },
   "svc.ai.desc": { es: "Asistentes inteligentes que responden, califican leads y automatizan tareas clave las 24 horas del día.", en: "Smart assistants that respond, qualify leads, and automate key tasks around the clock." },
   "svc.seo.title": { es: "SEO, GEO y Marketing Digital", en: "SEO, GEO & Digital Marketing" },
-  "svc.seo.desc": { es: "Posicionamiento en Google y en IA. Optimizamos tu presencia para búsquedas tradicionales y para que ChatGPT, Gemini y Google SGE te recomienden.", en: "Rank on Google and in AI. We optimize for traditional search and to get recommended by ChatGPT, Gemini, and Google SGE." },
+  "svc.seo.desc": { es: "Posicionamiento en Google y en IA. Optimizamos tu presencia para búsquedas tradicionales y para que AI (como ChatGPT, Gemini y Google SGE) te recomienden.", en: "Rank on Google and in AI. We optimize for traditional search and to get recommended by AI (like ChatGPT, Gemini, and Google SGE)." },
   "svc.leads.title": { es: "Ecosistemas de Leads", en: "Lead Ecosystems" },
   "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. Nada de campañas aisladas, solo sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. No isolated campaigns, just predictable growth systems." },
   "svc.email.title": { es: "Email Marketing y Newsletter", en: "Email Marketing & Newsletter" },
