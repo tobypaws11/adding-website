@@ -49,7 +49,7 @@ const translations: Translations = {
   "svc.ai.title": { es: "Agentes de IA", en: "AI agents" },
   "svc.ai.desc": { es: "Asistentes inteligentes que responden, califican leads y automatizan tareas clave las 24 horas del día.", en: "Smart assistants that respond, qualify leads, and automate key tasks around the clock." },
   "svc.seo.title": { es: "SEO y marketing digital", en: "SEO & digital marketing" },
-  "svc.seo.desc": { es: "Estrategias orientadas a datos para posicionarte orgánicamente y generar tráfico calificado constante.", en: "Data-driven strategies to rank organically and generate consistent qualified traffic." },
+  "svc.seo.desc": { es: "Estrategias de SEO y GEO (optimización para IA) orientadas a datos para posicionarte en buscadores tradicionales y en respuestas generativas de IA.", en: "SEO & GEO (AI search optimization) strategies to rank in traditional search engines and AI-generated answers." },
   "svc.leads.title": { es: "Ecosistemas de leads", en: "Lead ecosystems" },
   "svc.leads.desc": { es: "Flywheel automatizado: prospección, nutrición, cierre y retención. Nada de campañas aisladas, solo sistemas de crecimiento predecible.", en: "Automated flywheel: prospecting, nurturing, closing, and retention. No isolated campaigns, just predictable growth systems." },
   "svc.email.title": { es: "Email marketing y newsletter", en: "Email marketing & newsletter" },

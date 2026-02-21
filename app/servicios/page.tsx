@@ -45,6 +45,7 @@ const services = [
       { es: "Auditoría SEO técnica completa", en: "Complete technical SEO audit" },
       { es: "Estrategia de keywords y contenido", en: "Keyword and content strategy" },
       { es: "Optimización on-page y off-page", en: "On-page and off-page optimization" },
+      { es: "Optimización GEO para búsquedas con IA (ChatGPT, Gemini, Perplexity)", en: "GEO optimization for AI search (ChatGPT, Gemini, Perplexity)" },
       { es: "Google Ads y Meta Ads", en: "Google Ads and Meta Ads" },
       { es: "Reportes de posicionamiento mensual", en: "Monthly ranking reports" },
     ],

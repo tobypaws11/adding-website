@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { blogPosts } from "@/lib/blog-data";
 import { useI18n } from "@/lib/i18n";
 
 export function BlogPreview() {
   const { t } = useI18n();
+  const latestPosts = blogPosts.slice(0, 3);
 
   return (
     <section id="blog" className="bg-carbon-gray py-24 md:py-40 border-t border-white/5">
@@ -14,22 +16,25 @@ export function BlogPreview() {
           <h2 className="text-4xl md:text-6xl font-black tracking-tight mt-4 md:mt-6">{t("blog.title")}</h2>
         </div>
 
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="border border-white/10 bg-matte-black p-12 md:p-20 relative overflow-hidden">
-            {/* Construction animation */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
-            <div className="absolute top-4 right-4 text-xs font-mono text-accent-yellow uppercase tracking-widest">STATUS: BUILDING</div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {latestPosts.map((post) => (
+            <article key={post.slug} className="bg-matte-black border border-white/10 p-6 md:p-8 flex flex-col">
+              <span className="inline-block w-fit border border-primary/30 bg-primary/10 px-3 py-1 text-[10px] font-black uppercase tracking-[0.25em] text-primary">
+                {post.category}
+              </span>
+              <h3 className="mt-5 text-2xl font-black tracking-tight">{post.title}</h3>
+              <p className="mt-4 text-sm md:text-base font-light leading-relaxed text-white/50 flex-1">{post.excerpt}</p>
+              <Link href={`/blog/${post.slug}`} className="mt-8 inline-block text-xs font-black uppercase tracking-[0.2em] text-primary hover:text-white transition-all">
+                LEER MÁS →
+              </Link>
+            </article>
+          ))}
+        </div>
 
-            <div className="text-6xl md:text-8xl mb-8">🏗️</div>
-            <h3 className="text-2xl md:text-3xl font-black tracking-luxury mb-6">{t("blog.soon")}</h3>
-            <p className="text-white/40 text-base md:text-lg font-light leading-relaxed max-w-xl mx-auto mb-10">
-              {t("blog.p")}
-            </p>
-
-            <Link href="/blog" className="inline-block border border-primary/40 text-primary px-10 py-4 text-xs font-black tracking-luxury hover:bg-primary hover:text-white transition-all">
-              {t("blog.visit")}
-            </Link>
-          </div>
+        <div className="mt-10 md:mt-12 text-center">
+          <Link href="/blog" className="inline-block border border-primary/40 text-primary px-10 py-4 text-xs font-black tracking-luxury hover:bg-primary hover:text-white transition-all">
+            VER TODOS LOS ARTÍCULOS →
+          </Link>
         </div>
       </div>
     </section>
