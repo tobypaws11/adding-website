@@ -37,6 +37,8 @@ export function HomeFaq() {
       label="FAQ"
       title="Preguntas frecuentes"
       subtitle="Lo que más nos preguntan antes de empezar"
+      ctaText="Ver más preguntas frecuentes"
+      ctaHref="/faq"
     />
   );
 }

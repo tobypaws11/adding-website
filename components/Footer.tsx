@@ -168,6 +168,7 @@ export function Footer() {
                 { href: "/por-que-adding", label: lang === "es" ? "Por qué AdDing"   : "Why AdDing" },
                 { href: "/nosotros",       label: lang === "es" ? "Nosotros"          : "About"      },
                 { href: "/blog",           label: "Blog"                                             },
+                { href: "/faq",            label: lang === "es" ? "Preguntas frecuentes" : "FAQ"     },
                 { href: "/contacto",       label: lang === "es" ? "Contacto"          : "Contact"    },
               ].map((item) => (
                 <li key={item.href}>

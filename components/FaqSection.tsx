@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export interface FaqItem {
   question: string;
@@ -12,9 +13,11 @@ interface FaqSectionProps {
   label?: string;
   title?: string;
   subtitle?: string;
+  ctaText?: string;
+  ctaHref?: string;
 }
 
-export function FaqSection({ items, label = "FAQ", title = "Preguntas frecuentes", subtitle }: FaqSectionProps) {
+export function FaqSection({ items, label = "FAQ", title = "Preguntas frecuentes", subtitle, ctaText, ctaHref }: FaqSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -51,6 +54,17 @@ export function FaqSection({ items, label = "FAQ", title = "Preguntas frecuentes
             );
           })}
         </div>
+        {ctaText && ctaHref && (
+          <div className="flex justify-center mt-12 md:mt-16">
+            <Link
+              href={ctaHref}
+              className="inline-flex items-center gap-3 bg-primary text-white px-10 md:px-14 py-4 md:py-5 text-xs font-black tracking-[0.2em] uppercase hover:scale-105 transition-all shadow-[0_0_30px_rgba(0,143,240,0.3)]"
+            >
+              {ctaText}
+              <span className="material-symbols-outlined text-base">arrow_forward</span>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
