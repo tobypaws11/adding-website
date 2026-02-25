@@ -2,6 +2,7 @@ import { BlogPreview } from "@/components/BlogPreview";
 import { Comparison } from "@/components/Comparison";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { HomeFaq } from "@/components/HomeFaq";
 import { LogosBar } from "@/components/LogosBar";
 import { Nav } from "@/components/Nav";
 import { PortfolioPreview } from "@/components/PortfolioPreview";
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Services />
         <WhyAdding />
         <Comparison />
+        <HomeFaq />
         <BlogPreview />
       </main>
       <Footer />

@@ -4,7 +4,66 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ServiciosFaq } from "@/components/ServiciosFaq";
 import { useI18n } from "@/lib/i18n";
+
+const serviciosFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.addingagency.com/servicios#faq",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Cómo funciona el sistema Flywheel de generación de leads?",
+      acceptedAnswer: { "@type": "Answer", text: "Es un ciclo automatizado de 4 etapas: atracción, captación, nutrición y conversión. Cada etapa alimenta la siguiente, así que entre más tiempo funciona, mejores resultados genera para tu negocio." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué es SEO y por qué lo necesita mi negocio?",
+      acceptedAnswer: { "@type": "Answer", text: "SEO (Search Engine Optimization) es el proceso de optimizar tu sitio web para que aparezca en los primeros resultados de Google. Si tu negocio no aparece cuando alguien busca tus servicios en Costa Rica, estás perdiendo clientes todos los días." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué es GEO y en qué se diferencia del SEO?",
+      acceptedAnswer: { "@type": "Answer", text: "GEO (Generative Engine Optimization) optimiza tu presencia para buscadores con inteligencia artificial como ChatGPT, Gemini y Perplexity. Mientras el SEO te posiciona en Google, el GEO asegura que la IA recomiende tu negocio cuando alguien pregunta por servicios como los tuyos." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuánto cuesta contratar los servicios de AdDing?",
+      acceptedAnswer: { "@type": "Answer", text: "Cada proyecto es único. Armamos paquetes personalizados según tus objetivos y presupuesto. Escribinos por WhatsApp y te damos una cotización sin compromiso en menos de 24 horas." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué tipo de automatización pueden implementar?",
+      acceptedAnswer: { "@type": "Answer", text: "Automatizamos CRM, seguimiento de leads, onboarding de clientes, email marketing, agendamiento y notificaciones. Todo se integra con herramientas como WhatsApp, email y calendario para que nada se pierda." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cómo funcionan los agentes de IA que ofrecen?",
+      acceptedAnswer: { "@type": "Answer", text: "Son chatbots inteligentes que atienden a tus clientes 24/7 por WhatsApp y web. Califican leads, responden preguntas frecuentes, agendan citas y se entrenan específicamente para tu negocio." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Necesito tener un sitio web para trabajar con ustedes?",
+      acceptedAnswer: { "@type": "Answer", text: "No. Podemos crear tu sitio web desde cero como parte del ecosistema digital. Lo diseñamos optimizado para velocidad, SEO y conversión desde el primer día." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Cómo miden los resultados de sus servicios?",
+      acceptedAnswer: { "@type": "Answer", text: "Usamos dashboards con métricas claras: leads generados, tasa de conversión, posicionamiento en Google, tráfico web y ROI. Recibís reportes mensuales para que sepás exactamente cómo va tu inversión." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Puedo contratar solo un servicio o tengo que tomar el paquete completo?",
+      acceptedAnswer: { "@type": "Answer", text: "Podés contratar servicios individuales. Sin embargo, recomendamos el ecosistema completo porque cada pieza potencia las demás. Un sitio web sin SEO es como una tienda sin dirección." },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué diferencia a AdDing de otras agencias de marketing en Costa Rica?",
+      acceptedAnswer: { "@type": "Answer", text: "Combinamos marketing digital con inteligencia artificial y automatización real. No vendemos likes ni seguidores: construimos ecosistemas que generan leads y ventas medibles. Además, optimizamos para SEO y GEO, algo que muy pocas agencias en el país ofrecen." },
+    },
+  ],
+};
 
 const services = [
   {
@@ -99,6 +158,10 @@ export default function ServiciosPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviciosFaqJsonLd) }}
+      />
       <Nav />
       <main className="pt-20 page-enter">
         {/* Hero */}
@@ -144,6 +207,9 @@ export default function ServiciosPage() {
             ))}
           </div>
         </section>
+
+        {/* FAQ */}
+        <ServiciosFaq />
 
         {/* CTA */}
         <section className="py-16 md:py-32 bg-carbon-gray border-t border-white/5">

@@ -158,26 +158,42 @@ export default function RootLayout({
         mainEntity: [
           {
             "@type": "Question",
-            name: "¿Qué tipo de negocios atienden?",
+            name: "¿Qué tipo de negocios atienden en AdDing?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Trabajamos con PYMES, marcas personales y empresas en crecimiento que buscan resultados concretos en digital con ecosistemas completos de generación de leads."
+              text: "Trabajamos con PYMES, marcas personales y empresas en crecimiento en Costa Rica que buscan resultados concretos en digital. Si tenés un negocio y querés generar leads de forma consistente, podemos ayudarte."
             }
           },
           {
             "@type": "Question",
-            name: "¿En cuánto tiempo podría ver resultados?",
+            name: "¿En cuánto tiempo voy a ver resultados?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "La fase de fundación toma entre 2 y 5 semanas. Desde el segundo mes ya empezás a ver leads consistentes y métricas de crecimiento medibles."
+              text: "La fase de fundación toma entre 2 y 5 semanas. Desde el segundo mes ya empezás a ver leads consistentes y métricas de crecimiento medibles con nuestro sistema Flywheel."
             }
           },
           {
             "@type": "Question",
-            name: "¿Pueden ayudarme aunque no tenga equipo interno?",
+            name: "¿Pueden ayudarme aunque no tenga equipo de marketing interno?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica para que podás avanzar sin fricción."
+              text: "Sí. Nos integramos como tu equipo externo de marketing, ejecución y analítica. Vos te concentrás en tu negocio y nosotros nos encargamos de todo el ecosistema digital."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "¿Qué incluye el ecosistema digital de AdDing?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Incluye diseño web, SEO, automatización, agentes de IA, email marketing y generación de leads. Todo conectado para que cada pieza trabaje en conjunto y multiplique tus resultados."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "¿Trabajan con empresas fuera de Costa Rica?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Sí. Aunque estamos en Heredia, Costa Rica, atendemos clientes en toda Latinoamérica y el Caribe. Nuestro modelo es 100% digital, así que la ubicación no es una barrera."
             }
           }
         ]
