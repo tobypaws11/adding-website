@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
@@ -67,9 +68,11 @@ export function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-5 flex flex-col gap-6">
-            <img
+            <Image
               src="/logos/logo-icon.svg"
               alt="AdDing Agency"
+              width={40}
+              height={40}
               className="h-10 w-auto"
             />
             <p className="text-sm text-white/40 font-light leading-relaxed max-w-sm">

@@ -78,7 +78,6 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {
       "es-CR": "/",
-      "en": "/"
     }
   }
 };
@@ -128,6 +127,17 @@ export default function RootLayout({
           addressLocality: "Heredia",
           addressRegion: "Heredia",
           addressCountry: "CR"
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 9.9977,
+          longitude: -84.1173
+        },
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "18:00"
         },
         areaServed: "Costa Rica",
         url: "https://www.addingagency.com"

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { TypeWriter } from "@/components/TypeWriter";
@@ -27,7 +28,7 @@ export function Hero() {
 
         {/* Logo */}
         <div className="mb-6 md:mb-10 animate-float">
-          <img src="/logos/logo-full.svg" alt="AdDing Agency" className="h-40 sm:h-48 md:h-56 w-auto mx-auto" fetchPriority="high" decoding="async" />
+          <Image src="/logos/logo-full.svg" alt="AdDing Agency — Agencia de Marketing Digital e IA en Heredia, Costa Rica" width={400} height={224} className="h-40 sm:h-48 md:h-56 w-auto mx-auto" priority />
         </div>
 
         {/* Agency badge */}

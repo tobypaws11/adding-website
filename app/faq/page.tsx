@@ -156,6 +156,15 @@ const faqJsonLd = {
   })),
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.addingagency.com" },
+    { "@type": "ListItem", position: 2, name: "Preguntas Frecuentes", item: "https://www.addingagency.com/faq" },
+  ],
+};
+
 /* ── Component ───────────────────────────────────────── */
 
 function FaqAccordionGroup({ category }: { category: FaqCategory }) {
@@ -197,6 +206,10 @@ export default function FaqPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Nav />
       <main className="pt-20 page-enter">
@@ -241,7 +254,19 @@ export default function FaqPage() {
             >
               ESCRIBINOS POR WHATSAPP
             </a>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link
+                href="/servicios"
+                className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all"
+              >
+                Ver servicios →
+              </Link>
+              <Link
+                href="/contacto"
+                className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all"
+              >
+                Contacto →
+              </Link>
               <Link
                 href="/"
                 className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all"

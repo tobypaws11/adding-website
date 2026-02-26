@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
@@ -23,7 +24,7 @@ export function Nav() {
     <nav className="fixed top-0 w-full z-[100] border-b border-white/5 bg-matte-black/95 backdrop-blur-xl">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between">
         <Link href="/" className="inline-flex shrink-0 items-center" aria-label="AdDing Agency">
-          <img src="/logos/logo-icon.svg" alt="AdDing" className="h-8 w-auto md:h-10" />
+          <Image src="/logos/logo-icon.svg" alt="AdDing Agency" width={40} height={40} className="h-8 w-auto md:h-10" />
         </Link>
 
         {/* Desktop menu */}

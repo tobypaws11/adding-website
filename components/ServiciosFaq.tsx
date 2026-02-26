@@ -31,7 +31,7 @@ const serviciosFaqItems: FaqItem[] = [
   {
     question: "¿Cómo funcionan los agentes de IA que ofrecen?",
     answer:
-      "Son chatbots inteligentes que atienden a tus clientes 24/7 por WhatsApp y web. Califican leads, responden preguntas frecuentes, agendan citas y se entrenan específicamente para tu negocio en Costa Rica.",
+      "Son asistentes entrenados específicamente para tu negocio. Conocen a fondo tus productos, servicios y procesos, y ayudan en múltiples tareas: atención al cliente, calificación de leads, agendamiento, seguimiento y más. Funcionan 24/7 por WhatsApp, web y otros canales.",
   },
   {
     question: "¿Necesito tener un sitio web para trabajar con ustedes?",

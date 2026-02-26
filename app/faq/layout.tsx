@@ -13,6 +13,12 @@ export const metadata: Metadata = {
       "Todo lo que necesitás saber sobre nuestros servicios de marketing digital, SEO, GEO, automatización e IA para tu negocio en Costa Rica.",
     url: "https://www.addingagency.com/faq",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Preguntas Frecuentes | AdDing Agency",
+    description:
+      "Todo sobre marketing digital, SEO, GEO, automatización e IA para PYMES en Costa Rica.",
+  },
 };
 
 export default function FaqLayout({ children }: { children: React.ReactNode }) {

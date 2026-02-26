@@ -17,11 +17,27 @@ const socials = [
   { label: "Pinterest", href: "https://www.pinterest.com/addingagencydotcom/" },
 ];
 
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://www.addingagency.com/contacto#page",
+  name: "Contacto — AdDing Agency",
+  description: "Contactá a AdDing Agency en Heredia, Costa Rica para servicios de marketing digital, SEO, GEO, IA y automatización.",
+  url: "https://www.addingagency.com/contacto",
+  mainEntity: {
+    "@id": "https://www.addingagency.com/#localbusiness",
+  },
+};
+
 export default function ContactoPage() {
   const { t } = useI18n();
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       <Nav />
       <main className="pt-20 page-enter">
         {/* Hero */}

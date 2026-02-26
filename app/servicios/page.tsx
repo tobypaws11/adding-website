@@ -8,63 +8,7 @@ import { ServiciosFaq } from "@/components/ServiciosFaq";
 import { useI18n } from "@/lib/i18n";
 import { Icon } from "@/components/Icon";
 
-const serviciosFaqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://www.addingagency.com/servicios#faq",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Cómo funciona el sistema Flywheel de generación de leads?",
-      acceptedAnswer: { "@type": "Answer", text: "Es un ciclo automatizado de 4 etapas: atracción, captación, nutrición y conversión. Combinamos SEO Costa Rica, GEO, Google Business Profile y automatización para que cada etapa alimente la siguiente y tu negocio genere leads y conversiones de forma constante." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué es SEO y por qué lo necesita mi negocio en Costa Rica?",
-      acceptedAnswer: { "@type": "Answer", text: "SEO (Search Engine Optimization) es el proceso de optimizar tu sitio web para que aparezca en los primeros resultados de Google. Si tu negocio en Heredia, San José o cualquier zona de Costa Rica no aparece cuando alguien busca tus servicios, estás perdiendo leads y clientes todos los días." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué es GEO y en qué se diferencia del SEO?",
-      acceptedAnswer: { "@type": "Answer", text: "GEO (Generative Engine Optimization) optimiza tu presencia para buscadores con inteligencia artificial como ChatGPT, Gemini y Perplexity. Mientras el SEO te posiciona en Google, el GEO asegura que la IA recomiende tu negocio cuando alguien pregunta por servicios en Costa Rica como los tuyos. Juntos, SEO y GEO maximizan tu posicionamiento local y tus conversiones." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuánto cuesta contratar los servicios de AdDing?",
-      acceptedAnswer: { "@type": "Answer", text: "Cada proyecto es único. Armamos paquetes personalizados de SEO, GEO, automatización y diseño web según tus objetivos y presupuesto. Escribinos por WhatsApp y te damos una cotización sin compromiso en menos de 24 horas." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué tipo de automatización pueden implementar para generar más leads?",
-      acceptedAnswer: { "@type": "Answer", text: "Automatizamos CRM, seguimiento de leads, onboarding de clientes, email marketing, agendamiento y notificaciones. Todo se integra con herramientas como WhatsApp, email y calendario para que ningún lead se pierda y tus conversiones aumenten." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cómo funcionan los agentes de IA que ofrecen?",
-      acceptedAnswer: { "@type": "Answer", text: "Son asistentes entrenados específicamente para tu negocio. Conocen a fondo tus productos, servicios y procesos, y ayudan en múltiples tareas: atención al cliente, calificación de leads, agendamiento, seguimiento y más. Funcionan 24/7 por WhatsApp, web y otros canales." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Necesito tener un sitio web para trabajar con ustedes?",
-      acceptedAnswer: { "@type": "Answer", text: "No. Podemos crear tu sitio web desde cero como parte del ecosistema digital. Lo diseñamos optimizado para velocidad, SEO Costa Rica, posicionamiento local y conversión desde el primer día." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cómo miden los resultados de SEO, GEO y marketing digital?",
-      acceptedAnswer: { "@type": "Answer", text: "Usamos dashboards con métricas claras: leads generados, tasa de conversión, posicionamiento en Google, visibilidad en buscadores con IA, tráfico web y ROI. Recibís reportes mensuales para que sepás exactamente cómo va tu inversión." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Puedo contratar solo SEO o tengo que tomar el paquete completo?",
-      acceptedAnswer: { "@type": "Answer", text: "Podés contratar servicios individuales como SEO, GEO o diseño web. Sin embargo, recomendamos el ecosistema completo porque cada pieza potencia las demás. Un sitio web sin SEO es como una tienda sin dirección, y sin GEO perdés visibilidad en buscadores con IA." },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué diferencia a AdDing de otras agencias de marketing en Costa Rica?",
-      acceptedAnswer: { "@type": "Answer", text: "Combinamos marketing digital con inteligencia artificial y automatización real desde Heredia, Costa Rica. No vendemos likes ni seguidores: construimos ecosistemas que generan leads y ventas medibles. Además, optimizamos para SEO y GEO con Google Business Profile, algo que muy pocas agencias en el país ofrecen." },
-    },
-  ],
-};
+/* FAQ JSON-LD removed — canonical FAQ schema lives on /faq page to avoid duplication */
 
 const services = [
   {
@@ -159,10 +103,7 @@ export default function ServiciosPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviciosFaqJsonLd) }}
-      />
+
       <Nav />
       <main className="pt-20 page-enter">
         {/* Hero */}
@@ -219,7 +160,10 @@ export default function ServiciosPage() {
             <a href="https://wa.me/50670136366" target="_blank" rel="noreferrer" className="inline-block bg-primary text-white px-12 md:px-16 py-5 md:py-7 text-xs font-black tracking-[0.3em] hover:scale-105 transition-all shadow-[0_0_40px_rgba(0,143,240,0.4)]">
               {t("svcpage.cta.btn")}
             </a>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link href="/faq" className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all">
+                Preguntas frecuentes →
+              </Link>
               <Link href="/" className="text-xs font-bold uppercase tracking-luxury text-white/40 hover:text-primary transition-all">
                 {t("blog.back")}
               </Link>

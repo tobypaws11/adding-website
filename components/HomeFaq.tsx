@@ -6,7 +6,7 @@ const homeFaqItems: FaqItem[] = [
   {
     question: "¿Qué tipo de negocios atienden en AdDing?",
     answer:
-      "Trabajamos con PYMES, marcas personales y empresas en crecimiento en Costa Rica que necesitan posicionamiento local, más leads y conversiones reales. Si tenés un negocio en Heredia, San José o cualquier parte del país y querés aparecer en Google y en buscadores con IA, podemos ayudarte.",
+      "Trabajamos con empresas nuevas y establecidas: PYMES, marcas personales y negocios en crecimiento que buscan posicionamiento, más leads y conversiones reales. Atendemos clientes en Costa Rica y en toda América. Si querés aparecer en Google y en buscadores con IA, podemos ayudarte.",
   },
   {
     question: "¿En cuánto tiempo voy a ver resultados con SEO y GEO?",
@@ -26,7 +26,7 @@ const homeFaqItems: FaqItem[] = [
   {
     question: "¿Trabajan con empresas fuera de Costa Rica?",
     answer:
-      "Sí. Aunque estamos en Heredia, Costa Rica, atendemos clientes en toda Latinoamérica y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% digital, así que la ubicación no es una barrera para lograr posicionamiento y conversiones.",
+      "Sí. Atendemos clientes en toda América: Norte, Centro, Sur y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% remoto, así que la ubicación no es barrera para lograr posicionamiento y conversiones.",
   },
 ];
 
