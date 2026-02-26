@@ -6,6 +6,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { FaqItem } from "@/components/FaqSection";
+import { Icon } from "@/components/Icon";
 
 /* ── FAQ sections ─────────────────────────────────────── */
 
@@ -21,7 +22,7 @@ const faqCategories: FaqCategory[] = [
       {
         question: "¿Qué tipo de negocios atienden en AdDing?",
         answer:
-          "Trabajamos con PYMES, marcas personales y empresas en crecimiento en Costa Rica que necesitan posicionamiento local, más leads y conversiones reales. Si tenés un negocio en Heredia, San José o cualquier parte del país y querés aparecer en Google y en buscadores con IA, podemos ayudarte.",
+          "Trabajamos con empresas nuevas y establecidas: PYMES, marcas personales y negocios en crecimiento que buscan posicionamiento, más leads y conversiones reales. Atendemos clientes en Costa Rica y en toda América. Si querés aparecer en Google y en buscadores con IA, podemos ayudarte.",
       },
       {
         question: "¿En cuánto tiempo voy a ver resultados con SEO y GEO?",
@@ -41,7 +42,7 @@ const faqCategories: FaqCategory[] = [
       {
         question: "¿Trabajan con empresas fuera de Costa Rica?",
         answer:
-          "Sí. Aunque estamos en Heredia, Costa Rica, atendemos clientes en toda Latinoamérica y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% digital, así que la ubicación no es una barrera para lograr posicionamiento y conversiones.",
+          "Sí. Atendemos clientes en toda América: Norte, Centro, Sur y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% remoto, así que la ubicación no es barrera para lograr posicionamiento y conversiones.",
       },
       {
         question: "¿Cuánto cuesta contratar los servicios de AdDing?",
@@ -106,12 +107,12 @@ const faqCategories: FaqCategory[] = [
       {
         question: "¿Cómo funcionan los agentes de IA que ofrecen?",
         answer:
-          "Son chatbots inteligentes que atienden a tus clientes 24/7 por WhatsApp y web. Califican leads, responden preguntas frecuentes, agendan citas y se entrenan específicamente para tu negocio en Costa Rica.",
+          "Son asistentes entrenados específicamente para tu negocio. Conocen a fondo tus productos, servicios y procesos, y ayudan en múltiples tareas: atención al cliente, calificación de leads, agendamiento, seguimiento y más. Funcionan 24/7 por WhatsApp, web y otros canales.",
       },
       {
         question: "¿Un agente de IA puede reemplazar a mi equipo de ventas?",
         answer:
-          "No lo reemplaza, lo potencia. El agente de IA se encarga de las preguntas repetitivas, la calificación inicial y el agendamiento. Tu equipo se enfoca en cerrar ventas con leads que ya están listos para comprar, aumentando tus conversiones.",
+          "No lo reemplaza, lo potencia. Un agente de IA puede apoyar en muchas áreas de tu operación: atención al cliente, calificación de leads, seguimiento, agendamiento y soporte interno. Tu equipo se enfoca en cerrar ventas y tareas estratégicas, mientras el agente se encarga del trabajo repetitivo.",
       },
     ],
   },
@@ -173,11 +174,7 @@ function FaqAccordionGroup({ category }: { category: FaqCategory }) {
                 className="w-full flex items-center justify-between px-6 md:px-8 py-5 md:py-6 text-left gap-4"
               >
                 <span className="text-sm md:text-base font-bold tracking-wide">{item.question}</span>
-                <span
-                  className={`material-symbols-outlined text-primary text-xl shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
-                >
-                  expand_more
-                </span>
+                <Icon name="expand_more" className={`text-primary text-xl transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}

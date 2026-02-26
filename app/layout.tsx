@@ -161,7 +161,7 @@ export default function RootLayout({
             name: "¿Qué tipo de negocios atienden en AdDing?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Trabajamos con PYMES, marcas personales y empresas en crecimiento en Costa Rica que necesitan posicionamiento local, más leads y conversiones reales. Si tenés un negocio en Heredia, San José o cualquier parte del país y querés aparecer en Google y en buscadores con IA, podemos ayudarte."
+              text: "Trabajamos con empresas nuevas y establecidas: PYMES, marcas personales y negocios en crecimiento que buscan posicionamiento, más leads y conversiones reales. Atendemos clientes en Costa Rica y en toda América. Si querés aparecer en Google y en buscadores con IA, podemos ayudarte."
             }
           },
           {
@@ -193,7 +193,7 @@ export default function RootLayout({
             name: "¿Trabajan con empresas fuera de Costa Rica?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Sí. Aunque estamos en Heredia, Costa Rica, atendemos clientes en toda Latinoamérica y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% digital, así que la ubicación no es una barrera para lograr posicionamiento y conversiones."
+              text: "Sí. Atendemos clientes en toda América: Norte, Centro, Sur y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% remoto, así que la ubicación no es barrera para lograr posicionamiento y conversiones."
             }
           }
         ]
@@ -214,8 +214,7 @@ export default function RootLayout({
         <meta name="geo.placename" content="Heredia, Costa Rica" />
         <meta name="geo.position" content="9.9977;-84.1173" />
         <meta name="ICBM" content="9.9977, -84.1173" />
-        {/* Fonts */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        {/* Icons now use local SVG via components/Icon.tsx — no external font needed */}
       </head>
       <body className={`${poppins.variable} ${jetbrains.variable} font-sans`}>
 

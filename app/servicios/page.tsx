@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ServiciosFaq } from "@/components/ServiciosFaq";
 import { useI18n } from "@/lib/i18n";
+import { Icon } from "@/components/Icon";
 
 const serviciosFaqJsonLd = {
   "@context": "https://schema.org",
@@ -40,7 +41,7 @@ const serviciosFaqJsonLd = {
     {
       "@type": "Question",
       name: "¿Cómo funcionan los agentes de IA que ofrecen?",
-      acceptedAnswer: { "@type": "Answer", text: "Son chatbots inteligentes que atienden a tus clientes 24/7 por WhatsApp y web. Califican leads, responden preguntas frecuentes, agendan citas y se entrenan específicamente para tu negocio en Costa Rica." },
+      acceptedAnswer: { "@type": "Answer", text: "Son asistentes entrenados específicamente para tu negocio. Conocen a fondo tus productos, servicios y procesos, y ayudan en múltiples tareas: atención al cliente, calificación de leads, agendamiento, seguimiento y más. Funcionan 24/7 por WhatsApp, web y otros canales." },
     },
     {
       "@type": "Question",
@@ -185,7 +186,7 @@ export default function ServiciosPage() {
                 <div className="absolute top-4 right-4 md:top-6 md:right-6 text-xs font-mono text-white/10">{svc.code}</div>
                 <div>
                   <div className={`w-14 h-14 border ${svc.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>
-                    <span className={`material-symbols-outlined text-2xl ${svc.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{svc.icon}</span>
+                    <Icon name={svc.icon} className={`text-2xl ${svc.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`} />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-black tracking-normal mb-4">{t(svc.titleKey)}</h2>
                   <p className="text-white/50 text-base md:text-lg font-light leading-relaxed">{t(svc.descKey)}</p>
@@ -197,7 +198,7 @@ export default function ServiciosPage() {
                   <ul className="space-y-4">
                     {svc.features.map((f, i) => (
                       <li key={i} className="flex items-start gap-4">
-                        <span className="material-symbols-outlined text-primary text-lg mt-0.5">check_circle</span>
+                        <Icon name="check_circle" className="text-primary text-lg mt-0.5" />
                         <span className="text-sm text-white/60 font-light">{f[lang]}</span>
                       </li>
                     ))}

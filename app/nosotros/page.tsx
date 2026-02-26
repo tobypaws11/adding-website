@@ -5,6 +5,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { useI18n } from "@/lib/i18n";
+import { Icon } from "@/components/Icon";
 
 const values = [
   { key: "v1", icon: "lightbulb", color: "primary" },
@@ -86,7 +87,7 @@ export default function NosotrosPage() {
                 <div key={v.key} className="component-module brushed-texture p-6 md:p-10 relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-4 font-mono text-xs opacity-20">VAL_{String(idx + 1).padStart(2, "0")}</div>
                   <div className={`w-12 h-12 border ${v.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>
-                    <span className={`material-symbols-outlined ${v.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{v.icon}</span>
+                    <Icon name={v.icon} className={`${v.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`} />
                   </div>
                   <h3 className="text-lg font-black tracking-luxury mb-4">{t(`about.${v.key}.title`)}</h3>
                   <p className="text-white/40 leading-relaxed text-sm">{t(`about.${v.key}.desc`)}</p>

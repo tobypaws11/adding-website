@@ -5,6 +5,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { useI18n } from "@/lib/i18n";
+import { Icon } from "@/components/Icon";
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/addingagencydotcom" },
@@ -60,7 +61,7 @@ export default function ContactoPage() {
               {/* Email */}
               <div className="border border-white/10 bg-carbon-gray p-8 md:p-12 relative overflow-hidden group hover:border-primary/20 transition-all">
                 <div className="w-14 h-14 border border-accent-yellow/30 flex items-center justify-center mb-8">
-                  <span className="material-symbols-outlined text-accent-yellow text-2xl">mail</span>
+                  <Icon name="mail" className="text-accent-yellow text-2xl" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-black tracking-normal mb-3">{t("contact.email.title")}</h3>
                 <p className="text-white/40 text-sm font-light leading-relaxed mb-8">{t("contact.email.desc")}</p>
@@ -75,14 +76,14 @@ export default function ContactoPage() {
             <div className="grid md:grid-cols-2 gap-4 md:gap-8 mt-4 md:mt-8">
               <div className="border border-white/10 bg-matte-black p-8 md:p-12">
                 <div className="w-14 h-14 border border-primary/30 flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-primary text-2xl">location_on</span>
+                  <Icon name="location_on" className="text-primary text-2xl" />
                 </div>
                 <h4 className="text-lg font-black tracking-widest mb-3">{t("contact.location.title")}</h4>
                 <p className="text-white/40 text-sm font-light leading-relaxed">{t("contact.location.desc")}</p>
               </div>
               <div className="border border-white/10 bg-matte-black p-8 md:p-12">
                 <div className="w-14 h-14 border border-accent-yellow/30 flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-accent-yellow text-2xl">schedule</span>
+                  <Icon name="schedule" className="text-accent-yellow text-2xl" />
                 </div>
                 <h4 className="text-lg font-black tracking-widest mb-3">{t("contact.hours.title")}</h4>
                 <p className="text-white/40 text-sm font-light leading-relaxed">{t("contact.hours.desc")}</p>

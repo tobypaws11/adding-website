@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import { Icon } from "@/components/Icon";
 
 const modules = [
   { icon: "precision_manufacturing", titleKey: "svc.leads.title", descKey: "svc.leads.desc", tag: "FLYWHEEL", color: "primary" },
@@ -37,7 +38,7 @@ export function Services() {
                 {/* Icon + tag row */}
                 <div className="flex items-start justify-between mb-6 md:mb-8">
                   <div className={`w-12 h-12 border ${mod.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center`}>
-                    <span className={`material-symbols-outlined text-xl ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{mod.icon}</span>
+                    <Icon name={mod.icon} className={`text-xl ${mod.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`} />
                   </div>
                   <span className={`text-xs font-black tracking-[0.3em] ${mod.color === "accent-yellow" ? "text-accent-yellow/50" : "text-primary/50"}`}>{mod.tag}</span>
                 </div>

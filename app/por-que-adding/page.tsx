@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Comparison } from "@/components/Comparison";
 import { useI18n } from "@/lib/i18n";
+import { Icon } from "@/components/Icon";
 
 const differentiators = [
   { key: "d1", icon: "smart_toy", color: "primary" },
@@ -95,7 +96,7 @@ export default function WhyAddingPage() {
                 <div key={d.key} className="component-module brushed-texture p-8 md:p-12 relative overflow-hidden group">
                   <div className="absolute top-0 right-0 p-4 font-mono text-xs opacity-20">DIFF_{String(idx + 1).padStart(2, "0")}</div>
                   <div className={`w-12 h-12 border ${d.color === "accent-yellow" ? "border-accent-yellow/30" : "border-primary/30"} flex items-center justify-center mb-8`}>
-                    <span className={`material-symbols-outlined ${d.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`}>{d.icon}</span>
+                    <Icon name={d.icon} className={`${d.color === "accent-yellow" ? "text-accent-yellow" : "text-primary"}`} />
                   </div>
                   <h3 className="text-xl font-black tracking-luxury mb-4">{t(`whypage.${d.key}.title`)}</h3>
                   <p className="text-white/40 leading-relaxed text-sm">{t(`whypage.${d.key}.desc`)}</p>

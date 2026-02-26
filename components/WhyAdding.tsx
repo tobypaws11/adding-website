@@ -2,6 +2,7 @@
 
 import { useI18n } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import { Icon } from "@/components/Icon";
 
 export function WhyAdding() {
   const { t } = useI18n();
@@ -70,7 +71,7 @@ export function WhyAdding() {
             <div className="space-y-8 md:space-y-12">
               <div className="flex gap-6 md:gap-8 group">
                 <div className="w-12 h-12 flex-shrink-0 border border-primary/20 flex items-center justify-center bg-white/5">
-                  <span className="material-symbols-outlined text-primary text-2xl">security</span>
+                  <Icon name="security" className="text-primary text-2xl" />
                 </div>
                 <div>
                   <h4 className="text-base font-bold mb-2">{t("why.p1.title")}</h4>
@@ -79,7 +80,7 @@ export function WhyAdding() {
               </div>
               <div className="flex gap-6 md:gap-8 group">
                 <div className="w-12 h-12 flex-shrink-0 border border-primary/20 flex items-center justify-center bg-white/5">
-                  <span className="material-symbols-outlined text-primary text-2xl">schema</span>
+                  <Icon name="schema" className="text-primary text-2xl" />
                 </div>
                 <div>
                   <h4 className="text-base font-bold mb-2">{t("why.p2.title")}</h4>

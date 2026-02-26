@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { blogPosts, getPostsByCategory, type BlogPost } from "@/lib/blog-data";
+import { Icon } from "@/components/Icon";
 
 type CategoryFilter = "all" | BlogPost["categoryKey"];
 
@@ -196,7 +197,7 @@ export default function BlogPage() {
                 {categoryStats.map((category) => (
                   <div key={category.key} className="component-module brushed-texture p-6 text-center md:p-8">
                     <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center border border-primary/30">
-                      <span className="material-symbols-outlined text-primary">{category.icon}</span>
+                      <Icon name={category.icon} className="text-primary" />
                     </div>
                     <p className="text-xs font-bold uppercase tracking-luxury text-white/60">{category.label}</p>
                     <p className="mt-3 text-[10px] font-mono uppercase tracking-[0.22em] text-white/35">

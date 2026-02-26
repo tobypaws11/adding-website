@@ -1,6 +1,7 @@
 "use client";
 
 import { useI18n } from "@/lib/i18n";
+import { Icon } from "@/components/Icon";
 
 export function Comparison() {
   const { t } = useI18n();
@@ -22,7 +23,7 @@ export function Comparison() {
             <ul className="space-y-8 md:space-y-12 mt-8 md:mt-12">
               {["c1", "c2", "c3"].map((key) => (
                 <li key={key} className="flex items-center gap-4 md:gap-8 opacity-20">
-                  <span className="material-symbols-outlined text-red-500">cancel</span>
+                  <Icon name="cancel" className="text-red-500" />
                   <span className="text-base md:text-xl font-black tracking-widest">{t(`why.${key}.them`)}</span>
                 </li>
               ))}
@@ -32,12 +33,12 @@ export function Comparison() {
           <div className="bg-matte-black p-10 md:p-20 relative overflow-hidden border border-primary/30">
             <div className="absolute top-4 md:top-8 left-4 md:left-8 text-xs font-mono text-primary">ADDING_ENGINEERING</div>
             <div className="absolute top-0 right-0 p-8 md:p-12 opacity-5">
-              <span className="material-symbols-outlined text-[8rem] md:text-[15rem] text-primary">verified</span>
+              <Icon name="verified" className="text-[8rem] md:text-[15rem] text-primary" />
             </div>
             <ul className="space-y-8 md:space-y-12 mt-8 md:mt-12">
               {["c1", "c2", "c3"].map((key) => (
                 <li key={key} className="flex items-center gap-4 md:gap-8">
-                  <span className="material-symbols-outlined text-primary scale-110 md:scale-125">check_circle</span>
+                  <Icon name="check_circle" className="text-primary scale-110 md:scale-125" />
                   <span className="text-base md:text-xl font-black tracking-widest">{t(`why.${key}.us`)}</span>
                 </li>
               ))}

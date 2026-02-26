@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Icon } from "@/components/Icon";
 
 export interface FaqItem {
   question: string;
@@ -39,9 +40,7 @@ export function FaqSection({ items, label = "FAQ", title = "Preguntas frecuentes
                   className="w-full flex items-center justify-between px-6 md:px-8 py-5 md:py-6 text-left gap-4"
                 >
                   <span className="text-sm md:text-base font-bold tracking-wide">{item.question}</span>
-                  <span className={`material-symbols-outlined text-primary text-xl shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
-                    expand_more
-                  </span>
+                  <Icon name="expand_more" className={`text-primary text-xl transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
@@ -61,7 +60,7 @@ export function FaqSection({ items, label = "FAQ", title = "Preguntas frecuentes
               className="inline-flex items-center gap-3 bg-primary text-white px-10 md:px-14 py-4 md:py-5 text-xs font-black tracking-[0.2em] uppercase hover:scale-105 transition-all shadow-[0_0_30px_rgba(0,143,240,0.3)]"
             >
               {ctaText}
-              <span className="material-symbols-outlined text-base">arrow_forward</span>
+              <Icon name="arrow_forward" className="text-base" />
             </Link>
           </div>
         )}
