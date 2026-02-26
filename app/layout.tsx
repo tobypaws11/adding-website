@@ -151,52 +151,6 @@ export default function RootLayout({
             { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automatización" } }
           ]
         }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.addingagency.com/#faq",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "¿Qué tipo de negocios atienden en AdDing?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Trabajamos con empresas nuevas y establecidas: PYMES, marcas personales y negocios en crecimiento que buscan posicionamiento, más leads y conversiones reales. Atendemos clientes en Costa Rica y en toda América. Si querés aparecer en Google y en buscadores con IA, podemos ayudarte."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "¿En cuánto tiempo voy a ver resultados con SEO y GEO?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "La fase de fundación toma entre 2 y 5 semanas. Desde el segundo mes ya empezás a ver leads consistentes y métricas de crecimiento medibles con nuestro sistema Flywheel. Los resultados de SEO Costa Rica y posicionamiento local se consolidan entre el tercer y sexto mes."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "¿Qué incluye el ecosistema digital de AdDing?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Incluye diseño web, SEO, GEO (Generative Engine Optimization), automatización, agentes de IA, email marketing, Google Business Profile y generación de leads. Todo conectado para que cada pieza trabaje en conjunto y multiplique tus conversiones."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "¿Pueden ayudarme con mi perfil de Google Business y posicionamiento local?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sí. Optimizamos tu Google Business Profile para que tu negocio aparezca en búsquedas locales en Costa Rica. Combinamos eso con SEO on-page, GEO y contenido estratégico para que generés más leads desde Google Maps y buscadores con inteligencia artificial."
-            }
-          },
-          {
-            "@type": "Question",
-            name: "¿Trabajan con empresas fuera de Costa Rica?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sí. Atendemos clientes en toda América: Norte, Centro, Sur y el Caribe. Nuestro modelo de SEO, GEO y marketing digital es 100% remoto, así que la ubicación no es barrera para lograr posicionamiento y conversiones."
-            }
-          }
-        ]
       }
     ]
   };
