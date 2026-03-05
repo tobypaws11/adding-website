@@ -117,8 +117,8 @@ export const blogPosts: BlogPost[] = [
     categoryKey: "seo",
     readingTime: 7,
     publishedAt: "2026-02-20",
-    author: "José Molina",
-    authorRole: "Director de Estrategia Digital, AdDing Agency",
+    author: "AdDing Agency",
+    authorRole: "Equipo Editorial",
     coverGradient: "linear-gradient(135deg, rgba(37,99,235,0.24) 0%, rgba(34,211,238,0.08) 100%)",
     tags: ["seo", "geo", "chatgpt", "gemini", "marketing digital", "costa rica"],
     metaTitle: "SEO vs GEO en Costa Rica: lo que tenés que cambiar hoy",
@@ -285,8 +285,8 @@ export const blogPosts: BlogPost[] = [
     categoryKey: "ai",
     readingTime: 8,
     publishedAt: "2026-02-20",
-    author: "José Molina",
-    authorRole: "Director de Estrategia Digital, AdDing Agency",
+    author: "AdDing Agency",
+    authorRole: "Equipo Editorial",
     coverGradient: "linear-gradient(135deg, rgba(124,58,237,0.24) 0%, rgba(168,85,247,0.08) 100%)",
     tags: ["inteligencia artificial", "automatización", "pymes", "costa rica", "chatbots"],
     metaTitle: "IA para PYMES en Costa Rica: guía práctica 2026",
@@ -412,8 +412,8 @@ export const blogPosts: BlogPost[] = [
     categoryKey: "leads",
     readingTime: 6,
     publishedAt: "2026-02-20",
-    author: "José Molina",
-    authorRole: "Director de Estrategia Digital, AdDing Agency",
+    author: "AdDing Agency",
+    authorRole: "Equipo Editorial",
     coverGradient: "linear-gradient(135deg, rgba(5,150,105,0.24) 0%, rgba(20,184,166,0.08) 100%)",
     tags: ["conversión", "leads", "landing page", "ux", "sitio web", "costa rica"],
     metaTitle: "Por qué tu web no genera leads: las 7 razones y cómo arreglarlas",
@@ -442,6 +442,130 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "agencia-marketing-digital-costa-rica-seo-geo",
+    title: "Agencia de marketing digital en Costa Rica: cómo elegir una que te genere ventas en 90 días",
+    excerpt:
+      "Si querés crecer sin quemar presupuesto, esta guía te muestra cómo elegir una agencia que combine SEO+GEO, automatización y estrategia comercial para generar demanda calificada.",
+    content: `
+      <p>Si estás evaluando una <strong>agencia de marketing digital en Costa Rica</strong>, probablemente ya te pasó esto: invertiste en anuncios, publicaste en redes, hiciste cambios en tu web y aun así los resultados no son estables. Entran algunos leads, después se cae todo y cada mes parece arrancar desde cero.</p>
+      <p>La realidad es simple: no necesitás más tácticas aisladas. Necesitás un sistema de crecimiento que convierta tráfico en oportunidades reales. Ahí es donde una agencia correcta te puede ahorrar meses de prueba y error, especialmente si competís en zonas como Heredia, San José o Escazú.</p>
+      <p>En esta guía te voy a mostrar cómo elegir una agencia con enfoque de conversión, qué señales revisar antes de contratar y por qué hoy el combo SEO+GEO está marcando la diferencia para empresas en Costa Rica que quieren escalar también en América.</p>
+
+      <h2>Por qué ya no alcanza con marketing digital tradicional en Costa Rica</h2>
+      <p>Hace unos años bastaba con posicionar algunas palabras clave y pautar en Meta o Google. Hoy el recorrido de compra cambió. Tus clientes investigan en buscadores, comparan en redes y también preguntan en motores de IA como ChatGPT o Gemini.</p>
+      <p>Si tu marca no está preparada para ese comportamiento, quedás fuera justo en el momento de decisión. Por eso una agencia moderna no solo debería prometer visibilidad: debería construir una presencia completa que te haga aparecer, convencer y convertir.</p>
+
+      <h2>Qué debería incluir una agencia de marketing digital orientada a ventas</h2>
+      <h3>1) Diagnóstico comercial antes que propuesta genérica</h3>
+      <p>Si te mandan un plan estándar sin entender tu ciclo de ventas, tus márgenes y tu ticket promedio, salí de ahí. Una estrategia seria arranca con preguntas de negocio, no con plantillas.</p>
+
+      <h3>2) Estrategia SEO + GEO integrada para búsquedas y motores de IA</h3>
+      <p>El SEO te posiciona en resultados tradicionales. El GEO te ayuda a aparecer en respuestas generadas por IA. Cuando trabajás ambos frentes, tu marca gana más puntos de contacto y reduce dependencia de pauta pagada.</p>
+      <ul>
+        <li>SEO para búsquedas con intención transaccional en Costa Rica.</li>
+        <li>GEO para consultas conversacionales y recomendaciones de IA en español para América.</li>
+        <li>Contenido estructurado para convertir y no solo atraer visitas.</li>
+      </ul>
+      <p>Si querés ver cómo funciona esta integración, podés revisar nuestra guía de <a href="/blog/seo-vs-geo-costa-rica">SEO vs GEO en Costa Rica</a>.</p>
+
+      <h3>3) Embudo claro de captación y seguimiento</h3>
+      <p>No sirve traer tráfico si no hay proceso para convertirlo. Pedí que te expliquen cómo pasan de visita a lead, y de lead a reunión o venta. Debería incluir automatización de seguimiento y criterios de calificación.</p>
+
+      <h3>4) Servicios conectados con ejecución real</h3>
+      <p>Una buena agencia debería mostrarte con claridad qué incluye cada fase: estrategia, contenidos, automatización y optimización continua. Si querés validar el alcance, revisá también nuestra página de <a href="/servicios">servicios</a>.</p>
+
+      <h3>5) Reportes conectados con métricas de negocio</h3>
+      <p>Likes y alcance son métricas secundarias. Lo principal: costo por lead calificado, tasa de cierre, retorno por canal y velocidad de respuesta comercial.</p>
+
+      <h2>7 preguntas que tenés que hacer antes de contratar</h2>
+      <ol>
+        <li>¿Cómo definen un lead calificado para mi negocio?</li>
+        <li>¿Qué estrategia proponen para posicionarme en Costa Rica y mercados de América?</li>
+        <li>¿Cómo integran SEO y GEO en la ejecución mensual?</li>
+        <li>¿Qué parte del proceso van a automatizar para mejorar conversión?</li>
+        <li>¿Qué KPIs van a usar para medir impacto real en ventas?</li>
+        <li>¿Cuánto tiempo estiman para ver resultados iniciales medibles?</li>
+        <li>¿Qué casos similares pueden mostrar con contexto y resultados?</li>
+      </ol>
+      <p>Si las respuestas son vagas o prometen resultados mágicos en dos semanas, no es por ahí.</p>
+
+      <h2>Señales de alerta que te conviene evitar</h2>
+      <ul>
+        <li>Te prometen "primer lugar en Google" sin analizar competencia ni contexto local.</li>
+        <li>No hablan de conversión ni de integración con ventas.</li>
+        <li>Solo ofrecen publicaciones en redes como solución completa.</li>
+        <li>No tienen metodología para contenido local en Heredia ni expansión regional en América.</li>
+        <li>No incluyen ownership de data ni transparencia en reportes.</li>
+      </ul>
+
+      <h2>Enfoque recomendado para Costa Rica, Heredia y expansión en América</h2>
+      <p>Para empresas ticas que quieren crecer, funciona muy bien una estrategia por capas:</p>
+      <ul>
+        <li><strong>Capa 1:</strong> posicionamiento local con SEO técnico y contenido de intención alta para Costa Rica.</li>
+        <li><strong>Capa 2:</strong> contenidos GEO para preguntas complejas y comparativas que hacen tus prospectos en IA.</li>
+        <li><strong>Capa 3:</strong> automatización comercial para responder rápido y nutrir oportunidades.</li>
+        <li><strong>Capa 4:</strong> optimización continua basada en datos de conversión por ciudad, canal y país.</li>
+      </ul>
+      <p>Este enfoque te ayuda a construir crecimiento sostenible, no picos aislados. Si además querés mejorar la captura de leads desde tu web, te puede servir este artículo sobre <a href="/blog/por-que-tu-sitio-web-no-genera-leads">por qué tu sitio no genera leads</a>.</p>
+
+      <h2>¿Qué resultados podés esperar en 90 días?</h2>
+      <p>Depende de tu punto de partida, pero con una ejecución seria podés esperar:</p>
+      <ul>
+        <li>Mejor calidad de leads por mayor alineación entre mensaje y oferta.</li>
+        <li>Más visibilidad en búsquedas locales y consultas asistidas por IA.</li>
+        <li>Reducción del desperdicio en pauta por mejor segmentación y embudo.</li>
+        <li>Proceso comercial más rápido gracias a automatizaciones.</li>
+      </ul>
+
+      <h2>Conclusión</h2>
+      <p>Elegir una agencia no se trata de quién publica más contenido, sino de quién entiende tu negocio y diseña un sistema para vender más con consistencia. Si estás buscando una <strong>agencia de marketing digital en Costa Rica</strong>, asegurate de que trabaje con visión SEO+GEO, conversión y datos reales.</p>
+      <p>Si querés resolver dudas frecuentes antes de agendar, podés pasar por nuestra sección de <a href="/faq">preguntas frecuentes</a>.</p>
+      <p><strong>¿Querés una evaluación concreta de tu caso en Costa Rica o Heredia? Escribinos desde <a href="/contacto">contacto</a> y te compartimos un plan accionable para los próximos 90 días.</strong></p>
+    `,
+    category: "Marketing",
+    categoryKey: "marketing",
+    readingTime: 8,
+    publishedAt: "2026-03-02",
+    author: "AdDing Agency",
+    authorRole: "Equipo Editorial",
+    coverGradient: "linear-gradient(135deg, rgba(192,38,211,0.24) 0%, rgba(244,114,182,0.08) 100%)",
+    tags: [
+      "agencia de marketing digital en costa rica",
+      "agencia de marketing digital en heredia",
+      "seo y geo costa rica",
+      "generación de leads",
+      "automatización de marketing",
+      "estrategia digital en américa"
+    ],
+    metaTitle: "Agencia de marketing digital en Costa Rica y Heredia | Guía 90 días",
+    metaDescription:
+      "Elegí una agencia de marketing digital en Costa Rica con enfoque SEO+GEO y conversión. Mirá qué preguntar, qué evitar y cómo generar ventas en 90 días.",
+    faq: [
+      {
+        question: "¿Cómo elegir una agencia de marketing digital en Costa Rica?",
+        answer:
+          "Elegí una agencia que entienda tu modelo de negocio, mida resultados comerciales y trabaje una estrategia integrada de SEO, GEO y conversión. En ciudades como Heredia, además, conviene validar experiencia local y capacidad de escalar campañas para otros mercados de América.",
+      },
+      {
+        question: "¿Qué diferencia hay entre SEO y GEO para una empresa en Costa Rica?",
+        answer:
+          "SEO te ayuda a posicionarte en buscadores tradicionales. GEO optimiza tu presencia para motores de IA que generan respuestas, como ChatGPT o Gemini. Trabajar ambos aumenta tu visibilidad en todo el recorrido de compra, desde búsquedas locales en Costa Rica hasta consultas comparativas en América.",
+      },
+      {
+        question: "¿En cuánto tiempo se ven resultados al contratar una agencia?",
+        answer:
+          "En muchos casos se observan señales iniciales entre 30 y 60 días, y mejoras más sólidas entre 90 y 120 días, dependiendo de tu punto de partida, competencia y velocidad de implementación.",
+      },
+      {
+        question: "¿Conviene una estrategia local solo para Costa Rica o regional para América?",
+        answer:
+          "Lo más efectivo suele ser empezar fuerte en Costa Rica, consolidar resultados en zonas clave como Heredia y luego escalar por etapas a mercados de América con contenido y campañas adaptadas por país.",
+      },
+    ],
+  },
+
+
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

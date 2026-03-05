@@ -6,7 +6,9 @@ import { useI18n } from "@/lib/i18n";
 
 export function BlogPreview() {
   const { t } = useI18n();
-  const latestPosts = blogPosts.slice(0, 3);
+  const latestPosts = [...blogPosts]
+    .sort((left, right) => right.publishedAt.localeCompare(left.publishedAt))
+    .slice(0, 3);
 
   return (
     <section id="blog" className="bg-carbon-gray py-24 md:py-40 border-t border-white/5">

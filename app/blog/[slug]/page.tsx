@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       description: post.metaDescription,
       type: "article",
       publishedTime: post.publishedAt,
+      authors: ["AdDing Agency"],
       tags: post.tags,
       images: [
         {
@@ -69,6 +70,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     description: post.metaDescription,
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
+    inLanguage: "es-CR",
     keywords: post.tags.join(", "),
     articleSection: post.category,
     wordCount: post.content
@@ -87,15 +89,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       height: 630,
     },
     author: {
-      "@type": "Person",
-      name: post.author,
-      url: "https://www.addingagency.com/nosotros",
-      jobTitle: post.authorRole,
-      worksFor: {
-        "@type": "Organization",
-        name: "AdDing Agency",
-        url: "https://www.addingagency.com",
-      },
+      "@type": "Organization",
+      name: "AdDing Agency",
+      url: "https://www.addingagency.com",
     },
     publisher: {
       "@type": "Organization",
@@ -129,12 +125,41 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         }
       : null;
 
+  const jsonLdBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Inicio",
+        item: "https://www.addingagency.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://www.addingagency.com/blog",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `https://www.addingagency.com/blog/${post.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <ArticlePageClient post={post} relatedPosts={relatedPosts} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdArticle) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb) }}
       />
       {jsonLdFaq && (
         <script

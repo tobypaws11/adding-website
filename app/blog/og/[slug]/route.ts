@@ -147,7 +147,7 @@ export async function GET(_request: NextRequest, { params }: { params: { slug: s
                 color: accent,
               },
             },
-            "JM"
+            "AA"
           ),
           createElement(
             "div",
