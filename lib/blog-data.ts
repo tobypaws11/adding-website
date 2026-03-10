@@ -564,6 +564,189 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cuanto-cuesta-agencia-marketing-digital-costa-rica",
+    title: "¿Cuánto cuesta contratar una agencia de marketing digital en Costa Rica? Guía de precios 2026",
+    excerpt:
+      "Si ya pediste varias cotizaciones y los montos no se parecen entre sí, esta guía te ayuda a entender rangos reales de mercado en Costa Rica y cómo evaluar si un precio es justo.",
+    content: `
+      <p>Te pasa más de lo que creés: pedís tres cotizaciones para marketing digital en Costa Rica y recibís tres números que no tienen nada que ver entre sí. Una propuesta ronda los $500 al mes, otra anda por $1,800 y una tercera supera los $3,000. Entonces aparece la duda lógica: <strong>¿cuánto cuesta contratar una agencia de marketing digital en Costa Rica?</strong></p>
+      <p>La respuesta corta es que depende, pero no porque el mercado sea un misterio, sino porque no todas las propuestas incluyen lo mismo. Algunas solo ejecutan piezas; otras incluyen estrategia, analítica, optimización y acompañamiento comercial.</p>
+      <p>En esta guía vas a ver rangos de mercado actualizados para 2026, qué factores mueven el precio y cómo decidir con criterio para no pagar de más ni quedarte corto.</p>
+
+      <h2>¿Qué factores afectan el precio de una agencia de marketing digital en Costa Rica?</h2>
+      <h3>Tamaño y tipo de agencia (freelancer vs boutique vs grande)</h3>
+      <p>El tamaño del equipo cambia costos y alcance. Un freelancer suele tener tarifas más bajas, pero capacidad limitada. Una agencia boutique normalmente combina especialización y atención cercana. Una agencia grande puede ofrecer más áreas internas, aunque con estructura más costosa.</p>
+      <p>Eso no significa que una opción sea siempre mejor que otra. Significa que el precio refleja recursos, procesos y nivel de soporte disponible para tu cuenta.</p>
+
+      <h3>Servicios incluidos o no</h3>
+      <p>Dos propuestas pueden llamarse "marketing digital" y ser completamente distintas. Antes de comparar precio, revisá alcance real.</p>
+      <ul>
+        <li>Estrategia y planificación mensual.</li>
+        <li>Producción de contenido (copy, diseño, video).</li>
+        <li>Gestión de pauta y optimización diaria.</li>
+        <li>Implementación técnica (tracking, píxeles, eventos).</li>
+        <li>Reportería y análisis de conversiones.</li>
+      </ul>
+      <p>Si estos puntos no están claros por escrito, el precio que ves puede parecer competitivo pero terminar siendo incompleto.</p>
+
+      <h3>Experiencia y resultados previos</h3>
+      <p>Una agencia con casos comprobables en tu industria normalmente cobra más que una que está empezando, y eso es esperable. En muchos casos pagás por reducir curva de aprendizaje, errores de ejecución y tiempo perdido.</p>
+      <p>Si tenés metas agresivas de crecimiento, la experiencia suele impactar más en el retorno que en el costo mensual aislado.</p>
+
+      <h3>Modelo de cobro (retainer vs proyecto vs performance)</h3>
+      <ul>
+        <li><strong>Retainer mensual:</strong> monto fijo por operación continua y optimización constante.</li>
+        <li><strong>Proyecto:</strong> precio cerrado para entregables puntuales (por ejemplo, un sitio web).</li>
+        <li><strong>Performance:</strong> parte del pago ligada a resultados definidos por contrato.</li>
+      </ul>
+      <p>Cada modelo tiene lógica distinta. Si querés estabilidad y mejora continua, el retainer suele ser el formato más común en Costa Rica.</p>
+
+      <h2>Rangos de precios por servicio en Costa Rica (2026)</h2>
+      <p>Estos rangos son aproximados y reflejan mercado local para 2026. El precio final puede variar según complejidad, sector y nivel de especialización requerido.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Servicio</th>
+            <th>Rango de mercado</th>
+            <th>Referencia de alcance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gestión de redes sociales</td>
+            <td>₡150,000–₡600,000/mes ($300–$1,200/mes)</td>
+            <td>Calendario, diseño, copy y community management básico a intermedio.</td>
+          </tr>
+          <tr>
+            <td>SEO básico</td>
+            <td>$400–$1,000/mes</td>
+            <td>Optimización on-page, contenido base y seguimiento de keywords.</td>
+          </tr>
+          <tr>
+            <td>SEO avanzado + GEO</td>
+            <td>$800–$2,500/mes</td>
+            <td>Estrategia técnica, clústeres de contenido, autoridad temática y presencia en motores generativos.</td>
+          </tr>
+          <tr>
+            <td>Diseño web (sitio informativo)</td>
+            <td>$1,500–$5,000 proyecto</td>
+            <td>Sitio corporativo con UX, estructura SEO base e integraciones estándar.</td>
+          </tr>
+          <tr>
+            <td>Diseño web (ecommerce)</td>
+            <td>$3,000–$12,000 proyecto</td>
+            <td>Tienda en línea con catálogo, pagos, logística e integraciones de venta.</td>
+          </tr>
+          <tr>
+            <td>Google Ads (gestión)</td>
+            <td>$300–$800/mes + presupuesto de pauta</td>
+            <td>Configuración, optimización y reporte de campañas; pauta se paga aparte.</td>
+          </tr>
+          <tr>
+            <td>Email marketing y automatización</td>
+            <td>$400–$1,200/mes</td>
+            <td>Flujos, segmentación, campañas y mejora de conversión del canal.</td>
+          </tr>
+          <tr>
+            <td>Ecosistema digital completo (todo incluido)</td>
+            <td>$1,500–$5,000/mes</td>
+            <td>Estrategia integral con canales orgánicos, pagos, automatización y análisis.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Tomá estos números como punto de partida para presupuesto, no como tarifa única obligatoria del mercado.</p>
+
+      <h2>¿Barato sale caro? Lo que a veces no está incluido en un precio bajo</h2>
+      <h3>Sin estrategia, solo ejecución</h3>
+      <p>Un precio bajo puede cubrir publicaciones o campañas aisladas, pero no necesariamente una ruta para lograr objetivos comerciales. Sin estrategia, terminás acumulando tareas sin dirección.</p>
+
+      <h3>Reportes que no miden conversiones reales</h3>
+      <p>Hay reportes llenos de métricas bonitas que no te dicen cuántos leads calificados o ventas generaste. Si no hay trazabilidad de conversiones, no podés evaluar retorno real.</p>
+
+      <h3>Sin optimización continua</h3>
+      <p>La ejecución inicial casi nunca alcanza. Si no hay iteración, testing y ajustes mensuales, el rendimiento se estanca rápido y el costo por resultado sube.</p>
+      <blockquote>
+        "El precio más bajo no siempre es el menor costo: sin estrategia ni optimización, podés pagar menos y perder más."
+      </blockquote>
+
+      <h2>Cómo evaluar si el precio es justo (más allá del número)</h2>
+      <h3>3 preguntas que debés hacer antes de firmar</h3>
+      <ol>
+        <li>¿Qué entregables exactos recibo cada mes y quién los ejecuta?</li>
+        <li>¿Cómo van a medir conversiones, oportunidades y retorno?</li>
+        <li>¿Qué resultados intermedios debería esperar en 30, 60 y 90 días?</li>
+      </ol>
+
+      <h3>Señales de alerta (red flags)</h3>
+      <ul>
+        <li>Promesas de resultados garantizados sin revisar tu contexto.</li>
+        <li>Propuestas sin detalle de alcance, tiempos y responsables.</li>
+        <li>Contrato rígido sin KPI claros ni revisión periódica.</li>
+        <li>Reportes centrados solo en alcance, likes o impresiones.</li>
+        <li>Cero explicación sobre tracking, datos y atribución.</li>
+      </ul>
+
+      <h2>¿Cuándo tiene sentido invertir más?</h2>
+      <p>Invertir más suele tener sentido cuando necesitás velocidad, especialización o ejecución multicanal coordinada. Por ejemplo:</p>
+      <ul>
+        <li>Cuando tu ticket promedio es alto y cada lead perdido cuesta mucho.</li>
+        <li>Cuando competís en una industria saturada y necesitás diferenciarte rápido.</li>
+        <li>Cuando ya validaste demanda y querés escalar sin romper la operación comercial.</li>
+        <li>Cuando necesitás integrar SEO, pauta, automatización y analítica en un solo sistema.</li>
+      </ul>
+      <p>Si el plan más caro viene acompañado de metodología clara, métricas de negocio y responsables definidos, puede salir más rentable que una opción barata con ejecución parcial.</p>
+
+      <h2>Conclusión</h2>
+      <p>En Costa Rica, contratar marketing digital en 2026 puede ir desde unos cientos de dólares mensuales para servicios puntuales hasta varios miles para un ecosistema completo. El número por sí solo no alcanza: lo clave es qué problema resuelve, cómo se mide y qué capacidad de mejora continua incluye.</p>
+      <p>Antes de firmar, compará propuestas por alcance, método y resultados esperados, no solo por tarifa.</p>
+      <p><strong>Si querés tomar una decisión con más claridad, pedí una consulta gratuita de diagnóstico y revisá tu presupuesto con objetivos y métricas concretas.</strong></p>
+    `,
+    category: "marketing",
+    categoryKey: "marketing",
+    readingTime: 9,
+    publishedAt: "2026-03-10",
+    author: "AdDing Agency",
+    authorRole: "Equipo Editorial",
+    coverGradient: "linear-gradient(135deg, rgba(234,179,8,0.24) 0%, rgba(251,146,60,0.08) 100%)",
+    tags: [
+      "precio agencia marketing digital costa rica",
+      "cuanto cuesta marketing digital costa rica",
+      "agencia digital heredia precio",
+      "seo costa rica costo",
+      "presupuesto marketing digital pyme"
+    ],
+    metaTitle: "¿Cuánto cuesta una agencia de marketing digital en Costa Rica? Precios 2026",
+    metaDescription:
+      "Conocé los rangos de precios de agencias de marketing digital en Costa Rica en 2026: redes sociales, SEO, GEO, diseño web y ecosistemas completos. Guía completa.",
+    faq: [
+      {
+        question: "¿Cuánto cuesta contratar una agencia de marketing digital en Costa Rica?",
+        answer:
+          "En 2026, los rangos varían por servicio: redes sociales desde ₡150,000 hasta ₡600,000 al mes, SEO entre $400 y $2,500 al mes según complejidad, diseño web desde $1,500 por proyecto y ecosistemas completos entre $1,500 y $5,000 mensuales. El monto final depende de alcance, experiencia y modelo de trabajo.",
+      },
+      {
+        question: "¿Qué incluye un retainer mensual de marketing digital en Costa Rica?",
+        answer:
+          "Un retainer mensual suele incluir estrategia, ejecución de canales definidos, optimización continua, reuniones de seguimiento, reporte de KPIs y ajustes de campañas. También puede incluir soporte técnico de tracking y coordinación con ventas, según contrato.",
+      },
+      {
+        question: "¿Es mejor contratar un freelancer o una agencia de marketing digital?",
+        answer:
+          "Depende de lo que necesités. Un freelancer puede funcionar si tenés objetivos puntuales y presupuesto limitado. Una agencia suele convenir cuando ocupás varias especialidades coordinadas, capacidad de ejecución constante y respaldo de procesos.",
+      },
+      {
+        question: "¿Por qué hay tanta diferencia de precios entre agencias digitales en Costa Rica?",
+        answer:
+          "Porque no todas venden lo mismo: cambia el nivel de estrategia, la cantidad de servicios incluidos, la experiencia del equipo, la profundidad de análisis y el modelo de cobro. Dos propuestas con el mismo nombre pueden tener alcances totalmente distintos.",
+      },
+      {
+        question: "¿Cuándo vale la pena pagar más por una agencia de marketing?",
+        answer:
+          "Vale la pena cuando el plan más completo te ayuda a mejorar resultados de negocio con velocidad y menor riesgo: mejor calidad de leads, mejor tasa de conversión, optimización constante y decisiones basadas en datos reales.",
+      },
+    ],
+  },
 
 
 ];
