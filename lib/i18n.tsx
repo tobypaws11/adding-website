@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from "react";
 
 export type Lang = "es" | "en";
 
@@ -286,8 +286,18 @@ const I18nContext = createContext<I18nContextType>({
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>("es");
 
+  // Restore language preference from localStorage on mount
+  useEffect(() => {
+    const saved = typeof window !== "undefined" ? localStorage.getItem("adding_lang") : null;
+    if (saved === "en" || saved === "es") setLang(saved);
+  }, []);
+
   const toggle = useCallback(() => {
-    setLang((prev) => (prev === "es" ? "en" : "es"));
+    setLang((prev) => {
+      const next = prev === "es" ? "en" : "es";
+      if (typeof window !== "undefined") localStorage.setItem("adding_lang", next);
+      return next;
+    });
   }, []);
 
   const t = useCallback(
